@@ -5,7 +5,13 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Utils plugins
-  use { 'windwp/nvim-autopairs' }
+  use { 
+    'windwp/nvim-autopairs',
+    config = function()
+      require('nvim-autopairs').setup()
+    end
+  }
+
   use {
     'norcalli/nvim-colorizer.lua',
     config = function()

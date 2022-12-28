@@ -2,9 +2,22 @@ vim.g.mapleader = " "
 
 -- Telescope Remaps
 local builtin = require('telescope.builtin')
+local telescope = require('telescope')
 
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<C-t>', builtin.buffers, {})
+
+telescope.setup {
+  defaults = {
+    file_ignore_patterns = { 
+      "node_modules",
+      ".git",
+      "dist",
+      "build",
+      ".next"
+    },
+  }
+}
 
 -- LSP Remaps
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
