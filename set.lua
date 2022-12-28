@@ -4,6 +4,8 @@ vim.opt.softtabstop = 2
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
 vim.opt.wrap = false
+vim.opt.smartindent = true
+vim.opt.scrolloff = 8
 
 -- Folds sets
 vim.opt.foldmethod = "expr"

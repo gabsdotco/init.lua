@@ -1,5 +1,9 @@
 vim.g.mapleader = " "
 
+-- Basic Remaps
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- Telescope Remaps
 local builtin = require('telescope.builtin')
 local telescope = require('telescope')
@@ -9,7 +13,7 @@ vim.keymap.set('n', '<C-t>', builtin.buffers, {})
 
 telescope.setup {
   defaults = {
-    file_ignore_patterns = { 
+    file_ignore_patterns = {
       "node_modules",
       ".git",
       "dist",
