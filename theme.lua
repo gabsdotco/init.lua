@@ -19,3 +19,6 @@ vim.cmd("highlight VertSplit guibg=#000000 guifg=#000000")
 -- Command line colors
 vim.cmd("highlight Pmenu guibg=#000000 guifg=#ff0088")
 vim.cmd("highlight PmenuSel guibg=#ff0088 guifg=#ffffff")
+
+-- Fold colors
+vim.cmd("highlight Folded guibg=#000000 guifg=#3b3b3b")
