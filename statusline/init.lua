@@ -2,6 +2,7 @@ require("deeckard.statusline.components.mode")
 require("deeckard.statusline.components.file")
 require("deeckard.statusline.components.branch")
 require("deeckard.statusline.components.diagnostics")
+require("deeckard.statusline.components.saved")
 
 require("deeckard.statusline.utils")
 require("deeckard.statusline.colors")
@@ -12,12 +13,14 @@ function status_line()
   local branch = get_branch_component()
   local errors = get_errors_component()
   local warnings = get_warnings_component()
+  local saved = get_saved_component()
 
   return table.concat {
     get_component("StatusMode", mode),
     get_component("StatusBranch", branch),
     get_component("StatusFile", file),
     get_component_separator(),
+    get_component("StatusSaved", saved),
     get_component("StatusErrors", errors),
     get_component("StatusWarnings", warnings),
   }
