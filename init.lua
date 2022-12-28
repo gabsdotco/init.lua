@@ -1,0 +1,5 @@
+require("deeckard.plugins")
+require("deeckard.set")
+require("deeckard.remap")
+require("deeckard.lsp")
+require("deeckard.statusline")
