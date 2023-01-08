@@ -11,5 +11,5 @@ function get_branch_component()
     return ""
   end
 
-  return branch
+  return branch:sub(1, 15)
 end
