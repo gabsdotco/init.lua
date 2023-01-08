@@ -12,6 +12,8 @@ return require('packer').startup(function(use)
     end
   }
 
+  use 'wakatime/vim-wakatime'
+
   use {
     'norcalli/nvim-colorizer.lua',
     config = function()
@@ -31,6 +33,9 @@ return require('packer').startup(function(use)
   }
 
   -- Treesitter plugins
+  use 'tpope/vim-commentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+
   use({
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
@@ -44,8 +49,17 @@ return require('packer').startup(function(use)
           "typescript",
           "json",
         },
+
         sync_install = false,
         auto_install = true,
+
+        ident = {
+          enable = true,
+        },
+
+        context_commentstring = {
+          enable = true,
+        },
 
         highlight = {
           enable = true,
@@ -53,7 +67,14 @@ return require('packer').startup(function(use)
       }
     end
   })
+
   use('nvim-treesitter/playground')
+  use({
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end
+  })
 
   -- Git plugins
   use('tpope/vim-fugitive')
@@ -80,7 +101,7 @@ return require('packer').startup(function(use)
     config = function()
       require("noirbuddy").setup({
         colors = {
-          background = '#000000',
+          background = "#0A0A0A",
         },
       })
 

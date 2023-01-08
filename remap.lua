@@ -20,6 +20,7 @@ local telescope = require('telescope')
 
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<C-t>', builtin.buffers, {})
+vim.keymap.set('n', '<C-g>', builtin.live_grep, {})
 
 telescope.setup {
   defaults = {
@@ -41,9 +42,6 @@ vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
-vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, {})
-vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, {})
-vim.keymap.set('n', '<leader>wl', vim.lsp.buf.list_workspace_folders, {})
 
 -- Copilot Remaps
 vim.g.copilot_no_tab_map = true
@@ -56,10 +54,19 @@ vim.keymap.set('n', '<C-q>', ':tabclose<CR>', {})
 vim.keymap.set('n', '<C-n>', ':tabnew ', {})
 
 -- Split Remaps
-vim.keymap.set('n', '<S-h>', '<C-w>h', {})
-vim.keymap.set('n', '<S-l>', '<C-w>l', {})
 vim.keymap.set('n', '<S-q>', '<C-w>c', {})
 vim.keymap.set('n', '<S-n>', ':vsplit ', {})
+
+-- Vertical Split Remaps
+vim.keymap.set('n', '<S-h>', '<C-w>h', {})
+vim.keymap.set('n', '<S-l>', '<C-w>l', {})
+
+-- Horizonal Split Remaps
+vim.keymap.set('n', '<S-j>', '<C-w>j', {})
+vim.keymap.set('n', '<S-k>', '<C-w>k', {})
+
+-- Diagnostic Remaps
+vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {}) -- Open line diagnostics popup
 
 -- Force don't use arrows
 vim.keymap.set('n', '<Up>', '<Nop>', {})

@@ -1,19 +1,10 @@
 local lsp = require('lsp-zero')
-local cmp = require('cmp')
 
 lsp.preset('recommended')
 lsp.ensure_installed({
   'tsserver',
   'eslint',
   'sumneko_lua',
-})
-
-local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
-  ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-  ["<C-Space>"] = cmp.mapping.complete(),
 })
 
 lsp.set_preferences({
@@ -31,3 +22,15 @@ lsp.setup()
 vim.diagnostic.config({
   virtual_text = true,
 })
+
+vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics,
+  {
+    underline = true,
+    virtual_text = {
+      spacing = 5,
+      severity_limit = 'Warning',
+    },
+    update_in_insert = true,
+  }
+)

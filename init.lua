@@ -1,6 +1,6 @@
 require("deeckard.plugins")
+require("deeckard.lsp")
 require("deeckard.set")
 require("deeckard.remap")
 require("deeckard.statusline")
-require("deeckard.lsp")
 require("deeckard.prettier")

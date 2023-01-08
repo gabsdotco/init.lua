@@ -8,17 +8,28 @@ vim.cmd("highlight NonText guibg=none")
 vim.cmd("highlight Normal ctermbg=none")
 vim.cmd("highlight NonText ctermbg=none")
 
+vim.cmd("highlight clear LineNr")
+vim.cmd("highlight clear SignColumn")
+
+-- Numbers Gutter
+vim.cmd("highlight LineNr guifg=#2b2b2b")
+vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
+vim.cmd("highlight CursorLine guibg=NONE")
+
 -- Tabline colors
 vim.cmd("highlight TabLineSel guibg=#ff0088 guifg=#ffffff")
-vim.cmd("highlight TabLine guibg=#000000 guifg=#ff0088")
-vim.cmd("highlight TabLineFill guibg=#000000 guifg=#000000")
+vim.cmd("highlight TabLine guibg=#0A0A0A guifg=#ff0088")
+vim.cmd("highlight TabLineFill guibg=NONE guifg=NONE")
+
+-- Statusline background
+vim.cmd("highlight StatusLine guibg=#0A0A0A")
 
 -- Split colors
-vim.cmd("highlight VertSplit guibg=#000000 guifg=#000000")
+vim.cmd("highlight VertSplit guibg=#0A0A0A guifg=#0A0A0A")
 
 -- Command line colors
-vim.cmd("highlight Pmenu guibg=#000000 guifg=#ff0088")
+vim.cmd("highlight Pmenu guibg=#0A0A0A guifg=#ff0088")
 vim.cmd("highlight PmenuSel guibg=#ff0088 guifg=#ffffff")
 
 -- Fold colors
-vim.cmd("highlight Folded guibg=#000000 guifg=#3b3b3b")
+vim.cmd("highlight Folded guibg=#0A0A0A guifg=#3b3b3b")

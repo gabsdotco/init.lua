@@ -7,8 +7,10 @@ vim.opt.wrap = true
 vim.opt.smartindent = true
 vim.opt.scrolloff = 8
 vim.opt.relativenumber = true
+vim.opt.showtabline = 2
+vim.opt.cursorline = true
 
 -- Folds sets
-vim.opt.foldmethod = "expr"
+vim.opt.foldmethod = "indent"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevelstart = 99
