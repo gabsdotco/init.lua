@@ -134,4 +134,26 @@ return require('packer').startup(function(use)
       { 'rafamadriz/friendly-snippets' },
     }
   }
+
+  -- Indentation guides
+  use({
+    "lukas-reineke/indent-blankline.nvim",
+    config = function()
+      vim.opt.list = true
+      vim.opt.listchars:append "space:⋅"
+
+      vim.cmd [[
+        highlight IndentBlanklineChar guifg=#1c1c1c
+        highlight IndentBlanklineSpaceChar guifg=#1c1c1c
+        highlight IndentBlanklineSpaceCharBlankline guifg=#1c1c1c
+        highlight IndentBlanklineContextChar guifg=#303030
+      ]]
+
+      require("indent_blankline").setup {
+        space_char_blankline = " ",
+        show_current_context = true,
+        show_current_context_start = false,
+      }
+    end
+  })
 end)
