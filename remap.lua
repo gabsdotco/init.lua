@@ -15,8 +15,9 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Telescope Remaps
-local builtin = require('telescope.builtin')
 local telescope = require('telescope')
+local builtin = require('telescope.builtin')
+local actions = require('telescope.actions')
 
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<C-t>', builtin.buffers, {})
@@ -25,6 +26,11 @@ vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
 
 telescope.setup {
   defaults = {
+    mappings = {
+      i = {
+        ['<leader>s'] = actions.select_vertical
+      }
+    },
     file_ignore_patterns = {
       "node_modules",
       ".git",
@@ -52,17 +58,12 @@ vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true,
 vim.keymap.set('n', '<C-h>', ':tabprevious<CR>', {})
 vim.keymap.set('n', '<C-l>', ':tabnext<CR>', {})
 vim.keymap.set('n', '<C-q>', ':tabclose<CR>', {})
-vim.keymap.set('n', '<C-n>', ':tabnew ', {})
 
 -- Split Remaps
 vim.keymap.set('n', '<S-q>', '<C-w>c', {})
-vim.keymap.set('n', '<S-n>', ':vsplit ', {})
 
--- Vertical Split Remaps
 vim.keymap.set('n', '<S-h>', '<C-w>h', {})
 vim.keymap.set('n', '<S-l>', '<C-w>l', {})
-
--- Horizonal Split Remaps
 vim.keymap.set('n', '<S-j>', '<C-w>j', {})
 vim.keymap.set('n', '<S-k>', '<C-w>k', {})
 
