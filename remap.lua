@@ -69,6 +69,10 @@ vim.keymap.set('n', '<S-k>', '<C-w>k', {})
 -- Diagnostic Remaps
 vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {}) -- Open line diagnostics popup
 
+-- Clipboard Remaps
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
 -- Force don't use arrows
 vim.keymap.set('n', '<Up>', '<Nop>', {})
 vim.keymap.set('n', '<Down>', '<Nop>', {})
