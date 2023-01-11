@@ -78,10 +78,12 @@ return require('packer').startup(function(use)
 
   -- Git plugins
   use('tpope/vim-fugitive')
+
   use {
     'lewis6991/gitsigns.nvim',
     config = function()
       require('gitsigns').setup {
+        current_line_blame = true,
         signs = {
           add          = { hl = 'GitSignsAdd', text = '│', numhl = 'GitSignsAddNr', linehl = 'GitSignsAddLn' },
           change       = { hl = 'GitSignsChange', text = '│', numhl = 'GitSignsChangeNr', linehl = 'GitSignsChangeLn' },
