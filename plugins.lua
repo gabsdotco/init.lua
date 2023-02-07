@@ -101,9 +101,26 @@ return require('packer').startup(function(use)
     "jesseleite/nvim-noirbuddy",
     requires = { "tjdevries/colorbuddy.nvim", branch = "dev" },
     config = function()
+      -- Customised the theme based on this palette / https://calcolor.co/palette/942409461
       require("noirbuddy").setup({
+        preset = 'minimal',
+        styles = {
+          italic = true,
+          bold = false,
+          underline = false,
+          undercurl = true,
+        },
         colors = {
           background = "#0A0A0A",
+          primary = '#393939',
+          secondary = '#777777',
+          noir_0 = '#ffffff',
+          noir_1 = '#e0e0e0',
+          noir_2 = '#595959',
+          noir_4 = '#666666',
+          noir_5 = '#777777',
+          noir_6 = '#888888',
+          noir_7 = '#333333',
         },
       })
 

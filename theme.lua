@@ -17,8 +17,8 @@ vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
 vim.cmd("highlight CursorLine guibg=NONE")
 
 -- Tabline colors
-vim.cmd("highlight TabLineSel guibg=#ff0088 guifg=#ffffff")
-vim.cmd("highlight TabLine guibg=#0A0A0A guifg=#ff0088")
+vim.cmd("highlight TabLineSel guibg=#ffffff guifg=#0A0A0A")
+vim.cmd("highlight TabLine guibg=NONE guifg=#ffffff")
 vim.cmd("highlight TabLineFill guibg=NONE guifg=NONE")
 
 -- Statusline background
@@ -28,8 +28,8 @@ vim.cmd("highlight StatusLine guibg=#0A0A0A")
 vim.cmd("highlight VertSplit guibg=#0A0A0A guifg=#0A0A0A")
 
 -- Command line colors
-vim.cmd("highlight Pmenu guibg=#0A0A0A guifg=#ff0088")
-vim.cmd("highlight PmenuSel guibg=#ff0088 guifg=#ffffff")
+vim.cmd("highlight Pmenu guibg=#0A0A0A guifg=#444444")
+vim.cmd("highlight PmenuSel guibg=#cccccc guifg=#0A0A0A")
 
 -- Fold colors
 vim.cmd("highlight Folded guibg=#0A0A0A guifg=#3b3b3b")

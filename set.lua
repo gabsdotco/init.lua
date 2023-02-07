@@ -14,3 +14,6 @@ vim.opt.cursorline = true
 vim.opt.foldmethod = "indent"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevelstart = 99
+
+-- Remove netwr menu banner
+vim.g.netrw_banner = 0
