@@ -124,7 +124,7 @@ return require('packer').startup(function(use)
         },
       })
 
-      require("deeckard.theme")
+      require("theme")
     end
   }
 
