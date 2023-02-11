@@ -1,11 +1,11 @@
-require("deeckard.statusline.components.mode")
-require("deeckard.statusline.components.file")
-require("deeckard.statusline.components.branch")
-require("deeckard.statusline.components.diagnostics")
-require("deeckard.statusline.components.saved")
+require("statusline.components.mode")
+require("statusline.components.file")
+require("statusline.components.branch")
+require("statusline.components.diagnostics")
+require("statusline.components.saved")
 
-require("deeckard.statusline.utils")
-require("deeckard.statusline.colors")
+require("statusline.utils")
+require("statusline.colors")
 
 function status_line()
   local mode = get_mode_component()
