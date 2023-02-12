@@ -9,6 +9,7 @@ vim.opt.scrolloff = 8
 vim.opt.relativenumber = true
 vim.opt.showtabline = 2
 vim.opt.cursorline = true
+vim.opt.termguicolors = true
 
 -- Folds sets
 vim.opt.foldmethod = "indent"
