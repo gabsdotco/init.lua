@@ -64,8 +64,6 @@ vim.keymap.set('n', '<S-q>', '<C-w>c', {})
 
 vim.keymap.set('n', '<S-h>', '<C-w>h', {})
 vim.keymap.set('n', '<S-l>', '<C-w>l', {})
-vim.keymap.set('n', '<S-j>', '<C-w>j', {})
-vim.keymap.set('n', '<S-k>', '<C-w>k', {})
 
 -- Diagnostic Remaps
 vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {}) -- Open line diagnostics popup
