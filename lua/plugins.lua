@@ -111,7 +111,7 @@ return require('packer').startup(function(use)
           undercurl = true,
         },
         colors = {
-          background = "#0A0A0A",
+          background = "#000000",
           primary = '#393939',
           secondary = '#777777',
           noir_0 = '#ffffff',

@@ -120,13 +120,13 @@ _G.packer_plugins = {
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\nÅ\5\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\3=\3\17\2B\0\2\1K\0\1\0\nsigns\14untracked\1\0\4\ahl\16GitSignsAdd\nnumhl\18GitSignsAddNr\ttext\b‚îÜ\vlinehl\18GitSignsAddLn\17changedelete\1\0\4\ahl\19GitSignsChange\nnumhl\21GitSignsChangeNr\ttext\b‚îÇ\vlinehl\21GitSignsChangeLn\14topdelete\1\0\4\ahl\19GitSignsDelete\nnumhl\21GitSignsDeleteNr\ttext\b‚îÇ\vlinehl\21GitSignsDeleteLn\vdelete\1\0\4\ahl\19GitSignsDelete\nnumhl\21GitSignsDeleteNr\ttext\b‚îÇ\vlinehl\21GitSignsDeleteLn\vchange\1\0\4\ahl\19GitSignsChange\nnumhl\21GitSignsChangeNr\ttext\b‚îÇ\vlinehl\21GitSignsChangeLn\badd\1\0\0\1\0\4\ahl\16GitSignsAdd\nnumhl\18GitSignsAddNr\ttext\b‚îÇ\vlinehl\18GitSignsAddLn\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0" },
+    config = { "\27LJ\2\nÅ\5\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\3=\3\17\2B\0\2\1K\0\1\0\nsigns\14untracked\1\0\4\nnumhl\18GitSignsAddNr\ahl\16GitSignsAdd\vlinehl\18GitSignsAddLn\ttext\b‚îÜ\17changedelete\1\0\4\nnumhl\21GitSignsChangeNr\ahl\19GitSignsChange\vlinehl\21GitSignsChangeLn\ttext\b‚îÇ\14topdelete\1\0\4\nnumhl\21GitSignsDeleteNr\ahl\19GitSignsDelete\vlinehl\21GitSignsDeleteLn\ttext\b‚îÇ\vdelete\1\0\4\nnumhl\21GitSignsDeleteNr\ahl\19GitSignsDelete\vlinehl\21GitSignsDeleteLn\ttext\b‚îÇ\vchange\1\0\4\nnumhl\21GitSignsChangeNr\ahl\19GitSignsChange\vlinehl\21GitSignsChangeLn\ttext\b‚îÇ\badd\1\0\0\1\0\4\nnumhl\18GitSignsAddNr\ahl\16GitSignsAdd\vlinehl\18GitSignsAddLn\ttext\b‚îÇ\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["indent-blankline.nvim"] = {
-    config = { "\27LJ\2\nË\3\0\0\4\0\f\0\0226\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0009\0\3\0\18\2\0\0009\0\4\0'\3\5\0B\0\3\0016\0\0\0009\0\6\0'\2\a\0B\0\2\0016\0\b\0'\2\t\0B\0\2\0029\0\n\0005\2\v\0B\0\2\1K\0\1\0\1\0\3\25show_current_context\2\25space_char_blankline\6 \31show_current_context_start\1\nsetup\21indent_blankline\frequireı\1        highlight IndentBlanklineChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceCharBlankline guifg=#1c1c1c\n        highlight IndentBlanklineContextChar guifg=#303030\n      \bcmd\14space:‚ãÖ\vappend\14listchars\tlist\bopt\bvim\0" },
+    config = { "\27LJ\2\nË\3\0\0\4\0\f\0\0226\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0009\0\3\0\18\2\0\0009\0\4\0'\3\5\0B\0\3\0016\0\0\0009\0\6\0'\2\a\0B\0\2\0016\0\b\0'\2\t\0B\0\2\0029\0\n\0005\2\v\0B\0\2\1K\0\1\0\1\0\3\31show_current_context_start\1\25show_current_context\2\25space_char_blankline\6 \nsetup\21indent_blankline\frequireı\1        highlight IndentBlanklineChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceCharBlankline guifg=#1c1c1c\n        highlight IndentBlanklineContextChar guifg=#303030\n      \bcmd\14space:‚ãÖ\vappend\14listchars\tlist\bopt\bvim\0" },
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
@@ -174,7 +174,7 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-noirbuddy"] = {
-    config = { "\27LJ\2\n≈\2\0\0\4\0\t\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\0\0'\2\b\0B\0\2\1K\0\1\0\ntheme\vcolors\1\0\n\fprimary\f#393939\vnoir_7\f#333333\15background\f#0A0A0A\vnoir_6\f#888888\vnoir_5\f#777777\vnoir_4\f#666666\vnoir_2\f#595959\vnoir_1\f#e0e0e0\vnoir_0\f#ffffff\14secondary\f#777777\vstyles\1\0\4\14undercurl\2\14underline\1\tbold\1\vitalic\2\1\0\1\vpreset\fminimal\nsetup\14noirbuddy\frequire\0" },
+    config = { "\27LJ\2\n≈\2\0\0\4\0\t\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\0\0'\2\b\0B\0\2\1K\0\1\0\ntheme\vcolors\1\0\n\15background\f#000000\vnoir_6\f#888888\vnoir_5\f#777777\vnoir_4\f#666666\vnoir_2\f#595959\vnoir_1\f#e0e0e0\vnoir_0\f#ffffff\14secondary\f#777777\fprimary\f#393939\vnoir_7\f#333333\vstyles\1\0\4\tbold\1\vitalic\2\14undercurl\2\14underline\1\1\0\1\vpreset\fminimal\nsetup\14noirbuddy\frequire\0" },
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-noirbuddy",
     url = "https://github.com/jesseleite/nvim-noirbuddy"
@@ -249,19 +249,19 @@ try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for nvim-autopairs]], false)
 -- Config for: indent-blankline.nvim
 time([[Config for indent-blankline.nvim]], true)
-try_loadstring("\27LJ\2\nË\3\0\0\4\0\f\0\0226\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0009\0\3\0\18\2\0\0009\0\4\0'\3\5\0B\0\3\0016\0\0\0009\0\6\0'\2\a\0B\0\2\0016\0\b\0'\2\t\0B\0\2\0029\0\n\0005\2\v\0B\0\2\1K\0\1\0\1\0\3\25show_current_context\2\25space_char_blankline\6 \31show_current_context_start\1\nsetup\21indent_blankline\frequireı\1        highlight IndentBlanklineChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceCharBlankline guifg=#1c1c1c\n        highlight IndentBlanklineContextChar guifg=#303030\n      \bcmd\14space:‚ãÖ\vappend\14listchars\tlist\bopt\bvim\0", "config", "indent-blankline.nvim")
+try_loadstring("\27LJ\2\nË\3\0\0\4\0\f\0\0226\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0009\0\3\0\18\2\0\0009\0\4\0'\3\5\0B\0\3\0016\0\0\0009\0\6\0'\2\a\0B\0\2\0016\0\b\0'\2\t\0B\0\2\0029\0\n\0005\2\v\0B\0\2\1K\0\1\0\1\0\3\31show_current_context_start\1\25show_current_context\2\25space_char_blankline\6 \nsetup\21indent_blankline\frequireı\1        highlight IndentBlanklineChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceChar guifg=#1c1c1c\n        highlight IndentBlanklineSpaceCharBlankline guifg=#1c1c1c\n        highlight IndentBlanklineContextChar guifg=#303030\n      \bcmd\14space:‚ãÖ\vappend\14listchars\tlist\bopt\bvim\0", "config", "indent-blankline.nvim")
 time([[Config for indent-blankline.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\nÅ\5\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\3=\3\17\2B\0\2\1K\0\1\0\nsigns\14untracked\1\0\4\nnumhl\18GitSignsAddNr\ahl\16GitSignsAdd\vlinehl\18GitSignsAddLn\ttext\b‚îÜ\17changedelete\1\0\4\nnumhl\21GitSignsChangeNr\ahl\19GitSignsChange\vlinehl\21GitSignsChangeLn\ttext\b‚îÇ\14topdelete\1\0\4\nnumhl\21GitSignsDeleteNr\ahl\19GitSignsDelete\vlinehl\21GitSignsDeleteLn\ttext\b‚îÇ\vdelete\1\0\4\nnumhl\21GitSignsDeleteNr\ahl\19GitSignsDelete\vlinehl\21GitSignsDeleteLn\ttext\b‚îÇ\vchange\1\0\4\nnumhl\21GitSignsChangeNr\ahl\19GitSignsChange\vlinehl\21GitSignsChangeLn\ttext\b‚îÇ\badd\1\0\0\1\0\4\nnumhl\18GitSignsAddNr\ahl\16GitSignsAdd\vlinehl\18GitSignsAddLn\ttext\b‚îÇ\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-colorizer.lua
 time([[Config for nvim-colorizer.lua]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
 time([[Config for nvim-colorizer.lua]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\nÅ\5\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\3=\3\17\2B\0\2\1K\0\1\0\nsigns\14untracked\1\0\4\ahl\16GitSignsAdd\nnumhl\18GitSignsAddNr\ttext\b‚îÜ\vlinehl\18GitSignsAddLn\17changedelete\1\0\4\ahl\19GitSignsChange\nnumhl\21GitSignsChangeNr\ttext\b‚îÇ\vlinehl\21GitSignsChangeLn\14topdelete\1\0\4\ahl\19GitSignsDelete\nnumhl\21GitSignsDeleteNr\ttext\b‚îÇ\vlinehl\21GitSignsDeleteLn\vdelete\1\0\4\ahl\19GitSignsDelete\nnumhl\21GitSignsDeleteNr\ttext\b‚îÇ\vlinehl\21GitSignsDeleteLn\vchange\1\0\4\ahl\19GitSignsChange\nnumhl\21GitSignsChangeNr\ttext\b‚îÇ\vlinehl\21GitSignsChangeLn\badd\1\0\0\1\0\4\ahl\16GitSignsAdd\nnumhl\18GitSignsAddNr\ttext\b‚îÇ\vlinehl\18GitSignsAddLn\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-noirbuddy
 time([[Config for nvim-noirbuddy]], true)
-try_loadstring("\27LJ\2\n≈\2\0\0\4\0\t\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\0\0'\2\b\0B\0\2\1K\0\1\0\ntheme\vcolors\1\0\n\fprimary\f#393939\vnoir_7\f#333333\15background\f#0A0A0A\vnoir_6\f#888888\vnoir_5\f#777777\vnoir_4\f#666666\vnoir_2\f#595959\vnoir_1\f#e0e0e0\vnoir_0\f#ffffff\14secondary\f#777777\vstyles\1\0\4\14undercurl\2\14underline\1\tbold\1\vitalic\2\1\0\1\vpreset\fminimal\nsetup\14noirbuddy\frequire\0", "config", "nvim-noirbuddy")
+try_loadstring("\27LJ\2\n≈\2\0\0\4\0\t\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\0\0'\2\b\0B\0\2\1K\0\1\0\ntheme\vcolors\1\0\n\15background\f#000000\vnoir_6\f#888888\vnoir_5\f#777777\vnoir_4\f#666666\vnoir_2\f#595959\vnoir_1\f#e0e0e0\vnoir_0\f#ffffff\14secondary\f#777777\fprimary\f#393939\vnoir_7\f#333333\vstyles\1\0\4\tbold\1\vitalic\2\14undercurl\2\14underline\1\1\0\1\vpreset\fminimal\nsetup\14noirbuddy\frequire\0", "config", "nvim-noirbuddy")
 time([[Config for nvim-noirbuddy]], false)
 -- Config for: nvim-ts-autotag
 time([[Config for nvim-ts-autotag]], true)
