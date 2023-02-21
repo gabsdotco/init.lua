@@ -26,6 +26,21 @@ vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
 
 telescope.setup {
   defaults = {
+    layout_strategy = 'vertical',
+    layout_config = {
+      width = 0.6,
+      height = 0.8,
+      prompt_position = "bottom",
+      preview_height = 0.4,
+      vertical = {
+        mirror = false,
+      },
+    },
+    border = {},
+    prompt_prefix = " • ",
+    selection_caret = " • ",
+    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+    winblend = 0,
     mappings = {
       i = {
         ['<leader>s'] = actions.select_vertical
