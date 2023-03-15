@@ -4,6 +4,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Icons plugins
+  use 'kyazdani42/nvim-web-devicons'
+
   -- Utils plugins
   use {
     'windwp/nvim-autopairs',
@@ -155,6 +158,13 @@ return require('packer').startup(function(use)
       { 'L3MON4D3/LuaSnip' },
       { 'rafamadriz/friendly-snippets' },
     }
+  }
+
+  -- Tree plugins
+  use {
+    'ms-jpq/chadtree',
+    branch = 'chad',
+    run = 'python3 -m chadtree deps',
   }
 
   -- Indentation guides

@@ -7,7 +7,10 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Netrw Remaps
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+-- CHADTree Remaps
+vim.keymap.set("n", "<leader>pv", ":CHADopen<CR>", {})
 
 -- Scrolling Remaps
 vim.keymap.set("n", "J", "mzJ`z")
