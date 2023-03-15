@@ -40,7 +40,6 @@ telescope.setup {
     },
     file_ignore_patterns = {
       "node_modules",
-      ".git",
       "dist",
       "build",
       ".next"
@@ -50,6 +49,7 @@ telescope.setup {
     file_browser = {
       grouped = true,
       hijack_netrw = true,
+      hidden = true,
     },
   },
 }
