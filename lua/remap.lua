@@ -18,6 +18,7 @@ local actions = require('telescope.actions')
 
 telescope.setup {
   defaults = {
+    initial_mode = "normal",
     layout_config = {
       width = 0.9,
       height = 0.9,
@@ -49,7 +50,6 @@ telescope.setup {
     file_browser = {
       grouped = true,
       hijack_netrw = true,
-      initial_mode = "normal",
     },
   },
 }
@@ -59,6 +59,7 @@ telescope.load_extension('file_browser')
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<C-t>', builtin.buffers, {})
 vim.keymap.set('n', '<C-g>', builtin.git_files, {})
+vim.keymap.set('n', '<C-s>', builtin.git_status, {})
 vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
 vim.keymap.set('n', '<C-w>', ":Telescope file_browser initial_mode=normal path=%:p:h select_buffer=true<CR>", {})
 
