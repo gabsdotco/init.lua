@@ -1,6 +1,6 @@
 require("plugins")
 require("lsp")
 require("set")
-require("remap")
+require('remap')
 require("statusline")
 require("formatter")

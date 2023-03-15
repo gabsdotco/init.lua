@@ -6,12 +6,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
--- Netrw Remaps
--- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
--- CHADTree Remaps
-vim.keymap.set("n", "<leader>pv", ":CHADopen<CR>", {})
-
 -- Scrolling Remaps
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -22,22 +16,13 @@ local telescope = require('telescope')
 local builtin = require('telescope.builtin')
 local actions = require('telescope.actions')
 
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<C-t>', builtin.buffers, {})
-vim.keymap.set('n', '<C-g>', builtin.git_files, {})
-vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
-
 telescope.setup {
   defaults = {
-    layout_strategy = 'vertical',
     layout_config = {
-      width = 0.6,
-      height = 0.8,
+      width = 0.9,
+      height = 0.9,
       prompt_position = "bottom",
-      preview_height = 0.4,
-      vertical = {
-        mirror = false,
-      },
+      preview_width = 0.5
     },
     border = {},
     prompt_prefix = " • ",
@@ -46,8 +31,11 @@ telescope.setup {
     winblend = 0,
     mappings = {
       i = {
-        ['<leader>s'] = actions.select_vertical
-      }
+        ['<leader>v'] = actions.select_vertical,
+      },
+      n = {
+        ['<leader>v'] = actions.select_vertical,
+      },
     },
     file_ignore_patterns = {
       "node_modules",
@@ -56,8 +44,23 @@ telescope.setup {
       "build",
       ".next"
     },
-  }
+  },
+  extensions = {
+    file_browser = {
+      grouped = true,
+      hijack_netrw = true,
+      initial_mode = "normal",
+    },
+  },
 }
+
+telescope.load_extension('file_browser')
+
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<C-t>', builtin.buffers, {})
+vim.keymap.set('n', '<C-g>', builtin.git_files, {})
+vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
+vim.keymap.set('n', '<C-w>', ":Telescope file_browser initial_mode=normal path=%:p:h select_buffer=true<CR>", {})
 
 -- LSP Remaps
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
@@ -87,7 +90,7 @@ vim.keymap.set('n', '<S-l>', '<C-w>l', {})
 vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {}) -- Open line diagnostics popup
 
 -- Clipboard Remaps
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Force don't use arrows
