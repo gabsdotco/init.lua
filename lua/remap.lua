@@ -18,7 +18,7 @@ local actions = require('telescope.actions')
 
 telescope.setup {
   defaults = {
-    initial_mode = "normal",
+    initial_mode = 'insert',
     layout_config = {
       width = 0.9,
       height = 0.9,
@@ -50,6 +50,7 @@ telescope.setup {
       grouped = true,
       hijack_netrw = true,
       hidden = true,
+      initial_mode = "normal",
     },
   },
 }
