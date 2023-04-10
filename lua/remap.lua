@@ -26,7 +26,7 @@ telescope.setup {
       preview_width = 0.5
     },
     border = {},
-    prompt_prefix = " • ",
+    prompt_prefix = " : ",
     selection_caret = " • ",
     borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
     winblend = 0,

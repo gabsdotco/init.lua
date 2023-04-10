@@ -33,3 +33,8 @@ vim.cmd("highlight PmenuSel guibg=#cccccc guifg=#000000")
 
 -- Fold colors
 vim.cmd("highlight Folded guibg=#000000 guifg=#3b3b3b")
+
+-- Gitsigns colors
+vim.cmd("highlight GitSignsAdd guifg=#8AE234")
+vim.cmd("highlight GitSignsChange guifg=#89B4FA")
+vim.cmd("highlight GitSignsDelete guifg=#EB6F92")
