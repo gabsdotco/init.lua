@@ -18,3 +18,6 @@ vim.opt.foldlevelstart = 99
 
 -- Remove netwr menu banner
 vim.g.netrw_banner = 0
+
+-- Cursor Style
+vim.opt.guicursor = 'i:block'
