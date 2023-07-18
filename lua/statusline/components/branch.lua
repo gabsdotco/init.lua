@@ -12,7 +12,7 @@ function get_branch_component()
   end
 
   if string.len(branch) > 15 then
-    return branch:sub(1, 15) .. "..."
+    branch = branch:sub(1, 15) .. "..."
   end
 
   local total_files_changed = vim.fn.system("git diff --name-only | wc -l")
@@ -24,7 +24,7 @@ function get_branch_component()
   total_files_changed = total_files_changed:gsub("%s+", "")
 
   if total_files_changed == "" then
-    return ""
+    return " " .. branch
   end
 
   return " " .. branch .. " +" .. total_files_changed
