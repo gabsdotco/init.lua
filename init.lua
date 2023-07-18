@@ -1,6 +1,6 @@
-require("set")
 require("plugins")
-require("lsp-config")
+require("lsp")
+require("set")
 require('remap')
 require("statusline")
 require("formatter")
