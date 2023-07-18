@@ -23,7 +23,7 @@ function get_branch_component()
 
   total_files_changed = total_files_changed:gsub("%s+", "")
 
-  if total_files_changed == "" then
+  if total_files_changed == "0" then
     return " " .. branch
   end
 
