@@ -1,24 +1,23 @@
-local lsp = require('lsp-zero')
+-- LSP Zero Setup
+local lsp = require('lsp-zero').preset({})
 
-lsp.preset('recommended')
 lsp.ensure_installed({
   'tsserver',
   'eslint',
   'lua_ls',
 })
 
-lsp.set_preferences({
-  sign_icons = {
-    error = '•',
-    warn = '•',
-    hint = '•',
-    info = '•'
-  }
+lsp.set_sign_icons({
+  error = '•',
+  warn = '•',
+  hint = '•',
+  info = '•'
 })
 
 lsp.nvim_workspace()
 lsp.setup()
 
+-- Neovim LSP Diagnostics
 vim.diagnostic.config({
   virtual_text = true,
 })
@@ -34,3 +33,17 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     update_in_insert = true,
   }
 )
+
+-- LSP CMP Setup
+local cmp = require('cmp')
+local cmp_action = require('lsp-zero').cmp_action()
+
+cmp.setup({
+  mapping = {
+    -- `Enter` key to confirm completion
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
+
+    -- Ctrl+Space to trigger completion menu
+    ['<C-Space>'] = cmp.mapping.complete(),
+  }
+})
