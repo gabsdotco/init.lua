@@ -9,20 +9,21 @@ telescope.setup {
     layout_strategy = "horizontal",
     layout_config = {
       horizontal = {
+        width = 0.87,
+        height = 0.80,
+        preview_cutoff = 120,
         prompt_position = "top",
-        preview_width = 0.55,
-        results_width = 0.8,
       },
       width = 0.87,
       height = 0.80,
       preview_cutoff = 120,
     },
     prompt_prefix = " : ",
-    selection_caret = " • ",
+    selection_caret = "❯ ",
     border = {},
-    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+    borderchars = { " " },
     path_display = { "truncate" },
-    winblend = 0,
+    winblend = 2,
     color_devicons = true,
     mappings = {
       i = {
@@ -64,3 +65,19 @@ vim.keymap.set('n', '<C-g>', builtin.git_files, {})
 vim.keymap.set('n', '<C-s>', builtin.git_status, {})
 vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
 vim.keymap.set('n', '<C-e>', ":Telescope file_browser initial_mode=normal path=%:p:h select_buffer=true<CR>", {})
+
+-- Telescope Buffer Fuzzy Find Remap
+vim.keymap.set('n', '<leader>/', function()
+  builtin.current_buffer_fuzzy_find({
+    prompt_title = "Current Buffer Search",
+    selection_caret = "❯ ",
+    initial_mode = "insert",
+    previewer = false,
+    sorting_strategy = "ascending",
+    layout_config = {
+      width = 0.55,
+      height = 0.8,
+      preview_cutoff = 120,
+    },
+  })
+end, {})
