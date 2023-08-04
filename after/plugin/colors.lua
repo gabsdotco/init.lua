@@ -38,8 +38,8 @@ vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
 vim.cmd("highlight CursorLine guibg=NONE")
 
 -- Tabline colors
-vim.cmd("highlight TabLineSel guibg=#ffffff guifg=#000000")
-vim.cmd("highlight TabLine guibg=NONE guifg=#ffffff")
+vim.cmd("highlight TabLineSel guibg=#222222 guifg=#e2e2e2")
+vim.cmd("highlight TabLine guibg=NONE guifg=#444444")
 vim.cmd("highlight TabLineFill guibg=NONE guifg=NONE")
 
 -- Statusline background
