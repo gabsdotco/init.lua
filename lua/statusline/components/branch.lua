@@ -27,5 +27,5 @@ function get_branch_component()
     return " " .. branch
   end
 
-  return " " .. branch .. " +" .. total_files_changed
+  return " " .. branch .. " [+" .. total_files_changed .. "]"
 end

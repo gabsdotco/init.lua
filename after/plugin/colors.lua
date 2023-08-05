@@ -12,7 +12,7 @@ require("noirbuddy").setup({
     secondary = '#777777',
     noir_0 = '#f1f1f1',
     noir_1 = '#e2e2e2',
-    noir_2 = '#e2e2e2',
+    noir_2 = '#c4c4c4',
     noir_3 = '#a7a7a7',
     noir_4 = '#555555',
     noir_5 = '#444444',
@@ -38,20 +38,20 @@ vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
 vim.cmd("highlight CursorLine guibg=NONE")
 
 -- Tabline colors
-vim.cmd("highlight TabLineSel guibg=#222222 guifg=#e2e2e2")
+vim.cmd("highlight TabLineSel guibg=#ffffff guifg=#000000")
 vim.cmd("highlight TabLine guibg=NONE guifg=#444444")
 vim.cmd("highlight TabLineFill guibg=NONE guifg=NONE")
 
 -- Statusline background
-vim.cmd("highlight StatusLine guibg=#000000")
+vim.cmd("highlight StatusLine guibg=#0a0a0a")
 
 -- Split colors
-vim.cmd("highlight VertSplit guibg=#000000 guifg=#000000")
+vim.cmd("highlight VertSplit guibg=NONE guifg=#0a0a0a")
 
 -- Command line colors
-vim.cmd("highlight Pmenu guibg=#000000 guifg=#444444")
-vim.cmd("highlight PmenuSel guibg=#cccccc guifg=#000000")
-vim.cmd("highlight PmenuSbar guibg=#000000 guifg=#000000")
+vim.cmd("highlight Pmenu guibg=#0a0a0a guifg=#444444")
+vim.cmd("highlight PmenuSel guibg=#ffffff guifg=#000000")
+vim.cmd("highlight PmenuSbar guibg=#0a0a0a guifg=#000000")
 vim.cmd("highlight PmenuThumb guibg=#333333 guifg=#000001")
 
 -- Fold colors
@@ -73,12 +73,12 @@ vim.cmd("highlight TelescopePromptTitle guibg=#e2e2e2 guifg=#0c0c0c")
 vim.cmd("highlight TelescopePromptBorder guibg=#111111 guifg=#111111")
 vim.cmd("highlight TelescopePromptCounter guibg=#111111 guifg=#111111")
 
-vim.cmd("highlight TelescopeResultsNormal guibg=#0c0c0c guifg=#e2e2e2")
-vim.cmd("highlight TelescopeResultsTitle guibg=#0c0c0c guifg=#0c0c0c")
-vim.cmd("highlight TelescopeResultsBorder guibg=#0c0c0c guifg=#0c0c0c")
+vim.cmd("highlight TelescopeResultsNormal guibg=NONE guifg=#e2e2e2")
+vim.cmd("highlight TelescopeResultsTitle guibg=NONE guifg=NONE")
+vim.cmd("highlight TelescopeResultsBorder guibg=NONE guifg=#0c0c0c")
 
 vim.cmd("highlight TelescopePreviewMatch guibg=#e2e2e2 guifg=#0c0c0c")
 
-vim.cmd("highlight TelescopePreviewNormal guibg=#0c0c0c guifg=#e2e2e2")
+vim.cmd("highlight TelescopePreviewNormal guibg=NONE guifg=#e2e2e2")
 vim.cmd("highlight TelescopePreviewTitle guibg=#e2e2e2 guifg=#0c0c0c")
-vim.cmd("highlight TelescopePreviewBorder guibg=#0c0c0c guifg=#0c0c0c")
+vim.cmd("highlight TelescopePreviewBorder guibg=NONE guifg=#0c0c0c")

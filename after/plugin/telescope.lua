@@ -9,13 +9,13 @@ telescope.setup {
     layout_strategy = "horizontal",
     layout_config = {
       horizontal = {
-        width = 0.87,
-        height = 0.80,
+        width = 0.8,
+        height = 0.7,
         preview_cutoff = 120,
         prompt_position = "top",
       },
-      width = 0.87,
-      height = 0.80,
+      width = 0.8,
+      height = 0.7,
       preview_cutoff = 120,
     },
     prompt_prefix = " : ",
@@ -23,7 +23,7 @@ telescope.setup {
     border = {},
     borderchars = { " " },
     path_display = { "truncate" },
-    winblend = 2,
+    winblend = 0,
     color_devicons = true,
     mappings = {
       i = {
@@ -75,8 +75,8 @@ vim.keymap.set('n', '<leader>/', function()
     previewer = false,
     sorting_strategy = "ascending",
     layout_config = {
-      width = 0.55,
-      height = 0.8,
+      width = 0.8,
+      height = 0.7,
       preview_cutoff = 120,
     },
   })
