@@ -6,7 +6,7 @@ local actions = require('telescope.actions')
 telescope.setup {
   defaults = {
     initial_mode = 'insert',
-    layout_strategy = "horizontal",
+    layout_strategy = "vertical",
     layout_config = {
       horizontal = {
         width = 0.8,
@@ -14,9 +14,10 @@ telescope.setup {
         preview_cutoff = 120,
         prompt_position = "top",
       },
-      width = 0.8,
+      width = 0.5,
       height = 0.7,
       preview_cutoff = 120,
+      prompt_position = "top",
     },
     prompt_prefix = " : ",
     selection_caret = "❯ ",
@@ -74,8 +75,14 @@ vim.keymap.set('n', '<leader>/', function()
     initial_mode = "insert",
     previewer = false,
     sorting_strategy = "ascending",
+    layout_strategy = "vertical",
     layout_config = {
-      width = 0.8,
+      horizontal = {
+        width = 0.8,
+        height = 0.7,
+        preview_cutoff = 120,
+      },
+      width = 0.5,
       height = 0.7,
       preview_cutoff = 120,
     },
