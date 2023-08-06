@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
   use 'wakatime/vim-wakatime'
   use 'windwp/nvim-autopairs'
   use 'norcalli/nvim-colorizer.lua'
+  use 'folke/zen-mode.nvim'
 
   -- Telescope plugins
   use {

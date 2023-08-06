@@ -55,7 +55,7 @@ vim.cmd("highlight PmenuSbar guibg=#0a0a0a guifg=#000000")
 vim.cmd("highlight PmenuThumb guibg=#333333 guifg=#000001")
 
 -- Fold colors
-vim.cmd("highlight Folded guibg=#000000 guifg=#3b3b3b")
+vim.cmd("highlight Folded guibg=NONE guifg=#3b3b3b")
 
 -- Gitsigns colors
 vim.cmd("highlight GitSignsAdd guifg=#8AE234")
