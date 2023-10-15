@@ -12,15 +12,6 @@ return require('packer').startup(function(use)
   use 'folke/zen-mode.nvim'
   use 'lewis6991/satellite.nvim'
   use 'yamatsum/nvim-cursorline'
-  use({
-    "utilyre/barbecue.nvim",
-    tag = "*",
-    requires = {
-      "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons", -- optional dependency
-    },
-    after = "nvim-web-devicons",   -- keep this if you're using NvChad
-  })
 
   -- Telescope plugins
   use {
