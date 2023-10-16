@@ -1,6 +1,6 @@
 local function get_total_files_created()
   local total_files_created = vim.fn.system("git ls-files --others --exclude-standard | wc -l")
-  
+
   if string.find(total_files_created, "fatal:") then
     return ""
   end
