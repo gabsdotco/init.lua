@@ -81,5 +81,8 @@ return require('packer').startup(function(use)
   -- Formatting plugins
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'MunifTanjim/prettier.nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
+  use({
+    'lukas-reineke/indent-blankline.nvim',
+    tag = 'v2.20.8'
+  })
 end)
