@@ -36,3 +36,6 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<Up>', '<Nop>', {})
 vim.keymap.set({ 'n', 'v', 'i' }, '<Down>', '<Nop>', {})
 vim.keymap.set({ 'n', 'v', 'i' }, '<Left>', '<Nop>', {})
 vim.keymap.set({ 'n', 'v', 'i' }, '<Right>', '<Nop>', {})
+
+-- Undo/Redo Remaps
+vim.keymap.set("n", "U", "<C-r>")
