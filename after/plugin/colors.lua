@@ -32,6 +32,11 @@ vim.cmd("highlight NonText ctermbg=none")
 vim.cmd("highlight clear LineNr")
 vim.cmd("highlight clear SignColumn")
 
+-- LSP colors
+vim.cmd("highlight FloatBorder guibg=NONE guifg=#111111")
+vim.cmd("highlight FloatShadow guibg=NONE guifg=NONE")
+vim.cmd("highlight FloatShadowThrough guibg=NONE guifg=NONE")
+
 -- Visual mode colors
 vim.cmd("highlight Visual guibg=#171717 guifg=NONE")
 
