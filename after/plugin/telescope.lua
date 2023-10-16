@@ -50,9 +50,7 @@ telescope.setup {
       hijack_netrw = true,
       hidden = true,
       initial_mode = "normal",
-      file_ignore_patterns = {
-        "node_modules",
-      },
+      file_ignore_patterns = {}
     },
   },
 }
