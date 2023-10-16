@@ -32,6 +32,9 @@ vim.cmd("highlight NonText ctermbg=none")
 vim.cmd("highlight clear LineNr")
 vim.cmd("highlight clear SignColumn")
 
+-- Visual mode colors
+vim.cmd("highlight Visual guibg=#171717 guifg=NONE")
+
 -- Numbers Gutter
 vim.cmd("highlight LineNr guifg=#2b2b2b")
 vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
