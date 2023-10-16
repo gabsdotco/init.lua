@@ -1,3 +1,51 @@
+local function get_total_files_created()
+  local total_files_created = vim.fn.system("git ls-files --others --exclude-standard | wc -l")
+  
+  if string.find(total_files_created, "fatal:") then
+    return ""
+  end
+
+  total_files_created = total_files_created:gsub("%s+", "")
+
+  if total_files_created == "0" then
+    return ""
+  end
+
+  return " %#BranchComponentStatus#(+" .. total_files_created .. ")"
+end
+
+local function get_total_files_deleted()
+  local total_files_deleted = vim.fn.system("git ls-files --deleted | wc -l")
+
+  if string.find(total_files_deleted, "fatal:") then
+    return ""
+  end
+
+  total_files_deleted = total_files_deleted:gsub("%s+", "")
+
+  if total_files_deleted == "0" then
+    return ""
+  end
+
+  return " %#BranchComponentStatus#(-" .. total_files_deleted .. ")"
+end
+
+local function get_total_files_changed()
+  local total_files_changed = vim.fn.system("git diff --name-only | wc -l")
+
+  if string.find(total_files_changed, "fatal:") then
+    return ""
+  end
+
+  total_files_changed = total_files_changed:gsub("%s+", "")
+
+  if total_files_changed == "0" then
+    return ""
+  end
+
+  return " %#BranchComponentStatus#(~" .. total_files_changed .. ")"
+end
+
 function get_branch_component()
   local branch = vim.fn.system("git branch --show-current")
 
@@ -15,17 +63,9 @@ function get_branch_component()
     branch = branch:sub(1, 15) .. "..."
   end
 
-  local total_files_changed = vim.fn.system("git diff --name-only | wc -l")
+  local created = get_total_files_created()
+  local changed = get_total_files_changed()
+  local deleted = get_total_files_deleted()
 
-  if string.find(total_files_changed, "fatal:") then
-    return ""
-  end
-
-  total_files_changed = total_files_changed:gsub("%s+", "")
-
-  if total_files_changed == "0" then
-    return " " .. branch
-  end
-
-  return " " .. branch .. " [+" .. total_files_changed .. "]"
+  return " " .. branch .. created .. changed .. deleted
 end
