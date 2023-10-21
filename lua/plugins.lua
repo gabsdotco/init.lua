@@ -13,6 +13,11 @@ return require('packer').startup(function(use)
   use 'yamatsum/nvim-cursorline'
   use 'mg979/vim-visual-multi'
 
+  use {
+    'akinsho/toggleterm.nvim',
+    tag = '*'
+  }
+
   -- Telescope plugins
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
@@ -22,18 +27,18 @@ return require('packer').startup(function(use)
   }
 
   use {
-    "nvim-telescope/telescope-file-browser.nvim",
+    'nvim-telescope/telescope-file-browser.nvim',
     requires = {
-      "nvim-telescope/telescope.nvim",
-      "nvim-lua/plenary.nvim"
+      'nvim-telescope/telescope.nvim',
+      'nvim-lua/plenary.nvim'
     }
   }
 
   -- Treesitter plugins
-  use({
+  use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-  })
+  }
 
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -46,9 +51,9 @@ return require('packer').startup(function(use)
 
   -- Theme plugins
   use {
-    "jesseleite/nvim-noirbuddy",
+    'jesseleite/nvim-noirbuddy',
     requires = {
-      "tjdevries/colorbuddy.nvim", branch = "dev"
+      'tjdevries/colorbuddy.nvim', branch = 'dev'
     },
   }
 
@@ -56,7 +61,7 @@ return require('packer').startup(function(use)
   use 'github/copilot.vim'
 
   -- LSP plugins
-  use({
+  use {
     'VonHeikemen/lsp-zero.nvim',
     requires = {
       -- LSP Support
@@ -76,24 +81,24 @@ return require('packer').startup(function(use)
       { 'L3MON4D3/LuaSnip' },
       { 'rafamadriz/friendly-snippets' },
     }
-  })
+  }
 
   -- Formatting plugins
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'MunifTanjim/prettier.nvim'
-  use({
+  use {
     'lukas-reineke/indent-blankline.nvim',
     tag = 'v2.20.8'
-  })
+  }
 
   -- Neotree
   use {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v3.x',
     requires = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
+      'MunifTanjim/nui.nvim',
     },
   }
 end)
