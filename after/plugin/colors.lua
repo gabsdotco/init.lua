@@ -59,12 +59,12 @@ vim.cmd("highlight TabLineFill guibg=NONE guifg=NONE")
 vim.cmd("highlight StatusLine guibg=#0a0a0a")
 
 -- Split colors
-vim.cmd("highlight VertSplit guibg=NONE guifg=#0a0a0a")
+vim.cmd("highlight VertSplit guibg=NONE guifg=#000000")
 
 -- Command line colors
-vim.cmd("highlight Pmenu guibg=#0f0f0f guifg=#444444")
-vim.cmd("highlight PmenuSel guibg=#ffffff guifg=#000000")
-vim.cmd("highlight PmenuSbar guibg=#0f0f0f guifg=#0f0f0f")
+vim.cmd("highlight Pmenu guibg=#0a0a0a guifg=#444444")
+vim.cmd("highlight PmenuSel guibg=#181818 guifg=#ffffff")
+vim.cmd("highlight PmenuSbar guibg=#0a0a0a guifg=#0f0f0f")
 vim.cmd("highlight PmenuThumb guibg=#181818 guifg=#0f0f0f")
 
 -- Fold colors
@@ -80,15 +80,15 @@ vim.cmd("highlight TelescopeBorder guibg=#0c0c0c guifg=#0c0c0c")
 vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
 vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#e2e2e2")
 
-vim.cmd("highlight TelescopePromptPrefix guibg=#181818 guifg=#e2e2e2")
-vim.cmd("highlight TelescopePromptNormal guibg=#181818 guifg=#e2e2e2")
+vim.cmd("highlight TelescopePromptPrefix guibg=#111111 guifg=#e2e2e2")
+vim.cmd("highlight TelescopePromptNormal guibg=#111111 guifg=#e2e2e2")
 vim.cmd("highlight TelescopePromptTitle guibg=#e2e2e2 guifg=#0f0f0f")
-vim.cmd("highlight TelescopePromptBorder guibg=#181818 guifg=#181818")
-vim.cmd("highlight TelescopePromptCounter guibg=#181818 guifg=#181818")
+vim.cmd("highlight TelescopePromptBorder guibg=#111111 guifg=#111111")
+vim.cmd("highlight TelescopePromptCounter guibg=#111111 guifg=#111111")
 
-vim.cmd("highlight TelescopeResultsNormal guibg=#0f0f0f guifg=#555555")
-vim.cmd("highlight TelescopeResultsTitle guibg=#0f0f0f guifg=#0f0f0f")
-vim.cmd("highlight TelescopeResultsBorder guibg=#0f0f0f guifg=#0f0f0f")
+vim.cmd("highlight TelescopeResultsNormal guibg=#0a0a0a guifg=#555555")
+vim.cmd("highlight TelescopeResultsTitle guibg=#0a0a0a guifg=#0a0a0a")
+vim.cmd("highlight TelescopeResultsBorder guibg=#0a0a0a guifg=#0a0a0a")
 
 vim.cmd("highlight TelescopePreviewMatch guibg=#e2e2e2 guifg=#0c0c0c")
 
