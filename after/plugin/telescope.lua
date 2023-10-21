@@ -11,12 +11,12 @@ telescope.setup {
       horizontal = {
         width = 0.8,
         height = 0.7,
-        preview_cutoff = 120,
+        preview_cutoff = 80,
         prompt_position = "top",
       },
-      width = 0.5,
-      height = 0.7,
-      preview_cutoff = 120,
+      width = 0.45,
+      height = 0.6,
+      preview_cutoff = 80,
       prompt_position = "top",
     },
     prompt_prefix = " : ",
@@ -26,6 +26,7 @@ telescope.setup {
     path_display = { "truncate" },
     winblend = 0,
     color_devicons = true,
+    sorting_strategy = "descending",
     mappings = {
       i = {
         ['<leader>v'] = actions.select_vertical,
@@ -37,20 +38,16 @@ telescope.setup {
         ["q"] = require("telescope.actions").close
       },
     },
-    file_ignore_patterns = {
-      "node_modules",
-      "dist",
-      "build",
-      ".next"
-    },
   },
   extensions = {
     file_browser = {
+      previewer = true,
       grouped = true,
       hijack_netrw = true,
       hidden = true,
       initial_mode = "normal",
-      file_ignore_patterns = {}
+      use_fd = false,
+      respect_gitignore = false
     },
   },
 }
@@ -65,23 +62,11 @@ vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
 vim.keymap.set('n', '<C-e>', ":Telescope file_browser initial_mode=normal path=%:p:h select_buffer=true<CR>", {})
 
 -- Telescope Buffer Fuzzy Find Remap
-vim.keymap.set('n', '<leader>/', function()
+vim.keymap.set('n', '<S-f>', function()
   builtin.current_buffer_fuzzy_find({
     prompt_title = "Current Buffer Search",
-    selection_caret = "❯ ",
     initial_mode = "insert",
     previewer = false,
     sorting_strategy = "ascending",
-    layout_strategy = "vertical",
-    layout_config = {
-      horizontal = {
-        width = 0.8,
-        height = 0.7,
-        preview_cutoff = 120,
-      },
-      width = 0.5,
-      height = 0.7,
-      preview_cutoff = 120,
-    },
   })
 end, {})
