@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
-  ["satellite.nvim"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/satellite.nvim",
-    url = "https://github.com/lewis6991/satellite.nvim"
-  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -253,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
   },
   ["vim-wakatime"] = {
     loaded = true,

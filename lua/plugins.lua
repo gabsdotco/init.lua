@@ -10,8 +10,8 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'norcalli/nvim-colorizer.lua'
   use 'folke/zen-mode.nvim'
-  use 'lewis6991/satellite.nvim'
   use 'yamatsum/nvim-cursorline'
+  use 'mg979/vim-visual-multi'
 
   -- Telescope plugins
   use {
