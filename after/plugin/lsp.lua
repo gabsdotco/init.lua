@@ -1,13 +1,22 @@
 local lsp = require('lsp-zero')
+local lsp_config = require('lspconfig')
+
+local mason = require('mason')
+local mason_lsp = require('mason-lspconfig')
+
+local lua_opts = lsp.nvim_lua_ls()
+
+lsp_config.lua_ls.setup(lua_opts)
 
 lsp.preset('recommended')
-lsp.ensure_installed({
-  'tsserver',
-  'lua_ls',
-})
 
--- Fix "Undefined global 'vim'" Warning
-lsp.nvim_workspace()
+mason.setup({})
+mason_lsp.setup({
+  ensure_installed = {
+    'tsserver',
+    'lua_ls',
+  }
+})
 
 -- Setup LSP Preferences
 lsp.set_preferences({
@@ -26,26 +35,33 @@ lsp.set_preferences({
 
 -- Setup CMP Plugin
 local cmp = require('cmp')
+
 local cmp_select = {
   behavior = cmp.SelectBehavior.Select,
 }
 
-local cmp_mappings = lsp.defaults.cmp_mappings({
-  ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ["<C-Space>"] = cmp.mapping.complete(),
-})
-
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
-
-lsp.setup_nvim_cmp({
-  mapping = cmp_mappings,
+cmp.setup({
+  sources = {
+    { name = 'nvim_lsp' },
+  },
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+    ["<C-Space>"] = cmp.mapping.complete(),
+    ['<Tab>'] = nil,
+    ['<S-Tab>'] = nil
+  })
 })
 
 -- LSP Remaps
 lsp.on_attach(function(_, bufnr)
   local opts = { buffer = bufnr, remap = false }
+
+  lsp.default_keymaps({ buffer = bufnr })
 
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
