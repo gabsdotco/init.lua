@@ -1,31 +1,17 @@
-local lsp = require('lsp-zero')
+local lsp_zero = require('lsp-zero')
 local lsp_config = require('lspconfig')
 
 local mason = require('mason')
 local mason_lsp = require('mason-lspconfig')
 
-local lua_opts = lsp.nvim_lua_ls()
+local lua_opts = lsp_zero.nvim_lua_ls()
 
 lsp_config.lua_ls.setup(lua_opts)
 
-lsp.preset('recommended')
-
-mason.setup({})
-mason_lsp.setup({
-  ensure_installed = {
-    'tsserver',
-    'lua_ls',
-  }
-})
-
 -- Setup LSP Preferences
-lsp.set_preferences({
+lsp_zero.set_preferences({
   suggest_lsp_servers = true,
   sign_icons = {
-    -- error = '•',
-    -- warn = '•',
-    -- hint = '•',
-    -- info = '•'
     error = 'E',
     warn = 'W',
     hint = 'H',
@@ -49,19 +35,20 @@ cmp.setup({
     documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({select = false}),
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ["<C-Space>"] = cmp.mapping.complete(),
+    ["<C-e>"] = cmp.mapping.complete(),
     ['<Tab>'] = nil,
     ['<S-Tab>'] = nil
   })
 })
 
 -- LSP Remaps
-lsp.on_attach(function(_, bufnr)
+lsp_zero.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr, remap = false }
 
-  lsp.default_keymaps({ buffer = bufnr })
+  lsp_zero.default_keymaps({ buffer = bufnr })
 
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
@@ -71,6 +58,17 @@ lsp.on_attach(function(_, bufnr)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
 end)
+
+mason.setup({})
+mason_lsp.setup({
+  ensure_installed = {
+    'tsserver',
+    'lua_ls',
+  },
+  handlers = {
+    lsp_zero.default_setup,
+  },
+})
 
 -- LSP Diagnostics
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
@@ -89,4 +87,4 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
 vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {}) -- Open line diagnostics popup
 
 -- LSP Setup
-lsp.setup()
+lsp_zero.setup()
