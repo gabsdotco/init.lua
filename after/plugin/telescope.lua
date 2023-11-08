@@ -25,7 +25,7 @@ telescope.setup {
     borderchars = { " " },
     path_display = { "truncate" },
     winblend = 0,
-    color_devicons = true,
+    color_devicons = false,
     sorting_strategy = "descending",
     mappings = {
       i = {
