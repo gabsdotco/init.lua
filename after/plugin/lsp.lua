@@ -12,12 +12,13 @@ lsp.nvim_workspace()
 -- Setup LSP Preferences
 lsp.set_preferences({
   suggest_lsp_servers = true,
-  sign_icons = {
-    error = 'E',
-    warn = 'W',
-    hint = 'H',
-    info = 'I'
-  }
+})
+
+lsp.set_sign_icons({
+  error = '•',
+  warn = '•',
+  hint = '•',
+  info = '•'
 })
 
 -- LSP Remaps
