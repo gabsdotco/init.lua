@@ -46,6 +46,8 @@ vim.cmd("highlight NeoTreeMessage guifg=#333333")
 vim.cmd("highlight NeoTreeFileName guifg=#555555")
 vim.cmd("highlight NeoTreeFolderName guifg=#666666")
 
+vim.cmd("highlight NeoTreeCursorLine guibg=#141414 guifg=NONE gui=bold")
+
 vim.cmd("highlight NeoTreeFloat guibg=NONE")
 vim.cmd("highlight NeoTreeFloatTitle guibg=#101010 guifg=#e2e2e2")
 vim.cmd("highlight NeoTreeFloatBorder guibg=NONE guifg=#111111")
@@ -72,6 +74,7 @@ vim.cmd("highlight Visual guibg=#171717 guifg=NONE")
 vim.cmd("highlight LineNr guifg=#2b2b2b")
 vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
 vim.cmd("highlight CursorLine guibg=NONE")
+vim.cmd("highlight Cursor guibg=NONE")
 
 -- Tabline colors
 vim.cmd("highlight TabLineSel guibg=#ffffff guifg=#000000")

@@ -1,8 +1,6 @@
 require 'nvim-treesitter.configs'.setup {
   ensure_installed = {
-    "c",
     "lua",
-    "rust",
     "javascript",
     "typescript",
     "json",
@@ -12,10 +10,6 @@ require 'nvim-treesitter.configs'.setup {
   auto_install = true,
 
   ident = {
-    enable = true,
-  },
-
-  context_commentstring = {
     enable = true,
   },
 

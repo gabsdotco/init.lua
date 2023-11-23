@@ -174,11 +174,6 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
-  ["nvim-cursorline"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
-    url = "https://github.com/yamatsum/nvim-cursorline"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -198,11 +193,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
-  },
-  ["nvim-ts-context-commentstring"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
-    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -263,11 +253,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/vim-wakatime",
     url = "https://github.com/wakatime/vim-wakatime"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
