@@ -9,8 +9,6 @@ return require('packer').startup(function(use)
   use 'wakatime/vim-wakatime'
   use 'windwp/nvim-autopairs'
   use 'norcalli/nvim-colorizer.lua'
-  use 'folke/zen-mode.nvim'
-  use 'yamatsum/nvim-cursorline'
   use 'mg979/vim-visual-multi'
 
   use {
@@ -41,7 +39,6 @@ return require('packer').startup(function(use)
   }
 
   use 'tpope/vim-commentary'
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'nvim-treesitter/playground'
   use 'windwp/nvim-ts-autotag'
 
