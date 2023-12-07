@@ -77,7 +77,7 @@ local setup_editor_colors = function()
   -- Numbers Gutter
   vim.cmd("highlight LineNr guifg=#2b2b2b")
   vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
-  vim.cmd("highlight CursorLine guibg=#080808 guifg=NONE gui=bold")
+  vim.cmd("highlight CursorLine guibg=NONE")
   vim.cmd("highlight Cursor guibg=NONE")
 
   -- Tabline colors
