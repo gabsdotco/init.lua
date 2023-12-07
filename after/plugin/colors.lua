@@ -50,7 +50,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight NeoTreeFileName guifg=#555555")
   vim.cmd("highlight NeoTreeFolderName guifg=#666666")
 
-  vim.cmd("highlight NeoTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
+  vim.cmd("highlight NeoTreeCursorLine guibg=#080808 guifg=NONE gui=bold")
 
   vim.cmd("highlight NeoTreeFloat guibg=NONE")
   vim.cmd("highlight NeoTreeFloatTitle guibg=#101010 guifg=#e2e2e2")
