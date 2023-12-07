@@ -1,5 +1,5 @@
 local minimal_palette = {
-  background = "#101010",
+  background = "#000000",
   primary = '#363636',
   secondary = '#666666',
   noir_0 = '#f1f1f1',
@@ -15,7 +15,7 @@ local minimal_palette = {
 }
 
 local macaroni_palette = {
-  background = "#101010",
+  background = "#000000",
   primary = '#fefa67',
   secondary = '#a978f6',
   noir_0 = '#f1f1f1',
@@ -50,7 +50,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight NeoTreeFileName guifg=#555555")
   vim.cmd("highlight NeoTreeFolderName guifg=#666666")
 
-  vim.cmd("highlight NeoTreeCursorLine guibg=#141414 guifg=NONE gui=bold")
+  vim.cmd("highlight NeoTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
 
   vim.cmd("highlight NeoTreeFloat guibg=NONE")
   vim.cmd("highlight NeoTreeFloatTitle guibg=#101010 guifg=#e2e2e2")
@@ -77,7 +77,7 @@ local setup_editor_colors = function()
   -- Numbers Gutter
   vim.cmd("highlight LineNr guifg=#2b2b2b")
   vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
-  vim.cmd("highlight CursorLine guibg=#141414 guifg=NONE gui=bold")
+  vim.cmd("highlight CursorLine guibg=#080808 guifg=NONE gui=bold")
   vim.cmd("highlight Cursor guibg=NONE")
 
   -- Tabline colors
@@ -89,13 +89,13 @@ local setup_editor_colors = function()
   vim.cmd("highlight StatusLine guibg=#0a0a0a")
 
   -- Split colors
-  vim.cmd("highlight VertSplit guibg=NONE guifg=#101010")
+  vim.cmd("highlight VertSplit guibg=NONE guifg=#000000")
 
   -- Command line colors
-  vim.cmd("highlight Pmenu guibg=#111111 guifg=#444444")
-  vim.cmd("highlight PmenuSel guibg=#181818 guifg=#ffffff")
-  vim.cmd("highlight PmenuSbar guibg=#101010 guifg=#0f0f0f")
-  vim.cmd("highlight PmenuThumb guibg=#181818 guifg=#0f0f0f")
+  vim.cmd("highlight Pmenu guibg=#080808 guifg=#444444")
+  vim.cmd("highlight PmenuSel guibg=#101010 guifg=#ffffff")
+  vim.cmd("highlight PmenuSbar guibg=#080808 guifg=#0f0f0f")
+  vim.cmd("highlight PmenuThumb guibg=#101010 guifg=#0f0f0f")
 
   -- Fold colors
   vim.cmd("highlight Folded guibg=NONE guifg=#3b3b3b")
@@ -110,15 +110,15 @@ local setup_editor_colors = function()
   vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
   vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#e2e2e2")
 
-  vim.cmd("highlight TelescopePromptPrefix guibg=#171717 guifg=#e2e2e2")
-  vim.cmd("highlight TelescopePromptNormal guibg=#171717 guifg=#e2e2e2")
+  vim.cmd("highlight TelescopePromptPrefix guibg=#101010 guifg=#e2e2e2")
+  vim.cmd("highlight TelescopePromptNormal guibg=#101010 guifg=#e2e2e2")
   vim.cmd("highlight TelescopePromptTitle guibg=#e2e2e2 guifg=#0f0f0f")
-  vim.cmd("highlight TelescopePromptBorder guibg=#171717 guifg=#111111")
-  vim.cmd("highlight TelescopePromptCounter guibg=#171717 guifg=#171717")
+  vim.cmd("highlight TelescopePromptBorder guibg=#101010 guifg=#111111")
+  vim.cmd("highlight TelescopePromptCounter guibg=#101010 guifg=#101010")
 
-  vim.cmd("highlight TelescopeResultsNormal guibg=#111111 guifg=#555555")
-  vim.cmd("highlight TelescopeResultsTitle guibg=#111111 guifg=#111111")
-  vim.cmd("highlight TelescopeResultsBorder guibg=#111111 guifg=#0a0a0a")
+  vim.cmd("highlight TelescopeResultsNormal guibg=#080808 guifg=#555555")
+  vim.cmd("highlight TelescopeResultsTitle guibg=#080808 guifg=#080808")
+  vim.cmd("highlight TelescopeResultsBorder guibg=#080808 guifg=#080808")
 
   vim.cmd("highlight TelescopePreviewMatch guibg=#e2e2e2 guifg=#0c0c0c")
 
