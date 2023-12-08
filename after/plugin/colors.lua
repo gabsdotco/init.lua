@@ -50,7 +50,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight NeoTreeFileName guifg=#555555")
   vim.cmd("highlight NeoTreeFolderName guifg=#666666")
 
-  vim.cmd("highlight NeoTreeCursorLine guibg=#080808 guifg=NONE gui=bold")
+  vim.cmd("highlight NeoTreeCursorLine guibg=NONE guifg=NONE gui=bold")
 
   vim.cmd("highlight NeoTreeFloat guibg=NONE")
   vim.cmd("highlight NeoTreeFloatTitle guibg=#101010 guifg=#e2e2e2")
@@ -89,13 +89,13 @@ local setup_editor_colors = function()
   vim.cmd("highlight StatusLine guibg=#0a0a0a")
 
   -- Split colors
-  vim.cmd("highlight VertSplit guibg=NONE guifg=#000000")
+  vim.cmd("highlight VertSplit guibg=NONE guifg=#101010")
 
   -- Command line colors
-  vim.cmd("highlight Pmenu guibg=#080808 guifg=#444444")
-  vim.cmd("highlight PmenuSel guibg=#101010 guifg=#ffffff")
-  vim.cmd("highlight PmenuSbar guibg=#080808 guifg=#0f0f0f")
-  vim.cmd("highlight PmenuThumb guibg=#101010 guifg=#0f0f0f")
+  vim.cmd("highlight Pmenu guibg=#101010 guifg=#444444")
+  vim.cmd("highlight PmenuSel guibg=#181818 guifg=#ffffff")
+  vim.cmd("highlight PmenuSbar guibg=#101010 guifg=#0f0f0f")
+  vim.cmd("highlight PmenuThumb guibg=#181818 guifg=#0f0f0f")
 
   -- Fold colors
   vim.cmd("highlight Folded guibg=NONE guifg=#3b3b3b")
@@ -110,15 +110,15 @@ local setup_editor_colors = function()
   vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
   vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#e2e2e2")
 
-  vim.cmd("highlight TelescopePromptPrefix guibg=#101010 guifg=#e2e2e2")
-  vim.cmd("highlight TelescopePromptNormal guibg=#101010 guifg=#e2e2e2")
+  vim.cmd("highlight TelescopePromptPrefix guibg=#181818 guifg=#e2e2e2")
+  vim.cmd("highlight TelescopePromptNormal guibg=#181818 guifg=#e2e2e2")
   vim.cmd("highlight TelescopePromptTitle guibg=#e2e2e2 guifg=#0f0f0f")
-  vim.cmd("highlight TelescopePromptBorder guibg=#101010 guifg=#111111")
-  vim.cmd("highlight TelescopePromptCounter guibg=#101010 guifg=#101010")
+  vim.cmd("highlight TelescopePromptBorder guibg=#181818 guifg=#111111")
+  vim.cmd("highlight TelescopePromptCounter guibg=#181818 guifg=#181818")
 
-  vim.cmd("highlight TelescopeResultsNormal guibg=#080808 guifg=#555555")
-  vim.cmd("highlight TelescopeResultsTitle guibg=#080808 guifg=#080808")
-  vim.cmd("highlight TelescopeResultsBorder guibg=#080808 guifg=#080808")
+  vim.cmd("highlight TelescopeResultsNormal guibg=#101010 guifg=#555555")
+  vim.cmd("highlight TelescopeResultsTitle guibg=#101010 guifg=#101010")
+  vim.cmd("highlight TelescopeResultsBorder guibg=#101010 guifg=#101010")
 
   vim.cmd("highlight TelescopePreviewMatch guibg=#e2e2e2 guifg=#0c0c0c")
 
