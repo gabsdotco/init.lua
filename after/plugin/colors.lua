@@ -36,7 +36,7 @@ local setup_editor_colors = function()
 
   -- NeoTree Git colors
   vim.cmd("highlight NeoTreeGitDirty guifg=#ff8989")
-  vim.cmd("highlight NeoTreeGitNew guifg=#f2ff8a")
+  vim.cmd("highlight NeoTreeGitNew guifg=#9bcea5")
   vim.cmd("highlight NeoTreeGitStaged guifg=#89B4FA")
   vim.cmd("highlight NeoTreeGitUnstaged guifg=#addef8")
   vim.cmd("highlight NeoTreeGitUntracked guifg=#F0C674")
@@ -101,8 +101,8 @@ local setup_editor_colors = function()
   vim.cmd("highlight Folded guibg=NONE guifg=#3b3b3b")
 
   -- Gitsigns colors
-  vim.cmd("highlight GitSignsAdd guifg=#f2ff8a")
-  vim.cmd("highlight GitSignsChange guifg=#addef8")
+  vim.cmd("highlight GitSignsAdd guifg=#9bcea5")
+  vim.cmd("highlight GitSignsChange guifg=#89B4FA")
   vim.cmd("highlight GitSignsDelete guifg=#ff8989")
 
   -- Telescope colors
