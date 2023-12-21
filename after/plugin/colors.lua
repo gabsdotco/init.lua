@@ -14,22 +14,6 @@ local minimal_palette = {
   noir_9 = '#111111',
 }
 
-local macaroni_palette = {
-  background = "#101010",
-  primary = '#fefa67',
-  secondary = '#a978f6',
-  noir_0 = '#f1f1f1',
-  noir_1 = '#e2e2e2',
-  noir_2 = '#ffffff',
-  noir_3 = '#a7a7a7',
-  noir_4 = '#555555',
-  noir_5 = '#444444',
-  noir_6 = '#444444',
-  noir_7 = '#333333',
-  noir_8 = '#222222',
-  noir_9 = '#111111',
-}
-
 local setup_editor_colors = function()
   -- Tokens colors
   vim.cmd("highlight @comment guifg=#383838")
@@ -84,6 +68,8 @@ local setup_editor_colors = function()
   vim.cmd("highlight TabLineSel guibg=#ffffff guifg=#000000")
   vim.cmd("highlight TabLine guibg=NONE guifg=#444444")
   vim.cmd("highlight TabLineFill guibg=NONE guifg=NONE")
+  vim.cmd("highlight TabLineCloseSel guibg=#ffffff guifg=#101010")
+  vim.cmd("highlight TabLineClose guibg=NONE guifg=#444444")
 
   -- Statusline background
   vim.cmd("highlight StatusLine guibg=#0a0a0a")
@@ -142,22 +128,4 @@ SetupMinimalTheme = function()
   setup_editor_colors()
 end
 
-SetupMacaroniTheme = function()
-  require("noirbuddy").setup({
-    preset = 'minimal',
-    styles = {
-      italic = true,
-      bold = true,
-      underline = true,
-      undercurl = true,
-    },
-    colors = macaroni_palette,
-  })
-
-  setup_editor_colors()
-end
-
 SetupMinimalTheme()
-
-vim.cmd("command! Blind lua SetupMinimalTheme()")
-vim.cmd("command! SemiBlind lua SetupMacaroniTheme()")
