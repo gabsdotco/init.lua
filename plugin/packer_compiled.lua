@@ -184,6 +184,11 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-noirbuddy",
     url = "https://github.com/jesseleite/nvim-noirbuddy"
   },
+  ["nvim-tabline"] = {
+    loaded = true,
+    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-tabline",
+    url = "https://github.com/seblj/nvim-tabline"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
