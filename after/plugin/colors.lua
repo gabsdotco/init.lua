@@ -18,28 +18,22 @@ local setup_editor_colors = function()
   -- Tokens colors
   vim.cmd("highlight @comment guifg=#383838")
 
-  -- NeoTree Git colors
-  vim.cmd("highlight NeoTreeGitDirty guifg=#ff8989")
-  vim.cmd("highlight NeoTreeGitNew guifg=#9bcea5")
-  vim.cmd("highlight NeoTreeGitStaged guifg=#89B4FA")
-  vim.cmd("highlight NeoTreeGitUnstaged guifg=#addef8")
-  vim.cmd("highlight NeoTreeGitUntracked guifg=#F0C674")
-  vim.cmd("highlight NeoTreeGitRenamed guifg=#f2ff8a")
-  vim.cmd("highlight NeoTreeGitIgnored guifg=#333333")
-  vim.cmd("highlight NeoTreeGitMerge guifg=#89B4FA")
-  vim.cmd("highlight NeoTreeGitModified guifg=#addef8")
-  vim.cmd("highlight NeoTreeGitDeleted guifg=#ff8989")
-  vim.cmd("highlight NeoTreeMessage guifg=#333333")
-
-  vim.cmd("highlight NeoTreeFileName guifg=#555555")
-  vim.cmd("highlight NeoTreeFolderName guifg=#666666")
-
-  vim.cmd("highlight NeoTreeCursorLine guibg=NONE guifg=NONE gui=bold")
-
-  vim.cmd("highlight NeoTreeFloat guibg=NONE")
-  vim.cmd("highlight NeoTreeFloatTitle guibg=#101010 guifg=#e2e2e2")
-  vim.cmd("highlight NeoTreeFloatBorder guibg=NONE guifg=#111111")
-  vim.cmd("highlight NeoTreeFloatNormal guibg=#111111 guifg=#e2e2e2")
+  -- NvimTree colors
+  vim.cmd("highlight NvimTreeFolderIcon guifg=#555555")
+  vim.cmd("highlight NvimTreeIndentMarker guifg=#333333")
+  vim.cmd("highlight NvimTreeNormal guibg=NONE guifg=#666666")
+  vim.cmd("highlight NvimTreeVertSplit guibg=NONE guifg=#101010")
+  
+  vim.cmd("highlight NvimTreeGitDirty guifg=#addef8")
+  vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
+  vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
+  vim.cmd("highlight NvimTreeGitUnstaged guifg=#addef8")
+  vim.cmd("highlight NvimTreeGitUntracked guifg=#F0C674")
+  vim.cmd("highlight NvimTreeGitRenamed guifg=#f2ff8a")
+  vim.cmd("highlight NvimTreeGitIgnored guifg=#333333")
+  vim.cmd("highlight NvimTreeGitMerge guifg=#89B4FA")
+  vim.cmd("highlight NvimTreeGitModified guifg=#addef8")
+  vim.cmd("highlight NvimTreeGitDeleted guifg=#ff8989")
 
   -- Editor transparent colors
   vim.cmd("highlight Normal guibg=none")
