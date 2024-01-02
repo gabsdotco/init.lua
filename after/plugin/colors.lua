@@ -23,7 +23,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight NvimTreeIndentMarker guifg=#333333")
   vim.cmd("highlight NvimTreeNormal guibg=NONE guifg=#666666")
   vim.cmd("highlight NvimTreeVertSplit guibg=NONE guifg=#101010")
-  
+
   vim.cmd("highlight NvimTreeGitDirty guifg=#addef8")
   vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
   vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
