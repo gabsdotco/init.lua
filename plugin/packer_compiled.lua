@@ -144,16 +144,6 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["neo-tree.nvim"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
-    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["nui.nvim"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
-  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -184,10 +174,10 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-noirbuddy",
     url = "https://github.com/jesseleite/nvim-noirbuddy"
   },
-  ["nvim-tabline"] = {
+  ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-tabline",
-    url = "https://github.com/seblj/nvim-tabline"
+    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -202,7 +192,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

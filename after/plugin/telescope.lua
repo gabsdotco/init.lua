@@ -43,7 +43,7 @@ telescope.setup {
     file_browser = {
       previewer = true,
       grouped = true,
-      hijack_netrw = true,
+      hijack_netrw = false,
       hidden = true,
       initial_mode = "normal",
       use_fd = false,
