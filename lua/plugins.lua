@@ -3,7 +3,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Icons plugins
-  use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-tree/nvim-web-devicons'
 
   -- Utils plugins
   use 'wakatime/vim-wakatime'
@@ -33,14 +33,13 @@ return require('packer').startup(function(use)
   }
 
   -- Treesitter plugins
+  use 'tpope/vim-commentary'
+  use 'nvim-treesitter/playground'
+  use 'windwp/nvim-ts-autotag'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
-
-  use 'tpope/vim-commentary'
-  use 'nvim-treesitter/playground'
-  use 'windwp/nvim-ts-autotag'
 
   -- Git plugins
   use 'tpope/vim-fugitive'
@@ -89,21 +88,6 @@ return require('packer').startup(function(use)
     tag = 'v2.20.8'
   }
 
-  -- Neotree
-  use {
-    'nvim-neo-tree/neo-tree.nvim',
-    requires = {
-      'nvim-lua/plenary.nvim',
-      'nvim-tree/nvim-web-devicons',
-      'MunifTanjim/nui.nvim',
-    },
-  }
-
-  -- Tabs
-  use {
-    'seblj/nvim-tabline',
-    requires = { 
-      'nvim-tree/nvim-web-devicons' 
-    }
-  }
+  -- Tree
+  use 'nvim-tree/nvim-tree.lua'
 end)
