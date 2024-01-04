@@ -29,12 +29,12 @@ telescope.setup {
     sorting_strategy = "descending",
     mappings = {
       i = {
-        ['<leader>v'] = actions.select_vertical,
-        ['<leader>h'] = actions.select_horizontal,
+        ['<C-s>'] = actions.select_vertical,
+        ['<C-x>'] = actions.select_horizontal,
       },
       n = {
-        ['<leader>v'] = actions.select_vertical,
-        ['<leader>h'] = actions.select_horizontal,
+        ['<C-s>'] = actions.select_vertical,
+        ['<C-x>'] = actions.select_horizontal,
         ["q"] = require("telescope.actions").close
       },
     },
@@ -56,6 +56,7 @@ telescope.load_extension('file_browser')
 
 -- Telescope Remaps
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<C-b>', builtin.buffers, {})
 vim.keymap.set('n', '<C-g>', builtin.git_files, {})
 vim.keymap.set('n', '<C-s>', builtin.git_status, {})
 vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
