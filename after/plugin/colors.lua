@@ -24,6 +24,8 @@ local setup_editor_colors = function()
   vim.cmd("highlight NvimTreeNormal guibg=NONE guifg=#666666")
   vim.cmd("highlight NvimTreeVertSplit guibg=NONE guifg=#101010")
 
+  vim.cmd("highlight NvimTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
+
   vim.cmd("highlight NvimTreeGitDirty guifg=#addef8")
   vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
   vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
@@ -55,7 +57,7 @@ local setup_editor_colors = function()
   -- Numbers Gutter
   vim.cmd("highlight LineNr guifg=#2b2b2b")
   vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
-  vim.cmd("highlight CursorLine guibg=#101010")
+  vim.cmd("highlight CursorLine guibg=NONE")
   vim.cmd("highlight Cursor guibg=NONE")
 
   -- Tabline colors
