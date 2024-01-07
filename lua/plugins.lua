@@ -10,15 +10,6 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'norcalli/nvim-colorizer.lua'
   use 'mg979/vim-visual-multi'
-  use {
-    "utilyre/barbecue.nvim",
-    tag = "*",
-    requires = {
-      "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons", -- optional dependency
-    },
-    after = "nvim-web-devicons",
-  }
 
   use {
     'akinsho/toggleterm.nvim',
