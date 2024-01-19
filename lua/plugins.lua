@@ -6,7 +6,6 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
 
   -- Utils plugins
-  use 'wakatime/vim-wakatime'
   use 'windwp/nvim-autopairs'
   use 'norcalli/nvim-colorizer.lua'
   use 'mg979/vim-visual-multi'
@@ -17,28 +16,20 @@ return require('packer').startup(function(use)
   }
 
   -- Telescope plugins
+  use 'nvim-lua/plenary.nvim'
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.x',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    }
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.x',
   }
 
-  use {
-    'nvim-telescope/telescope-file-browser.nvim',
-    requires = {
-      'nvim-telescope/telescope.nvim',
-      'nvim-lua/plenary.nvim'
-    }
-  }
+  use 'nvim-telescope/telescope-file-browser.nvim'
 
   -- Treesitter plugins
   use 'tpope/vim-commentary'
   use 'nvim-treesitter/playground'
-  use 'windwp/nvim-ts-autotag'
   use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
+     'nvim-treesitter/nvim-treesitter',
+     run = ':TSUpdate',
   }
 
   -- Git plugins

@@ -28,5 +28,13 @@ function status_line()
   }
 end
 
-vim.o.statusline = "%!luaeval('status_line()')"
 vim.o.laststatus = 3
+
+vim.api.nvim_exec([[
+  augroup Statusline
+  au!
+  au WinEnter,BufEnter * setlocal statusline=%!v:lua.status_line()
+  au WinLeave,BufLeave * setlocal statusline=%!v:lua.status_line()
+  au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.status_line()
+  augroup END
+]], false)

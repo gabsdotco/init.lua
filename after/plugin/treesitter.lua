@@ -3,18 +3,22 @@ require 'nvim-treesitter.configs'.setup {
     "lua",
     "javascript",
     "typescript",
-    "json",
   },
 
   sync_install = false,
   auto_install = true,
 
-  ident = {
+  indent = {
     enable = true,
+    disable = "yaml"
+  },
+
+  autotag = {
+    enable = false,
   },
 
   highlight = {
     enable = true,
+    additional_vim_regex_highlighting = false,
   },
 }
-
