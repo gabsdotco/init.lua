@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["accelerated-jk.nvim"] = {
-    loaded = true,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/accelerated-jk.nvim",
-    url = "https://github.com/rainbowhxch/accelerated-jk.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/cmp-buffer",

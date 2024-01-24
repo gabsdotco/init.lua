@@ -28,8 +28,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-commentary'
   use 'nvim-treesitter/playground'
   use {
-     'nvim-treesitter/nvim-treesitter',
-     run = ':TSUpdate',
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
   }
 
   -- Git plugins
