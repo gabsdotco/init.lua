@@ -12,6 +12,9 @@ local function my_on_attach(bufnr)
   vim.keymap.set("n", "<C-t>", ":NvimTreeToggle<CR>", {})
   vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
   vim.keymap.set('n', '<C-s>', api.node.open.vertical, opts('Open: Vertical Split'))
+
+  -- remove default mappings
+  vim.keymap.del('n', 'L', { buffer = bufnr })
 end
 
 require("nvim-tree").setup({
