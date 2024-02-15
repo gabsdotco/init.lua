@@ -1,13 +1,13 @@
-local function highlight(tag, foreground, background)
-  vim.cmd("highlight " .. tag .. " guifg=" .. foreground .. " guibg=" .. background)
+local function highlight(tag, foreground, background, style)
+  vim.cmd("highlight " .. tag .. " guifg=" .. foreground .. " guibg=" .. background .. " gui=" .. style)
 end
 
-highlight("StatusMode", "#000000", "#ffffff")
-highlight("StatusBranch", "#ffffff", "NONE")
-highlight("StatusFile", "#333333", "NONE")
-highlight("StatusSaved", "#adb5bd", "NONE")
-highlight("StatusWarnings", "#feff57", "NONE")
-highlight("StatusErrors", "#ff9898", "NONE")
-highlight("StatusInfos", "#8afeff", "NONE")
+highlight("StatusMode", "#000000", "#f0c674", "NONE")
+highlight("StatusBranch", "#ffffff", "NONE", "NONE")
+highlight("StatusFile", "#444444", "NONE", "NONE")
+highlight("StatusSaved", "#adb5bd", "NONE", "NONE")
+highlight("StatusWarnings", "#f0c674", "NONE", "NONE")
+highlight("StatusErrors", "#ff9898", "NONE", "NONE")
+highlight("StatusInfos", "#8afeff", "NONE", "NONE")
 
-highlight("BranchComponentStatus", "#444444", "NONE")
+highlight("BranchComponentStatus", "#444444", "NONE", "NONE")

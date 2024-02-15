@@ -1,22 +1,29 @@
 local minimal_palette = {
   background = "#101010",
-  primary = '#363636',
-  secondary = '#777777',
+  primary = '#f0c674',
+  secondary = '#ffffff',
   noir_0 = '#f1f1f1',
   noir_1 = '#e2e2e2',
-  noir_2 = '#ffffff',
+  noir_2 = '#f0c674',
   noir_3 = '#a7a7a7',
   noir_4 = '#555555',
   noir_5 = '#444444',
   noir_6 = '#444444',
-  noir_7 = '#333333',
-  noir_8 = '#222222',
+  noir_7 = '#444444',
+  noir_8 = '#333333',
   noir_9 = '#111111',
 }
 
 local setup_editor_colors = function()
   -- Tokens colors
-  vim.cmd("highlight @comment guifg=#383838")
+  vim.cmd("highlight @function guifg=#f0c674")
+  vim.cmd("highlight @method guifg=#f0c674")
+  vim.cmd("highlight @operator guifg=#444444")
+  vim.cmd("highlight @comment guifg=#555555")
+  vim.cmd("highlight @string guifg=#444444")
+
+  -- Vim command line error colors
+  vim.cmd("highlight ErrorMsg guifg=#444444 guibg=#ff8989")
 
   -- NvimTree colors
   vim.cmd("highlight NvimTreeFolderIcon guifg=#555555")
@@ -26,13 +33,13 @@ local setup_editor_colors = function()
 
   vim.cmd("highlight NvimTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
 
-  vim.cmd("highlight NvimTreeGitDirty guifg=#addef8")
+  vim.cmd("highlight NvimTreeGitDirty guifg=#f0c674")
   vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
   vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
   vim.cmd("highlight NvimTreeGitUnstaged guifg=#addef8")
   vim.cmd("highlight NvimTreeGitUntracked guifg=#F0C674")
   vim.cmd("highlight NvimTreeGitRenamed guifg=#f2ff8a")
-  vim.cmd("highlight NvimTreeGitIgnored guifg=#444444")
+  vim.cmd("highlight NvimTreeGitIgnored guifg=#333333")
   vim.cmd("highlight NvimTreeGitMerge guifg=#89B4FA")
   vim.cmd("highlight NvimTreeGitModified guifg=#addef8")
   vim.cmd("highlight NvimTreeGitDeleted guifg=#ff8989")
@@ -56,7 +63,7 @@ local setup_editor_colors = function()
 
   -- Numbers Gutter
   vim.cmd("highlight LineNr guifg=#2b2b2b")
-  vim.cmd("highlight CursorLineNr guibg=NONE guifg=#5b5b5b gui=bold")
+  vim.cmd("highlight CursorLineNr guibg=NONE guifg=#666666 gui=bold")
   vim.cmd("highlight CursorLine guibg=NONE")
   vim.cmd("highlight Cursor guibg=NONE")
 
@@ -84,13 +91,13 @@ local setup_editor_colors = function()
 
   -- Gitsigns colors
   vim.cmd("highlight GitSignsAdd guifg=#9bcea5")
-  vim.cmd("highlight GitSignsChange guifg=#89B4FA")
+  vim.cmd("highlight GitSignsChange guifg=#f0c674")
   vim.cmd("highlight GitSignsDelete guifg=#ff8989")
 
   -- Telescope colors
   vim.cmd("highlight TelescopeBorder guibg=#0c0c0c guifg=#0c0c0c")
   vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
-  vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#e2e2e2")
+  vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#f0c674")
 
   vim.cmd("highlight TelescopePromptPrefix guibg=#181818 guifg=#e2e2e2")
   vim.cmd("highlight TelescopePromptNormal guibg=#181818 guifg=#e2e2e2")
