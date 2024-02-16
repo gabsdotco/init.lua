@@ -14,22 +14,47 @@ local minimal_palette = {
   noir_9 = '#111111',
 }
 
+-- #TODO: Move all this to a custom plugin
 local setup_editor_colors = function()
   -- Tokens colors
   vim.cmd("highlight @function guifg=#f0c674")
+  vim.cmd("highlight @function.call guifg=#f0c674")
+
   vim.cmd("highlight @method guifg=#f0c674")
+  vim.cmd("highlight @method.call guifg=#f0c674")
+
+  vim.cmd("highlight @variable.member guifg=#666666")
+
+  vim.cmd("highlight @keyword guifg=#444444")
+  vim.cmd("highlight @keyword.operator guifg=#555555")
+  vim.cmd("highlight @keyword.return guifg=#666666")
+
+  vim.cmd("highlight @punctuation.bracket guifg=#555555")
+
   vim.cmd("highlight @operator guifg=#444444")
   vim.cmd("highlight @comment guifg=#555555")
   vim.cmd("highlight @string guifg=#444444")
 
+  vim.cmd("highlight @lsp.type.parameter guifg=#777777 gui=italic")
+
+  vim.cmd("highlight @type guifg=#f0c674")
+  vim.cmd("highlight @type.definition guifg=#f0c674")
+  vim.cmd("highlight @type.builtin guifg=#f0c674")
+  vim.cmd("highlight @type.qualifier guifg=#444444")
+
   -- Vim command line error colors
   vim.cmd("highlight ErrorMsg guifg=#444444 guibg=#ff8989")
 
+  -- Copilot colors
+  vim.cmd("highlight CopilotSuggestion guifg=#444444 gui=italic")
+  vim.cmd("highlight CopilotAnnotation guifg=#666666 gui=italic")
+
   -- NvimTree colors
-  vim.cmd("highlight NvimTreeFolderIcon guifg=#555555")
+  vim.cmd("highlight NvimTreeFolderIcon guifg=#666666")
+  vim.cmd("highlight NvimTreeFolderName guifg=#999999")
   vim.cmd("highlight NvimTreeIndentMarker guifg=#333333")
-  vim.cmd("highlight NvimTreeNormal guibg=NONE guifg=#666666")
-  vim.cmd("highlight NvimTreeVertSplit guibg=NONE guifg=#101010")
+  vim.cmd("highlight NvimTreeNormal guibg=NONE guifg=#555555")
+  vim.cmd("highlight NvimTreeVertSplit guibg=NONE guifg=NONE")
 
   vim.cmd("highlight NvimTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
 
@@ -97,7 +122,9 @@ local setup_editor_colors = function()
   -- Telescope colors
   vim.cmd("highlight TelescopeBorder guibg=#0c0c0c guifg=#0c0c0c")
   vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
-  vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#f0c674")
+  vim.cmd("highlight TelescopeSelection guibg=NONE")
+  vim.cmd("highlight TelescopeSelectionCaret guibg=NONE guifg=#f0c674")
+  vim.cmd("highlight TelescopeMatching guibg=NONE guifg=#f0c674")
 
   vim.cmd("highlight TelescopePromptPrefix guibg=#181818 guifg=#e2e2e2")
   vim.cmd("highlight TelescopePromptNormal guibg=#181818 guifg=#e2e2e2")
