@@ -59,13 +59,13 @@ local setup_editor_colors = function()
   vim.cmd("highlight NvimTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
 
   vim.cmd("highlight NvimTreeGitDirty guifg=#f0c674")
-  vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
-  vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
+  vim.cmd("highlight NvimTreeGitNew guifg=#89B4FA")
+  vim.cmd("highlight NvimTreeGitStaged guifg=#9bcea5")
   vim.cmd("highlight NvimTreeGitUnstaged guifg=#addef8")
-  vim.cmd("highlight NvimTreeGitUntracked guifg=#F0C674")
+  vim.cmd("highlight NvimTreeGitUntracked guifg=#f0c674")
   vim.cmd("highlight NvimTreeGitRenamed guifg=#f2ff8a")
   vim.cmd("highlight NvimTreeGitIgnored guifg=#333333")
-  vim.cmd("highlight NvimTreeGitMerge guifg=#89B4FA")
+  vim.cmd("highlight NvimTreeGitMerge guifg=#A978F6")
   vim.cmd("highlight NvimTreeGitModified guifg=#addef8")
   vim.cmd("highlight NvimTreeGitDeleted guifg=#ff8989")
 
@@ -115,7 +115,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight Folded guibg=NONE guifg=#3b3b3b")
 
   -- Gitsigns colors
-  vim.cmd("highlight GitSignsAdd guifg=#9bcea5")
+  vim.cmd("highlight GitSignsAdd guifg=#89B4FA")
   vim.cmd("highlight GitSignsChange guifg=#f0c674")
   vim.cmd("highlight GitSignsDelete guifg=#ff8989")
 
