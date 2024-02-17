@@ -32,7 +32,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight @punctuation.bracket guifg=#555555")
 
   vim.cmd("highlight @operator guifg=#444444")
-  vim.cmd("highlight @comment guifg=#555555")
+  vim.cmd("highlight @comment guifg=#333333")
   vim.cmd("highlight @string guifg=#444444")
 
   vim.cmd("highlight @lsp.type.parameter guifg=#777777 gui=italic")

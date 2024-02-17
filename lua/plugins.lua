@@ -45,7 +45,10 @@ return require('packer').startup(function(use)
   }
 
   -- Github Copilot plugins
-  use 'github/copilot.vim'
+  use { 
+    'github/copilot.vim',
+    tag = 'v1.18.0'
+  }
 
   -- LSP plugins
   use {
