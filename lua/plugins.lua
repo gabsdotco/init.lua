@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
   -- Git plugins
   use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
+  use 'sindrets/diffview.nvim'
 
   -- Theme plugins
   use {

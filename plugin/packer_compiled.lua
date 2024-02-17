@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/home/gabs/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/friendly-snippets",
