@@ -69,7 +69,7 @@ require("nvim-tree").setup({
     }
   },
   filters = {
-    git_ignored = true,
+    git_ignored = false,
     dotfiles = true,
   },
 })
