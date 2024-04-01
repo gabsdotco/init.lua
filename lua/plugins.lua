@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
 
   -- Utils plugins
-  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
   use 'norcalli/nvim-colorizer.lua'
   use 'mg979/vim-visual-multi'
 
@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
   use 'sindrets/diffview.nvim'
 
   -- Theme plugins
+  use 'akinsho/bufferline.nvim'
   use {
     'jesseleite/nvim-noirbuddy',
     requires = {
@@ -46,7 +47,7 @@ return require('packer').startup(function(use)
   }
 
   -- Github Copilot plugins
-  use { 
+  use {
     'github/copilot.vim',
     tag = 'v1.18.0'
   }
