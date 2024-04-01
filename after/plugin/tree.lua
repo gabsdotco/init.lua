@@ -9,12 +9,12 @@ local function my_on_attach(bufnr)
   api.config.mappings.default_on_attach(bufnr)
 
   -- custom mappings
-  vim.keymap.set("n", "<C-t>", ":NvimTreeToggle<CR>", {})
   vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
   vim.keymap.set('n', '<C-s>', api.node.open.vertical, opts('Open: Vertical Split'))
 
   -- remove default mappings
   vim.keymap.del('n', 'L', { buffer = bufnr })
+  vim.keymap.del('n', '<C-t>', { buffer = bufnr })
 end
 
 require("nvim-tree").setup({
@@ -23,13 +23,14 @@ require("nvim-tree").setup({
     sorter = "case_sensitive",
   },
   view = {
-    width = 35,
+    width = 38,
   },
   update_focused_file = {
     enable = true,
   },
   renderer = {
-    group_empty = true,
+    group_empty = false,
+    root_folder_label = false,
     highlight_git = true,
     special_files = {},
     icons = {

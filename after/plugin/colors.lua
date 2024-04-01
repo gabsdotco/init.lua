@@ -1,10 +1,10 @@
 local minimal_palette = {
   background = "#101010",
-  primary = '#f0c674',
+  primary = '#333333',
   secondary = '#ffffff',
   noir_0 = '#f1f1f1',
   noir_1 = '#e2e2e2',
-  noir_2 = '#f0c674',
+  noir_2 = '#666666',
   noir_3 = '#a7a7a7',
   noir_4 = '#555555',
   noir_5 = '#444444',
@@ -17,12 +17,6 @@ local minimal_palette = {
 -- #TODO: Move all this to a custom plugin
 local setup_editor_colors = function()
   -- Tokens colors
-  vim.cmd("highlight @function guifg=#f0c674")
-  vim.cmd("highlight @function.call guifg=#f0c674")
-
-  vim.cmd("highlight @method guifg=#f0c674")
-  vim.cmd("highlight @method.call guifg=#f0c674")
-
   vim.cmd("highlight @variable.member guifg=#666666")
 
   vim.cmd("highlight @keyword guifg=#444444")
@@ -32,14 +26,11 @@ local setup_editor_colors = function()
   vim.cmd("highlight @punctuation.bracket guifg=#555555")
 
   vim.cmd("highlight @operator guifg=#444444")
-  vim.cmd("highlight @comment guifg=#333333")
+  vim.cmd("highlight @comment guifg=#222222")
   vim.cmd("highlight @string guifg=#444444")
 
   vim.cmd("highlight @lsp.type.parameter guifg=#777777 gui=italic")
 
-  vim.cmd("highlight @type guifg=#f0c674")
-  vim.cmd("highlight @type.definition guifg=#f0c674")
-  vim.cmd("highlight @type.builtin guifg=#f0c674")
   vim.cmd("highlight @type.qualifier guifg=#444444")
 
   -- Vim command line error colors
@@ -59,8 +50,8 @@ local setup_editor_colors = function()
   vim.cmd("highlight NvimTreeCursorLine guibg=#101010 guifg=NONE gui=bold")
 
   vim.cmd("highlight NvimTreeGitDirty guifg=#f0c674")
-  vim.cmd("highlight NvimTreeGitNew guifg=#89B4FA")
-  vim.cmd("highlight NvimTreeGitStaged guifg=#9bcea5")
+  vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
+  vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
   vim.cmd("highlight NvimTreeGitUnstaged guifg=#addef8")
   vim.cmd("highlight NvimTreeGitUntracked guifg=#f0c674")
   vim.cmd("highlight NvimTreeGitRenamed guifg=#f2ff8a")
@@ -68,6 +59,18 @@ local setup_editor_colors = function()
   vim.cmd("highlight NvimTreeGitMerge guifg=#A978F6")
   vim.cmd("highlight NvimTreeGitModified guifg=#addef8")
   vim.cmd("highlight NvimTreeGitDeleted guifg=#ff8989")
+
+  -- Diagnostic colors
+  vim.cmd("highlight DiagnosticError guifg=#ff8989")
+  vim.cmd("highlight DiagnosticWarn guifg=#f0c674")
+  vim.cmd("highlight DiagnosticInfo guifg=#89B4FA")
+  vim.cmd("highlight DiagnosticHint guifg=#9bcea5")
+
+  -- Diagnostic signs colors
+  vim.cmd("highlight DiagnosticSignError guifg=#ff8989")
+  vim.cmd("highlight DiagnosticSignWarn guifg=#f0c674")
+  vim.cmd("highlight DiagnosticSignInfo guifg=#89B4FA")
+  vim.cmd("highlight DiagnosticSignHint guifg=#9bcea5")
 
   -- Editor transparent colors
   vim.cmd("highlight Normal guibg=none")
@@ -89,7 +92,7 @@ local setup_editor_colors = function()
   -- Numbers Gutter
   vim.cmd("highlight LineNr guifg=#2b2b2b")
   vim.cmd("highlight CursorLineNr guibg=NONE guifg=#666666 gui=bold")
-  vim.cmd("highlight CursorLine guibg=NONE")
+  vim.cmd("highlight CursorLine guibg=#101010 guifg=NONE gui=bold")
   vim.cmd("highlight Cursor guibg=NONE")
 
   -- Tabline colors
@@ -115,16 +118,16 @@ local setup_editor_colors = function()
   vim.cmd("highlight Folded guibg=NONE guifg=#3b3b3b")
 
   -- Gitsigns colors
-  vim.cmd("highlight GitSignsAdd guifg=#89B4FA")
+  vim.cmd("highlight GitSignsAdd guifg=#9bcea5")
   vim.cmd("highlight GitSignsChange guifg=#f0c674")
   vim.cmd("highlight GitSignsDelete guifg=#ff8989")
 
   -- Telescope colors
   vim.cmd("highlight TelescopeBorder guibg=#0c0c0c guifg=#0c0c0c")
   vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
-  vim.cmd("highlight TelescopeSelection guibg=NONE")
-  vim.cmd("highlight TelescopeSelectionCaret guibg=NONE guifg=#f0c674")
-  vim.cmd("highlight TelescopeMatching guibg=NONE guifg=#f0c674")
+  vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#f1f1f1")
+  vim.cmd("highlight TelescopeSelectionCaret guibg=NONE guifg=#f1f1f1")
+  vim.cmd("highlight TelescopeMatching guibg=NONE guifg=#f1f1f1")
 
   vim.cmd("highlight TelescopePromptPrefix guibg=#181818 guifg=#e2e2e2")
   vim.cmd("highlight TelescopePromptNormal guibg=#181818 guifg=#e2e2e2")

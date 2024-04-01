@@ -14,13 +14,28 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 
+-- NvimTree Remaps
+vim.keymap.set("n", "<C-t>", ":NvimTreeToggle<CR>", {})
+
 -- Tabs Remaps
-vim.keymap.set('n', '<C-h>', ':tabprevious<CR>', {})
-vim.keymap.set('n', '<C-l>', ':tabnext<CR>', {})
-vim.keymap.set('n', '<C-q>', ':tabclose<CR>', {})
+vim.keymap.set('n', '<C-q>', function()
+  vim.cmd("bd")
+  vim.cmd("bprev")
+end, {})
+
+vim.keymap.set("n", "<C-l>", function()
+	vim.cmd("bnext")
+end, {})
+
+vim.keymap.set("n", "<C-h>", function()
+	vim.cmd("bprev")
+end, {})
 
 -- Split Remaps
-vim.keymap.set('n', '<S-q>', '<C-w>c', {})
+vim.keymap.set('n', '<S-q>', function()
+  vim.cmd("bd")
+  vim.cmd("bprev")
+end, {})
 
 vim.keymap.set('n', '<S-h>', '<C-w>h', {})
 vim.keymap.set('n', '<S-l>', '<C-w>l', {})
