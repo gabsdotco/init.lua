@@ -7,7 +7,7 @@ vim.cmd [[
   highlight IndentBlanklineChar guifg=#1c1c1c
   highlight IndentBlanklineSpaceChar guifg=#1c1c1c
   highlight IndentBlanklineSpaceCharBlankline guifg=#1c1c1c
-  highlight IndentBlanklineContextChar guifg=#444444
+  highlight IndentBlanklineContextChar guifg=#333333
 ]]
 
 -- Indent lines settings
