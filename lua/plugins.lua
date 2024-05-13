@@ -42,7 +42,7 @@ return require('packer').startup(function(use)
   use {
     'jesseleite/nvim-noirbuddy',
     requires = {
-      'tjdevries/colorbuddy.nvim', branch = 'dev'
+      'tjdevries/colorbuddy.nvim',
     },
   }
 
