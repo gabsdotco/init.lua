@@ -5,7 +5,7 @@ function get_warnings_component()
     return ""
   end
 
-  return "● " .. warning_count
+  return "[" .. warning_count .. "]"
 end
 
 function get_errors_component()
@@ -15,7 +15,7 @@ function get_errors_component()
     return ""
   end
 
-  return "● " .. error_count
+  return "[" .. error_count .. "]"
 end
 
 function get_infos_component()
@@ -25,5 +25,5 @@ function get_infos_component()
     return ""
   end
 
-  return "● " .. info_count
+  return "[" .. info_count .. "]"
 end

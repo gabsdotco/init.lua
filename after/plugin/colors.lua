@@ -29,6 +29,9 @@ local setup_editor_colors = function()
   vim.cmd("highlight @comment guifg=#222222")
   vim.cmd("highlight @string guifg=#444444")
 
+  vim.cmd("highlight @tag guifg=#f1f1f1")
+  vim.cmd("highlight @tag.delimiter guifg=#f1f1f1")
+
   vim.cmd("highlight @lsp.type.parameter guifg=#777777 gui=italic")
 
   vim.cmd("highlight @type.qualifier guifg=#444444")
