@@ -2,6 +2,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Startup plugins
+  use 'goolord/alpha-nvim'
+
   -- Icons plugins
   use 'nvim-tree/nvim-web-devicons'
 
@@ -17,12 +20,12 @@ return require('packer').startup(function(use)
 
   -- Telescope plugins
   use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.x',
   }
 
-  use 'nvim-telescope/telescope-file-browser.nvim'
 
   -- Treesitter plugins
   use 'tpope/vim-commentary'
