@@ -62,6 +62,7 @@ local setup_editor_colors = function()
   vim.cmd("highlight NvimTreeGitMerge guifg=#A978F6")
   vim.cmd("highlight NvimTreeGitModified guifg=#addef8")
   vim.cmd("highlight NvimTreeGitDeleted guifg=#ff8989")
+  vim.cmd("highlight NvimTreeWinSeparator guibg=NONE guifg=#101010")
 
   -- Diagnostic colors
   vim.cmd("highlight DiagnosticError guifg=#ff8989")
@@ -110,6 +111,7 @@ local setup_editor_colors = function()
 
   -- Split colors
   vim.cmd("highlight VertSplit guibg=NONE guifg=#101010")
+  vim.cmd("highlight WinSeparator guibg=NONE guifg=#101010")
 
   -- Command line colors
   vim.cmd("highlight Pmenu guibg=#101010 guifg=#444444")
