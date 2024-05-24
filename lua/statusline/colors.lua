@@ -1,5 +1,5 @@
 local function highlight(tag, foreground, background, style)
-  vim.cmd("highlight " .. tag .. " guifg=" .. foreground .. " guibg=" .. background .. " gui=" .. style)
+	vim.cmd("highlight " .. tag .. " guifg=" .. foreground .. " guibg=" .. background .. " gui=" .. style)
 end
 
 highlight("StatusMode", "#000000", "#ffffff", "bold")

@@ -24,13 +24,13 @@ vim.g.netrw_banner = 0
 -- Cursor Style
 -- vim.opt.guicursor = 'i:block'
 
-vim.opt.fillchars:append {
-  eob       = " ",
-  horiz     = ' ',
-  horizup   = ' ',
-  horizdown = ' ',
-  vert      = ' ',
-  vertleft  = ' ',
-  vertright = ' ',
-  verthoriz = ' ',
-}
+vim.opt.fillchars:append({
+	eob = " ",
+	horiz = " ",
+	horizup = " ",
+	horizdown = " ",
+	vert = " ",
+	vertleft = " ",
+	vertright = " ",
+	verthoriz = " ",
+})
