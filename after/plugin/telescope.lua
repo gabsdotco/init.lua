@@ -14,12 +14,12 @@ telescope.setup({
 				preview_cutoff = 80,
 				prompt_position = "top",
 			},
-			width = 0.65,
-			height = 0.6,
+			width = 0.45,
+			height = 0.5,
 			preview_cutoff = 80,
 			prompt_position = "top",
 		},
-		prompt_prefix = " : ",
+		prompt_prefix = " ❯ ",
 		selection_caret = "❯ ",
 		border = {},
 		borderchars = { " " },
@@ -39,9 +39,29 @@ telescope.setup({
 			},
 		},
 	},
+	pickers = {
+		find_files = {
+			layout_config = {
+				preview_cutoff = 80,
+			},
+		},
+		live_grep = {
+			layout_config = {
+				preview_cutoff = 40,
+				height = 0.55,
+			},
+		},
+		git_status = {
+			initial_mode = "normal",
+			layout_config = {
+				preview_cutoff = 40,
+				height = 0.55,
+			},
+		},
+	},
 	extensions = {
 		file_browser = {
-			previewer = true,
+			previewer = false,
 			grouped = true,
 			hijack_netrw = false,
 			hidden = true,
@@ -56,7 +76,6 @@ telescope.load_extension("file_browser")
 
 -- Telescope Remaps
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-vim.keymap.set("n", "<C-b>", builtin.buffers, {})
 vim.keymap.set("n", "<C-g>", builtin.git_files, {})
 vim.keymap.set("n", "<C-s>", builtin.git_status, {})
 vim.keymap.set("n", "<C-f>", builtin.live_grep, {})

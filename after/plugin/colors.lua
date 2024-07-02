@@ -17,36 +17,49 @@ local minimal_palette = {
 -- #TODO: Move all this to a custom plugin
 local setup_editor_colors = function()
 	-- Tokens colors
+	vim.cmd("highlight @variable guifg=#ffffff")
+	vim.cmd("highlight @variable.builtin guifg=#ffffff")
 	vim.cmd("highlight @variable.member guifg=#666666")
+
+	vim.cmd("highlight @constant guifg=#777777")
 
 	vim.cmd("highlight @keyword guifg=#444444")
 	vim.cmd("highlight @keyword.operator guifg=#555555")
+	vim.cmd("highlight @keyword.function guifg=#666666")
 	vim.cmd("highlight @keyword.return guifg=#666666")
 
 	vim.cmd("highlight @punctuation.bracket guifg=#555555")
+
+	vim.cmd("highlight @constructor guifg=#888888")
 
 	vim.cmd("highlight @operator guifg=#444444")
 	vim.cmd("highlight @comment guifg=#222222")
 	vim.cmd("highlight @string guifg=#444444")
 
-	vim.cmd("highlight @tag guifg=#f1f1f1")
-	vim.cmd("highlight @tag.delimiter guifg=#f1f1f1")
+	vim.cmd("highlight @keyword.coroutine guifg=#444444")
+
+	vim.cmd("highlight @function.builtin guifg=#999999")
+	vim.cmd("highlight @function.call guifg=#999999")
+	vim.cmd("highlight @function.method.call guifg=#999999")
+
+	vim.cmd("highlight @tag guifg=#888888")
+	vim.cmd("highlight @tag.delimiter guifg=#888888")
+	vim.cmd("highlight @tag.attribute guifg=#444444")
 
 	vim.cmd("highlight @lsp.type.parameter guifg=#777777 gui=italic")
 
+	vim.cmd("highlight @type guifg=#e2e2e2")
 	vim.cmd("highlight @type.qualifier guifg=#444444")
 
 	-- Vim command line error colors
 	vim.cmd("highlight ErrorMsg guifg=#444444 guibg=#ff8989")
 
-	-- Copilot colors
-	vim.cmd("highlight CopilotSuggestion guifg=#444444 gui=italic")
-	vim.cmd("highlight CopilotAnnotation guifg=#666666 gui=italic")
-
 	-- NvimTree colors
-	vim.cmd("highlight NvimTreeFolderIcon guifg=#666666")
+	vim.cmd("highlight NvimTreeFolderIcon guifg=#555555")
 	vim.cmd("highlight NvimTreeFolderName guifg=#999999")
-	vim.cmd("highlight NvimTreeIndentMarker guifg=#333333")
+	vim.cmd("highlight NvimTreeFileIcon guifg=#444444")
+	vim.cmd("highlight NvimTreeFileName guifg=#444444")
+	vim.cmd("highlight NvimTreeIndentMarker guifg=#222222")
 	vim.cmd("highlight NvimTreeNormal guibg=NONE guifg=#555555")
 	vim.cmd("highlight NvimTreeVertSplit guibg=NONE guifg=NONE")
 

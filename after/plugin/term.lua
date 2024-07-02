@@ -9,7 +9,7 @@ end
 require("toggleterm").setup({
 	size = get_size,
 	open_mapping = [[<c-\>]],
-	direction = "vertical",
+	direction = "horizontal",
 	start_in_insert = true,
 	highlights = {
 		Normal = {

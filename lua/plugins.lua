@@ -9,7 +9,6 @@ return require("packer").startup(function(use)
 	use("nvim-tree/nvim-web-devicons")
 
 	-- Utils plugins
-	use("windwp/nvim-ts-autotag")
 	use("norcalli/nvim-colorizer.lua")
 	use("mg979/vim-visual-multi")
 
@@ -36,8 +35,11 @@ return require("packer").startup(function(use)
 
 	-- Git plugins
 	use("tpope/vim-fugitive")
-	use("lewis6991/gitsigns.nvim")
 	use("sindrets/diffview.nvim")
+	use({
+		"lewis6991/gitsigns.nvim",
+		tag = "v0.7",
+	})
 
 	-- Theme plugins
 	use("akinsho/bufferline.nvim")
@@ -48,7 +50,7 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	-- Github Copilot plugins
+	-- AI Assistant
 	use({
 		"github/copilot.vim",
 		tag = "v1.18.0",
@@ -80,12 +82,14 @@ return require("packer").startup(function(use)
 
 	-- Formatting plugins
 	use("jose-elias-alvarez/null-ls.nvim")
-	use("MunifTanjim/prettier.nvim")
 	use({
 		"lukas-reineke/indent-blankline.nvim",
 		tag = "v2.20.8",
 	})
 
 	-- Tree
-	use("nvim-tree/nvim-tree.lua")
+	use({
+		"nvim-tree/nvim-tree.lua",
+		tag = "v1.3.3",
+	})
 end)
