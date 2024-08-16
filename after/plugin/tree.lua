@@ -31,8 +31,8 @@ require("nvim-tree").setup({
 		sorter = "case_sensitive",
 	},
 	view = {
-		width = 40,
-		side = "right",
+		width = 35,
+		side = "left",
 	},
 	update_focused_file = {
 		enable = true,
@@ -67,7 +67,7 @@ require("nvim-tree").setup({
 					staged = "",
 					unmerged = "",
 					renamed = "󰁕",
-					untracked = "",
+					untracked = "",
 					deleted = "",
 					ignored = "",
 				},

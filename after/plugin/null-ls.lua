@@ -23,7 +23,6 @@ null_ls.setup({
 			vim.api.nvim_create_autocmd(event, {
 				buffer = bufnr,
 				group = group,
-				desc = "[null_ls] format on save",
 				callback = function()
 					vim.lsp.buf.format({
 						bufnr = bufnr,

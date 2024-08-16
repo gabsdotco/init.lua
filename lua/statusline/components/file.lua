@@ -5,5 +5,9 @@ function get_file_component()
 		file = "[no name]"
 	end
 
+	if string.match(file, "NvimTree") then
+		file = ""
+	end
+
 	return file
 end
