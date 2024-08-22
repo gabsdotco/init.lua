@@ -68,13 +68,25 @@ return require("packer").startup(function(use)
 	})
 
 	use({
+		"pmizio/typescript-tools.nvim",
+		requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+	})
+
+	use({
 		"L3MON4D3/LuaSnip",
 		tag = "v2.*",
 		run = "make install_jsregexp",
 	})
 
 	-- Formatting plugins
-	use("jose-elias-alvarez/null-ls.nvim")
+	use({
+		"nvimtools/none-ls.nvim",
+		requires = {
+			"jay-babu/mason-null-ls.nvim",
+			"nvimtools/none-ls-extras.nvim",
+		},
+	})
+
 	use({
 		"lukas-reineke/indent-blankline.nvim",
 		tag = "v2.20.8",
