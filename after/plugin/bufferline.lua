@@ -2,7 +2,6 @@ local bufferline = require("bufferline")
 
 bufferline.setup({
 	highlights = {
-		-- plain
 		fill = {
 			fg = "#555555",
 			bg = "NONE",
@@ -30,7 +29,6 @@ bufferline.setup({
 			fg = "#555555",
 			bg = "NONE",
 		},
-		-- selected
 		buffer_selected = {
 			fg = "#ffffff",
 			bg = "NONE",
@@ -41,7 +39,6 @@ bufferline.setup({
 			fg = "#ffffff",
 			bg = "NONE",
 		},
-		-- visible
 		buffer_visible = {
 			fg = "#555555",
 			bg = "NONE",
@@ -50,6 +47,30 @@ bufferline.setup({
 		},
 		close_button_visible = {
 			fg = "#555555",
+			bg = "NONE",
+		},
+		offset_separator = {
+			fg = "NONE",
+			bg = "NONE",
+		},
+		indicator_visible = {
+			fg = "NONE",
+			bg = "NONE",
+		},
+		indicator_selected = {
+			fg = "NONE",
+			bg = "NONE",
+		},
+		modified = {
+			fg = "#555555",
+			bg = "NONE",
+		},
+		modified_visible = {
+			fg = "#555555",
+			bg = "NONE",
+		},
+		modified_selected = {
+			fg = "#ffffff",
 			bg = "NONE",
 		},
 	},
