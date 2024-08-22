@@ -1,13 +1,29 @@
 local null_ls = require("null-ls")
 
+local formatting = null_ls.builtins.formatting
+
+local function has_eslint_config(utils)
+	return utils.root_has_file({
+		".eslintrc",
+		".eslintrc.cjs",
+		".eslintrc.js",
+		".eslintrc.json",
+		"eslint.config.cjs",
+		"eslint.config.js",
+		"eslint.config.mjs",
+	})
+end
+
 local sources = {
-	null_ls.builtins.formatting.prettier,
-	null_ls.builtins.formatting.stylua,
-	null_ls.builtins.diagnostics.eslint,
-	null_ls.builtins.code_actions.eslint,
+	formatting.prettierd,
+	formatting.stylua,
+	require("none-ls.code_actions.eslint_d").with({ condition = has_eslint_config }),
+	require("none-ls.diagnostics.eslint_d").with({ condition = has_eslint_config }),
+	require("none-ls.formatting.eslint_d").with({ condition = has_eslint_config }),
 }
 
-local group = vim.api.nvim_create_augroup("null_ls_format_on_save", { clear = false })
+local group = vim.api.nvim_create_augroup("LspFormatting", {})
+
 local event = "BufWritePre"
 local async = event == "BufWritePost"
 
