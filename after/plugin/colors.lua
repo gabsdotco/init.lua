@@ -135,33 +135,10 @@ local setup_editor_colors = function()
 	vim.cmd("highlight GitSignsDelete guifg=#ff8989")
 
 	-- Telescope colors
-	vim.cmd("highlight TelescopeBorder guibg=#0c0c0c guifg=#0c0c0c")
-	vim.cmd("highlight TelescopeNormal guibg=#0c0c0c")
-	vim.cmd("highlight TelescopeSelection guibg=NONE guifg=#f1f1f1")
-	vim.cmd("highlight TelescopeSelectionCaret guibg=NONE guifg=#f1f1f1")
-	vim.cmd("highlight TelescopeMatching guibg=NONE guifg=#f1f1f1")
-
-	vim.cmd("highlight TelescopePromptPrefix guibg=#222222 guifg=#e2e2e2")
-	vim.cmd("highlight TelescopePromptNormal guibg=#222222 guifg=#e2e2e2")
-	vim.cmd("highlight TelescopePromptTitle guibg=#e2e2e2 guifg=#0f0f0f")
-	vim.cmd("highlight TelescopePromptBorder guibg=#222222 guifg=#111111")
-	vim.cmd("highlight TelescopePromptCounter guibg=#222222 guifg=#222222")
-
-	vim.cmd("highlight TelescopeResultsNormal guibg=#181818 guifg=#666666")
-	vim.cmd("highlight TelescopeResultsTitle guibg=#181818 guifg=#181818")
-	vim.cmd("highlight TelescopeResultsBorder guibg=#181818 guifg=#181818")
-
-	vim.cmd("highlight TelescopePreviewMatch guibg=#e2e2e2 guifg=#0c0c0c")
-
-	vim.cmd("highlight TelescopePreviewNormal guibg=NONE guifg=#e2e2e2")
-	vim.cmd("highlight TelescopePreviewTitle guibg=#e2e2e2 guifg=#0c0c0c")
-	vim.cmd("highlight TelescopePreviewBorder guibg=NONE guifg=#0c0c0c")
+	vim.cmd("highlight TelescopeBorder guibg=NONE guifg=#333333")
 
 	-- Noice colors
-	vim.cmd("highlight NoiceMini guibg=#222222 guifg=#ffffff")
-
 	vim.cmd("highlight NoiceCmdlineIcon guibg=NONE guifg=#ffffff")
-
 	vim.cmd("highlight NoiceCmdlinePopup guibg=NONE guifg=#666666")
 	vim.cmd("highlight NoiceCmdlinePopupBorderInput guibg=NONE guifg=#444444")
 	vim.cmd("highlight NoiceCmdlinePopupBorder guibg=NONE guifg=#222222")
