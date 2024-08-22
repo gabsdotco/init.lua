@@ -15,10 +15,11 @@ require("noice").setup({
 			icons = false,
 		},
 	},
-	routes = {
-		{
-			filter = { event = "lsp", kind = "progress" },
-			opts = { skip = true },
+	views = {
+		mini = {
+			win_options = {
+				winblend = 0,
+			},
 		},
 	},
 })
