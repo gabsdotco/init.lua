@@ -2,27 +2,43 @@ local telescope = require("telescope")
 local builtin = require("telescope.builtin")
 local actions = require("telescope.actions")
 
+local layout_strategies = require("telescope.pickers.layout_strategies")
+
+layout_strategies.vertical_fused = function(picker, max_columns, max_lines, layout_config)
+	local layout = layout_strategies.vertical(picker, max_columns, max_lines, layout_config)
+
+	layout.prompt.title = ""
+	layout.results.title = ""
+
+	if layout.preview then
+		layout.preview.title = ""
+		layout.preview.height = layout.preview.height + 1
+		layout.preview.borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" }
+
+		layout.results.borderchars = { "─", "│", "─", "│", "├", "┤", "┤", "├" }
+	else
+		layout.results.borderchars = { "─", "│", "─", "│", "╭", "╮", "┤", "├" }
+	end
+
+	layout.results.height = layout.results.height + 1
+
+	layout.prompt.borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" }
+
+	return layout
+end
+
 -- Telescope Setup
 telescope.setup({
 	defaults = {
 		initial_mode = "insert",
-		layout_strategy = "vertical",
+		layout_strategy = "vertical_fused",
 		layout_config = {
-			horizontal = {
-				width = 0.8,
-				height = 0.7,
-				preview_cutoff = 80,
-				prompt_position = "top",
-			},
+			preview_cutoff = 1,
 			width = 0.45,
-			height = 0.5,
-			preview_cutoff = 80,
-			prompt_position = "top",
+			height = 0.6,
 		},
 		prompt_prefix = " ❯ ",
 		selection_caret = "❯ ",
-		border = {},
-		borderchars = { " " },
 		path_display = { "truncate" },
 		winblend = 0,
 		color_devicons = false,
@@ -40,28 +56,13 @@ telescope.setup({
 		},
 	},
 	pickers = {
-		find_files = {
-			layout_config = {
-				preview_cutoff = 80,
-			},
-		},
-		live_grep = {
-			layout_config = {
-				preview_cutoff = 40,
-				height = 0.55,
-			},
-		},
 		git_status = {
 			initial_mode = "normal",
-			layout_config = {
-				preview_cutoff = 40,
-				height = 0.55,
-			},
 		},
 	},
 	extensions = {
 		file_browser = {
-			previewer = false,
+			previewer = true,
 			grouped = true,
 			hijack_netrw = false,
 			hidden = true,
