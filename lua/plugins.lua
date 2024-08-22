@@ -12,34 +12,26 @@ return require("packer").startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 	use("mg979/vim-visual-multi")
 
-	use({
-		"akinsho/toggleterm.nvim",
-		tag = "*",
-	})
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
+	use({ "lukas-reineke/indent-blankline.nvim", tag = "v2.20.8" })
 
 	-- Telescope plugins
 	use("nvim-lua/plenary.nvim")
 	use("nvim-telescope/telescope-file-browser.nvim")
-	use({
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.x",
-	})
+
+	use({ "nvim-telescope/telescope.nvim", tag = "0.1.x" })
 
 	-- Treesitter plugins
 	use("tpope/vim-commentary")
 	use("nvim-treesitter/playground")
-	use({
-		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
-	})
+
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
 	-- Git plugins
 	use("tpope/vim-fugitive")
 	use("sindrets/diffview.nvim")
-	use({
-		"lewis6991/gitsigns.nvim",
-		tag = "v0.7",
-	})
+
+	use({ "lewis6991/gitsigns.nvim", tag = "v0.7" })
 
 	-- Theme plugins
 	use("akinsho/bufferline.nvim")
@@ -51,10 +43,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- AI Assistant
-	use({
-		"github/copilot.vim",
-		tag = "v1.18.0",
-	})
+	use({ "github/copilot.vim", tag = "v1.18.0" })
 
 	-- LSP plugins
 	use({ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" })
@@ -87,16 +76,8 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	use({
-		"lukas-reineke/indent-blankline.nvim",
-		tag = "v2.20.8",
-	})
-
 	-- Tree
-	use({
-		"nvim-tree/nvim-tree.lua",
-		tag = "v1.3.3",
-	})
+	use({ "nvim-tree/nvim-tree.lua", tag = "v1.3.3" })
 
 	-- Cmdline
 	use({
