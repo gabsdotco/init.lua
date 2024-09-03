@@ -13,5 +13,5 @@ function get_branch_component()
 		return " " .. branch
 	end
 
-	return ""
+	return " No branch"
 end
