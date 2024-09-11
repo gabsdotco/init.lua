@@ -17,10 +17,10 @@ end
 local sources = {
 	formatting.prettierd,
 	formatting.stylua,
-	require("none-ls.code_actions.eslint_d").with({ condition = has_eslint_config }),
-	require("none-ls.diagnostics.eslint_d").with({
+	require("none-ls.code_actions.eslint").with({ condition = has_eslint_config }),
+	require("none-ls.diagnostics.eslint").with({
 		condition = has_eslint_config,
-		diagnostics_format = "[eslint] - #{m} (#{c})",
+		diagnostics_format = "[eslint] #{m}",
 	}),
 }
 
