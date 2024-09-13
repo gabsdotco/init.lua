@@ -51,12 +51,3 @@ null_ls.setup({
 		end
 	end,
 })
-
-vim.keymap.set("n", "<leader>f", function()
-	vim.lsp.buf.format({
-		timeout_ms = 2000,
-		bufnr = vim.api.nvim_get_current_buf(),
-	})
-
-	vim.api.nvim_command("write")
-end)
