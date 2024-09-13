@@ -234,13 +234,6 @@ _G.packer_plugins = {
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/typescript-tools.nvim",
     url = "https://github.com/pmizio/typescript-tools.nvim"
   },
-  ["ultimate-autopair.nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/gabs/.local/share/nvim/site/pack/packer/opt/ultimate-autopair.nvim",
-    url = "https://github.com/altermo/ultimate-autopair.nvim"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/gabs/.local/share/nvim/site/pack/packer/start/vim-commentary",
@@ -259,14 +252,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'ultimate-autopair.nvim'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au CmdlineEnter * ++once lua require("packer.load")({'ultimate-autopair.nvim'}, { event = "CmdlineEnter *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
