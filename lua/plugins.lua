@@ -14,6 +14,13 @@ return require("packer").startup(function(use)
 
 	use({ "akinsho/toggleterm.nvim", tag = "*" })
 	use({ "lukas-reineke/indent-blankline.nvim", tag = "v2.20.8" })
+	use({ "nvim-pack/nvim-spectre" })
+
+	use({
+		"altermo/ultimate-autopair.nvim",
+		event = { "InsertEnter", "CmdlineEnter" },
+		branch = "v0.6",
+	})
 
 	-- Telescope plugins
 	use("nvim-lua/plenary.nvim")
