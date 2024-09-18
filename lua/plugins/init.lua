@@ -8,6 +8,5 @@ return {
 	{ "tpope/vim-commentary" },
 	{ "norcalli/nvim-colorizer.lua" },
 	{ "mg979/vim-visual-multi" },
-
 	{ "github/copilot.vim", version = "1.18.0" },
 }
