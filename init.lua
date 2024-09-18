@@ -1,4 +1,2 @@
-require("plugins")
-require("remap")
-require("set")
+require("config.lazy")
 require("statusline")
