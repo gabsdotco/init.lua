@@ -2,6 +2,10 @@ return {
 	"lewis6991/gitsigns.nvim",
 	version = "0.7",
 	opts = {
+		signcolumn = true,
+		numhl = false,
+		linehl = false,
+		word_diff = false,
 		current_line_blame = true,
 		signs = {
 			add = { hl = "GitSignsAdd", text = "┃", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
@@ -31,9 +35,5 @@ return {
 			},
 			untracked = { hl = "GitSignsAdd", text = "┇", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
 		},
-		signcolumn = true,
-		numhl = false,
-		linehl = false,
-		word_diff = false,
 	},
 }

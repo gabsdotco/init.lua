@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 -- Basic Remaps
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -12,23 +10,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Copilot Remaps
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-
--- NvimTree Remaps
-vim.keymap.set("n", "<C-t>", ":NvimTreeToggle<CR>", {})
-
--- Tabs Remaps
-vim.keymap.set("n", "<C-q>", function()
-	vim.cmd("bd")
-	vim.cmd("bprev")
-end, {})
-
-vim.keymap.set("n", "<C-l>", function()
-	vim.cmd("bnext")
-end, {})
-
-vim.keymap.set("n", "<C-h>", function()
-	vim.cmd("bprev")
-end, {})
 
 -- Split Remaps
 vim.keymap.set("n", "<S-q>", function()

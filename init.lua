@@ -1,2 +1,2 @@
 require("config.lazy")
-require("statusline")
+require("custom.statusline")

@@ -1,5 +1,18 @@
+local function has_eslint_config(utils)
+	return utils.root_has_file({
+		".eslintrc",
+		".eslintrc.cjs",
+		".eslintrc.js",
+		".eslintrc.json",
+		"eslint.config.cjs",
+		"eslint.config.js",
+		"eslint.config.mjs",
+	})
+end
+
 return {
 	"nvimtools/none-ls.nvim",
+	lazy = false,
 	dependencies = {
 		"jay-babu/mason-null-ls.nvim",
 		"nvimtools/none-ls-extras.nvim",
@@ -8,18 +21,6 @@ return {
 		local null_ls = require("null-ls")
 
 		local formatting = null_ls.builtins.formatting
-
-		local function has_eslint_config(utils)
-			return utils.root_has_file({
-				".eslintrc",
-				".eslintrc.cjs",
-				".eslintrc.js",
-				".eslintrc.json",
-				"eslint.config.cjs",
-				"eslint.config.js",
-				"eslint.config.mjs",
-			})
-		end
 
 		local sources = {
 			formatting.prettierd,

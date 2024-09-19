@@ -1,5 +1,26 @@
 return {
   "akinsho/bufferline.nvim",
+  lazy = false,
+  keys = {
+    {
+      "<C-q>",
+      function()
+        vim.cmd("bd")
+        vim.cmd("bprev")
+      end,
+      desc = "Kill Buffer",
+    },
+    {
+      "<C-l>",
+      "<cmd>bnext<cr>",
+      desc = "Next Buffer",
+    },
+    {
+      "<C-h>",
+      "<cmd>bprev<cr>",
+      desc = "Previous Buffer",
+    },
+  },
   opts = {
     highlights = {
       fill = {
