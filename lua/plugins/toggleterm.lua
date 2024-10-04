@@ -4,8 +4,8 @@ return {
 		open_mapping = [[<c-\>]],
 		direction = "float",
 		float_opts = {
-			width = 110,
-			height = 30,
+			width = 125,
+			height = 35,
 			border = "curved",
 			titli_pos = "center",
 		},
