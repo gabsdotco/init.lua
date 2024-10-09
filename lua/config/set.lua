@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 vim.opt.nu = true
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
