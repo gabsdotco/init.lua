@@ -5,7 +5,7 @@ return {
 	-- LSP plugins
 	{ "L3MON4D3/LuaSnip", version = "2.*", build = "make install_jsregexp" },
 	-- Utils
-	{ "tpope/vim-commentary" },
+	{ "folke/ts-comments.nvim", event = "VeryLazy", enabled = vim.fn.has("nvim-0.10.0") == 1 },
 	{ "norcalli/nvim-colorizer.lua", event = "BufEnter", opts = { "*" } },
 	{ "mg979/vim-visual-multi" },
 	{ "github/copilot.vim", version = "1.18.0" },
