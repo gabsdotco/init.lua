@@ -1,15 +1,3 @@
-local function has_eslint_config(utils)
-	return utils.root_has_file({
-		".eslintrc",
-		".eslintrc.cjs",
-		".eslintrc.js",
-		".eslintrc.json",
-		"eslint.config.cjs",
-		"eslint.config.js",
-		"eslint.config.mjs",
-	})
-end
-
 return {
 	"nvimtools/none-ls.nvim",
 	lazy = false,
@@ -25,9 +13,8 @@ return {
 		local sources = {
 			formatting.prettierd,
 			formatting.stylua,
-			require("none-ls.code_actions.eslint_d").with({ condition = has_eslint_config }),
+			require("none-ls.code_actions.eslint_d"),
 			require("none-ls.diagnostics.eslint_d").with({
-				condition = has_eslint_config,
 				diagnostics_format = "[eslint] #{m}",
 			}),
 		}
