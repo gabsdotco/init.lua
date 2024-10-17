@@ -6,7 +6,6 @@ return {
 		float_opts = {
 			width = 125,
 			height = 35,
-			border = "curved",
 			titli_pos = "center",
 		},
 		start_in_insert = true,
@@ -15,7 +14,7 @@ return {
 				guibg = "NONE",
 			},
 			FloatBorder = {
-				guifg = "#333333",
+				guifg = "#222222",
 				guibg = "NONE",
 			},
 		},
