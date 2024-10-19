@@ -13,6 +13,7 @@ return {
 	"williamboman/mason.nvim",
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
 		local handlers = {
@@ -20,8 +21,21 @@ return {
 			["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
 		}
 
-		require("mason").setup({})
-		require("mason-lspconfig").setup({
+		local mason = require("mason")
+		local mason_lspconfig = require("mason-lspconfig")
+		local mason_tool_installer = require("mason-tool-installer")
+
+		mason.setup({
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		})
+
+		mason_lspconfig.setup({
 			ensure_installed = { "ts_ls", "lua_ls" },
 			handlers = {
 				function(server_name)
@@ -34,6 +48,14 @@ return {
 						handlers = handlers,
 					})
 				end,
+			},
+		})
+
+		mason_tool_installer.setup({
+			ensure_installed = {
+				"stylua",
+				"prettierd",
+				"eslint_d",
 			},
 		})
 	end,
