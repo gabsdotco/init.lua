@@ -1,5 +1,5 @@
 vim.opt.nu = true
-vim.opt.statuscolumn = "%l%r %s " -- %s: status, %l: line, %r: relative line
+vim.opt.statuscolumn = "%s%l%r " -- %s: status, %l: line, %r: relative line
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.tabstop = 2
