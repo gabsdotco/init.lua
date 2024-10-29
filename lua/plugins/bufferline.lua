@@ -102,7 +102,7 @@ return {
       show_buffer_icons = false,
       left_trunc_marker = "...",
       right_trunc_marker = "...",
-      buffer_close_icon = "",
+      buffer_close_icon = "",
       show_duplicate_prefix = true,
       always_show_bufferline = false,
       separator_style = { "", "" },
