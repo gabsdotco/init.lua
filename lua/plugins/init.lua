@@ -7,5 +7,4 @@ return {
 	-- Utils
 	{ "norcalli/nvim-colorizer.lua", event = "BufEnter", opts = { "*" } },
 	{ "mg979/vim-visual-multi" },
-	{ "github/copilot.vim", version = "1.18.0" },
 }

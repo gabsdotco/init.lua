@@ -47,7 +47,7 @@ return {
 		vim.cmd("highlight @constructor guifg=#888888")
 
 		vim.cmd("highlight @operator guifg=#444444")
-		vim.cmd("highlight @comment guifg=#222222")
+		vim.cmd("highlight @comment guifg=#333333")
 		vim.cmd("highlight @string guifg=#444444")
 
 		vim.cmd("highlight @keyword.coroutine guifg=#444444")

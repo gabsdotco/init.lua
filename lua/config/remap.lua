@@ -7,10 +7,6 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
--- Copilot Remaps
-vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-
 -- Split Remaps
 vim.keymap.set("n", "<S-q>", function()
 	vim.cmd("bd")
@@ -24,7 +20,6 @@ vim.keymap.set("n", "<leader>k", "<C-w>k", {})
 
 vim.keymap.set("n", "<leader>.", ":vertical resize +15<CR>", {})
 vim.keymap.set("n", "<leader>,", ":vertical resize -15<CR>", {})
-vim.keymap.set("n", "<leader>=", "<C-w>=", {})
 
 -- Clipboard Remaps
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
@@ -40,6 +35,6 @@ vim.keymap.set({ "n", "v", "i" }, "<Right>", "<Nop>", {})
 vim.keymap.set("n", "U", "<C-r>")
 
 -- Clear search highlights
-vim.keymap.set("n", "<leader><space>", function()
+vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("nohlsearch")
 end, {})

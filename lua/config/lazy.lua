@@ -1,12 +1,5 @@
--- Setup remaps and options before loading plugins
-require("config.remap")
-require("config.set")
-
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -32,6 +25,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+
+-- Setup remaps and options before loading plugins
+require("config.remap")
+require("config.set")
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
