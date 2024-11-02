@@ -93,5 +93,12 @@ return {
 		options.on_attach = my_on_attach
 
 		require("nvim-tree").setup(options)
+
+		-- closes nvim-tree if it's the last open buffer
+		vim.api.nvim_create_autocmd({ "QuitPre" }, {
+			callback = function()
+				vim.cmd("NvimTreeClose")
+			end,
+		})
 	end,
 }
