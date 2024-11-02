@@ -8,7 +8,9 @@ return {
 				{ name = "nvim_lsp" },
 			},
 			completion = {
-				autocomplete = false,
+				autocomplete = {
+					require("cmp.types").cmp.TriggerEvent.TextChanged,
+				},
 			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-e>"] = cmp.mapping.complete(),

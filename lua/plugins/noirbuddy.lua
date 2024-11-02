@@ -35,6 +35,8 @@ return {
 		vim.cmd("highlight @variable.builtin guifg=#ffffff")
 		vim.cmd("highlight @variable.member guifg=#666666")
 
+		vim.cmd("highlight @lsp.type.function guifg=#adb5bd")
+
 		vim.cmd("highlight @constant guifg=#777777")
 
 		vim.cmd("highlight @keyword guifg=#444444")
@@ -48,13 +50,18 @@ return {
 
 		vim.cmd("highlight @operator guifg=#444444")
 		vim.cmd("highlight @comment guifg=#333333")
+
 		vim.cmd("highlight @string guifg=#444444")
+		vim.cmd("highlight @boolean guifg=#444444")
+		vim.cmd("highlight @number guifg=#444444")
+
+		vim.cmd("highlight @property guifg=#777777")
 
 		vim.cmd("highlight @keyword.coroutine guifg=#444444")
 
-		vim.cmd("highlight @function.builtin guifg=#999999")
-		vim.cmd("highlight @function.call guifg=#999999")
-		vim.cmd("highlight @function.method.call guifg=#999999")
+		vim.cmd("highlight @function.builtin guifg=#777777")
+		vim.cmd("highlight @function.call guifg=#777777")
+		vim.cmd("highlight @function.method.call guifg=#777777")
 
 		vim.cmd("highlight @tag guifg=#888888")
 		vim.cmd("highlight @tag.delimiter guifg=#888888")
@@ -79,11 +86,11 @@ return {
 
 		vim.cmd("highlight NvimTreeCursorLine guibg=#171717 guifg=NONE gui=bold")
 
-		vim.cmd("highlight NvimTreeGitDirty guifg=#f0c674")
+		vim.cmd("highlight NvimTreeGitDirty guifg=#f7dba7")
 		vim.cmd("highlight NvimTreeGitNew guifg=#9bcea5")
 		vim.cmd("highlight NvimTreeGitStaged guifg=#89B4FA")
 		vim.cmd("highlight NvimTreeGitUnstaged guifg=#addef8")
-		vim.cmd("highlight NvimTreeGitUntracked guifg=#f0c674")
+		vim.cmd("highlight NvimTreeGitUntracked guifg=#f7dba7")
 		vim.cmd("highlight NvimTreeGitRenamed guifg=#f2ff8a")
 		vim.cmd("highlight NvimTreeGitIgnored guifg=#333333")
 		vim.cmd("highlight NvimTreeGitMerge guifg=#A978F6")
@@ -145,7 +152,7 @@ return {
 
 		-- Gitsigns colors
 		vim.cmd("highlight GitSignsAdd guifg=#9bcea5")
-		vim.cmd("highlight GitSignsChange guifg=#f0c674")
+		vim.cmd("highlight GitSignsChange guifg=#f7dba7")
 		vim.cmd("highlight GitSignsDelete guifg=#ff8989")
 
 		-- Telescope colors
