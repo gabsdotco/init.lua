@@ -4,6 +4,7 @@ end
 
 highlight("StatusMode", "#000000", "#ffffff", "bold")
 highlight("StatusBranch", "#ffffff", "NONE", "NONE")
+highlight("StatusBranchChanges", "#444444", "NONE", "NONE")
 highlight("StatusFile", "#444444", "NONE", "NONE")
 highlight("StatusSaved", "#adb5bd", "NONE", "NONE")
 highlight("StatusWarnings", "#f0c674", "NONE", "NONE")
