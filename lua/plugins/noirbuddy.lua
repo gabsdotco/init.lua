@@ -131,8 +131,8 @@ return {
 		vim.cmd("highlight LineNr guifg=#2b2b2b")
 
 		vim.cmd("highlight Cursor guibg=NONE")
-		vim.cmd("highlight CursorLine guibg=#181818 guifg=NONE")
-		vim.cmd("highlight CursorLineNr guibg=NONE guifg=#666666 gui=bold")
+		vim.cmd("highlight CursorLine guibg=NONE guifg=NONE")
+		vim.cmd("highlight CursorLineNr guibg=NONE guifg=#ffffff gui=bold")
 
 		-- Split colors
 		vim.cmd("highlight VertSplit guibg=NONE guifg=#101010")
