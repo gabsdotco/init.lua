@@ -54,6 +54,7 @@ vim.keymap.set("n", "<leader>k", "<C-w>k", {})
 
 vim.keymap.set("n", "<leader>.", ":vertical resize +15<CR>", {})
 vim.keymap.set("n", "<leader>,", ":vertical resize -15<CR>", {})
+vim.keymap.set("n", "<leader>=", "<C-w>=", {})
 
 -- Clipboard Remaps
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
@@ -69,7 +70,7 @@ vim.keymap.set({ "n", "v", "i" }, "<Right>", "<Nop>", {})
 vim.keymap.set("n", "U", "<C-r>")
 
 -- Clear search highlights
-vim.keymap.set("n", "<leader><leader>", function()
+vim.keymap.set("n", "<leader><space>", function()
 	vim.cmd("nohlsearch")
 end, {})
 

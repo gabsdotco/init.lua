@@ -10,8 +10,8 @@ return {
 			sorter = "case_sensitive",
 		},
 		view = {
-			width = 37,
-			side = "left",
+			width = 45,
+			side = "right",
 		},
 		update_focused_file = {
 			enable = true,
