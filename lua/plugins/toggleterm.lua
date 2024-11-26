@@ -4,8 +4,8 @@ return {
 		open_mapping = [[<c-\>]],
 		direction = "float",
 		float_opts = {
-			width = 125,
-			height = 35,
+			width = 140,
+			height = 40,
 			titli_pos = "center",
 		},
 		start_in_insert = true,
