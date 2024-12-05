@@ -10,7 +10,7 @@ return {
 			sorter = "case_sensitive",
 		},
 		view = {
-			width = 45,
+			width = 40,
 			side = "right",
 		},
 		update_focused_file = {
@@ -30,7 +30,7 @@ return {
 				},
 				web_devicons = {
 					file = {
-						enable = true,
+						enable = false,
 						color = false,
 					},
 					folder = {
@@ -39,8 +39,18 @@ return {
 					},
 				},
 				glyphs = {
-					default = "",
+					default = "",
 					symlink = "",
+					folder = {
+						arrow_closed = "", -- Closed folder arrow
+						arrow_open = "", -- Open folder arrow
+						default = "", -- Default folder
+						open = "", -- Open folder
+						empty = "", -- Empty folder
+						empty_open = "", -- Open empty folder
+						symlink = "", -- Symlink folder
+						symlink_open = "", -- Open symlink folder
+					},
 					git = {
 						unstaged = "",
 						staged = "",
