@@ -28,7 +28,6 @@ return {
 			update_in_insert = true,
 			virtual_text = {
 				spacing = 4,
-				-- min = "Warning",
 				severity = { min = vim.diagnostic.severity.WARN },
 			},
 		})

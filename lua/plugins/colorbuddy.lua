@@ -134,6 +134,17 @@ return {
 			DiagnosticSignWarn = { fg = Palette.yellow },
 			DiagnosticSignInfo = { fg = Palette.blue },
 			DiagnosticSignHint = { fg = Palette.green },
+
+			CmpItemKindFunction = { fg = Palette.pink },
+			CmpItemKindMethod = { fg = Palette.peach },
+			CmpItemKindConstant = { fg = Palette.rosewater },
+			CmpItemKindEnum = { fg = Palette.lavender },
+			CmpItemKindField = { fg = Palette.sky },
+			CmpItemKindProperty = { fg = Palette.yellow },
+			CmpItemKindVariable = { fg = Palette.red },
+			CmpItemKindSnippet = { fg = Palette.maroon },
+			CmpItemKindKeyword = { fg = Palette.overlay2 },
+			CmpItemKindText = { fg = Palette.blue },
 		}
 
 		-- apply highlights

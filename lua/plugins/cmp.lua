@@ -7,6 +7,15 @@ return {
 			sources = {
 				{ name = "nvim_lsp" },
 			},
+			sorting = {
+				comparators = {
+					cmp.config.compare.offset,
+					cmp.config.compare.exact,
+					cmp.config.compare.score,
+					cmp.config.compare.recently_used,
+					cmp.config.compare.kind,
+				},
+			},
 			completion = {
 				autocomplete = {
 					require("cmp.types").cmp.TriggerEvent.TextChanged,
