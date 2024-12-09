@@ -7,7 +7,7 @@ require("custom.statusline.components.file")
 require("custom.statusline.utils")
 require("custom.statusline.colors")
 
-function status_line()
+function StatusLine()
 	local mode = get_mode_component()
 	local branch = get_branch_component()
 	local changes = get_branch_changes_component()
@@ -35,8 +35,8 @@ vim.o.laststatus = 3
 vim.cmd([[
   augroup Statusline
     au!
-    au WinEnter,BufEnter * setlocal statusline=%!v:lua.status_line()
-    au WinLeave,BufLeave * setlocal statusline=%!v:lua.status_line()
-    au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.status_line()
+    au WinEnter,BufEnter * setlocal statusline=%!v:lua.StatusLine()
+    au WinLeave,BufLeave * setlocal statusline=%!v:lua.StatusLine()
+    au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.StatusLine()
   augroup END
 ]])
