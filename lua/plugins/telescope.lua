@@ -2,8 +2,9 @@ return {
 	"nvim-telescope/telescope.nvim",
 	version = "0.1.8",
 	dependencies = {
-		"nvim-telescope/telescope-file-browser.nvim",
 		"nvim-lua/plenary.nvim",
+		"nvim-telescope/telescope-file-browser.nvim",
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
 	config = function()
 		local telescope = require("telescope")
@@ -69,6 +70,7 @@ return {
 				},
 			},
 			extensions = {
+				fzf = {},
 				file_browser = {
 					previewer = true,
 					grouped = true,
@@ -82,6 +84,7 @@ return {
 		})
 
 		telescope.load_extension("file_browser")
+		telescope.load_extension("fzf")
 
 		-- Telescope Remaps
 		vim.keymap.set("n", "<C-p>", builtin.find_files, {})
