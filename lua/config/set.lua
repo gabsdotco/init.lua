@@ -1,4 +1,4 @@
-vim.opt.nu = true
+vim.opt.nu = false
 vim.opt.statuscolumn = "%s%l%r " -- %s: status, %l: line, %r: relative line
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
@@ -6,7 +6,7 @@ vim.opt.tabstop = 2
 vim.opt.expandtab = true
 vim.opt.wrap = false
 vim.opt.smartindent = true
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 24
 vim.opt.relativenumber = false
 vim.opt.showtabline = 1
 vim.opt.cursorline = true
