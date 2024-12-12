@@ -8,7 +8,7 @@ return {
 		local highlights = {
 			Normal = { fg = Palette.noir_3, bg = Palette.none },
 			NonText = { fg = Palette.noir_2, bg = Palette.none },
-			Comment = { fg = Palette.noir_5 },
+			Comment = { fg = Palette.noir_5, style = "italic" },
 			Constant = { fg = Palette.noir_2 },
 			Title = { fg = Palette.text },
 			String = { fg = Palette.noir_5 },
