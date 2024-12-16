@@ -13,6 +13,7 @@ return {
 			Title = { fg = Palette.text },
 			String = { fg = Palette.noir_5 },
 			Character = { fg = Palette.noir_3 },
+			Directory = { fg = Palette.noir_4 },
 			Number = { fg = Palette.noir_5 },
 			Boolean = { fg = Palette.noir_5 },
 			Float = { fg = Palette.noir_5 },
