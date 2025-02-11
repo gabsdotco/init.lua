@@ -31,12 +31,4 @@ function StatusLine()
 end
 
 vim.o.laststatus = 3
-
-vim.cmd([[
-  augroup Statusline
-    au!
-    au WinEnter,BufEnter * setlocal statusline=%!v:lua.StatusLine()
-    au WinLeave,BufLeave * setlocal statusline=%!v:lua.StatusLine()
-    au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.StatusLine()
-  augroup END
-]])
+vim.o.statusline = "%!v:lua.StatusLine()"
