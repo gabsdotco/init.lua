@@ -35,10 +35,10 @@ return {
 			},
 			window = {
 				completion = cmp.config.window.bordered({
-					border = "border",
+					border = "rounded",
 				}),
 				documentation = cmp.config.window.bordered({
-					border = "border",
+					border = "rounded",
 				}),
 			},
 		})
