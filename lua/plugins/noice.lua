@@ -1,6 +1,6 @@
 return {
 	"folke/noice.nvim",
-	-- tag = "v4.5.1",
+	tag = "v4.5.1",
 	dependencies = {
 		"MunifTanjim/nui.nvim",
 	},
