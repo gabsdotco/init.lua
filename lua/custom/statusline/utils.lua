@@ -1,4 +1,6 @@
-function get_component(tag, value)
+M = {}
+
+M.get_component = function(tag, value)
 	if value == "" then
 		return ""
 	end
@@ -6,6 +8,8 @@ function get_component(tag, value)
 	return "%#" .. tag .. "# " .. value .. " "
 end
 
-function get_component_separator()
+M.get_component_separator = function()
 	return "%="
 end
+
+return M

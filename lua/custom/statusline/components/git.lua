@@ -1,5 +1,7 @@
-function get_branch_component()
-	local branch = vim.b.gitsigns_head
+M = {}
+
+M.get_branch_component = function()
+	local branch = vim.g.gitsigns_head
 
 	if branch == nil then
 		return "  No branch"
@@ -16,7 +18,7 @@ function get_branch_component()
 	return "  No branch"
 end
 
-function get_branch_changes_component()
+M.get_branch_changes_component = function()
 	local statuses = vim.b.gitsigns_status_dict
 
 	local changes = 0
@@ -31,3 +33,5 @@ function get_branch_changes_component()
 
 	return "%#GitSignsChange#~" .. changes .. " %#GitSignsAdd#+" .. additions .. " %#GitSignsDelete#-" .. deletions
 end
+
+return M

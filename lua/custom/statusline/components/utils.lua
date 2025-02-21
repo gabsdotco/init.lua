@@ -1,3 +1,5 @@
+M = {}
+
 local function get_mode_group(mode)
 	local groups = {
 		n = "n",
@@ -23,7 +25,28 @@ local function get_mode_group(mode)
 	return group:upper()
 end
 
-function get_mode_component()
+M.get_mode_component = function()
 	local mode = vim.api.nvim_get_mode().mode
 	return get_mode_group(mode)
 end
+
+M.get_saved_component = function()
+	local saved = vim.bo.modified and "*" or ""
+	return saved
+end
+
+M.get_file_component = function()
+	local file = vim.fn.expand("%:t")
+
+	if file == "" then
+		file = "[no name]"
+	end
+
+	if string.match(file, "NvimTree") then
+		file = ""
+	end
+
+	return file
+end
+
+return M
