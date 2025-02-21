@@ -1,3 +1,5 @@
+require("config.colors")
+
 return {
 	"akinsho/bufferline.nvim",
 	lazy = false,
@@ -24,75 +26,75 @@ return {
 	opts = {
 		highlights = {
 			fill = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 			},
 			duplicate = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 				italic = false,
 			},
 			duplicate_selected = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 				italic = false,
 			},
 			duplicate_visible = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 				italic = false,
 			},
 			background = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 			},
 			close_button = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 			},
 			buffer_selected = {
-				fg = "#ffffff",
-				bg = "NONE",
+				fg = Palette.text,
+				bg = Palette.none,
 				bold = true,
 				italic = false,
 			},
 			close_button_selected = {
-				fg = "#ffffff",
-				bg = "NONE",
+				fg = Palette.text,
+				bg = Palette.none,
 			},
 			buffer_visible = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 				bold = false,
 				italic = false,
 			},
 			close_button_visible = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 			},
 			offset_separator = {
-				fg = "NONE",
-				bg = "NONE",
+				fg = Palette.none,
+				bg = Palette.none,
 			},
 			indicator_visible = {
-				fg = "NONE",
-				bg = "NONE",
+				fg = Palette.none,
+				bg = Palette.none,
 			},
 			indicator_selected = {
-				fg = "NONE",
-				bg = "NONE",
+				fg = Palette.none,
+				bg = Palette.none,
 			},
 			modified = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 			},
 			modified_visible = {
-				fg = "#555555",
-				bg = "NONE",
+				fg = Palette.noir_4,
+				bg = Palette.none,
 			},
 			modified_selected = {
-				fg = "#ffffff",
-				bg = "NONE",
+				fg = Palette.text,
+				bg = Palette.none,
 			},
 		},
 		options = {
