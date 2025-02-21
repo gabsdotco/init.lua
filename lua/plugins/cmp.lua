@@ -1,5 +1,8 @@
 return {
 	"hrsh7th/nvim-cmp",
+	dependecies = {
+		{ "L3MON4D3/LuaSnip", version = "2.*", build = "make install_jsregexp" },
+	},
 	config = function()
 		local cmp = require("cmp")
 
@@ -32,10 +35,10 @@ return {
 			},
 			window = {
 				completion = cmp.config.window.bordered({
-					border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+					border = "rounded",
 				}),
 				documentation = cmp.config.window.bordered({
-					border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+					border = "rounded",
 				}),
 			},
 		})
