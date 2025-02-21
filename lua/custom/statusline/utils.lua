@@ -1,4 +1,4 @@
-function get_component(tag, value, no_space)
+function get_component(tag, value)
 	if value == "" then
 		return ""
 	end

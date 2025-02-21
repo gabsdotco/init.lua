@@ -20,7 +20,7 @@ function StatusLine()
 	return table.concat({
 		get_component("StatusMode", mode),
 		get_component("StatusBranch", branch),
-		get_component("StatusBranchChanges", changes, true),
+		get_component("StatusBranchChanges", changes),
 		get_component("StatusFile", file),
 		get_component_separator(),
 		get_component("StatusSaved", saved),
@@ -32,6 +32,27 @@ end
 
 vim.o.laststatus = 3
 vim.o.statusline = "%!v:lua.StatusLine()"
+
+-- local statusline_augroup = vim.api.nvim_create_augroup("statusline", { clear = true })
+--
+-- vim.api.nvim_create_autocmd({ "WinEnter", "BufEnter", "FileType" }, {
+-- 	group = statusline_augroup,
+-- 	pattern = {
+-- 		"NvimTree_1",
+-- 		"NvimTree",
+-- 		"TelescopePrompt",
+-- 		"fzf",
+-- 		"lspinfo",
+-- 		"lazy",
+-- 		"netrw",
+-- 		"mason",
+-- 		"noice",
+-- 		"qf",
+-- 	},
+-- 	callback = function()
+-- 		vim.opt_local.statusline = "%!v:lua.StatusLine()"
+-- 	end,
+-- })
 
 -- @todo
 -- only redraw if the buffer had any changes or was switched

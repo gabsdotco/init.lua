@@ -24,6 +24,6 @@ local function get_mode_group(mode)
 end
 
 function get_mode_component()
-	local mode = vim.fn.mode()
+	local mode = vim.api.nvim_get_mode().mode
 	return get_mode_group(mode)
 end
