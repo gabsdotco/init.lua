@@ -32,3 +32,7 @@ end
 
 vim.o.laststatus = 3
 vim.o.statusline = "%!v:lua.StatusLine()"
+
+-- @todo
+-- only redraw if the buffer had any changes or was switched
+-- dont draw the statusline on the initial alpha buffer
