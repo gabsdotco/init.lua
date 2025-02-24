@@ -26,8 +26,8 @@ M.get_branch_changes_component = function()
 	local deletions = 0
 
 	if statuses ~= nil then
-		changes = statuses.added or 0
-		additions = statuses.changed or 0
+		changes = statuses.changed or 0
+		additions = statuses.added or 0
 		deletions = statuses.removed or 0
 	end
 
