@@ -100,6 +100,7 @@ return {
 			NvimTreeFolderName = { fg = Palette.noir_4 },
 			NvimTreeFileIcon = { fg = Palette.noir_4 },
 			NvimTreeFileName = { fg = Palette.noir_4 },
+			NvimTreeExecFile = { fg = Palette.noir_4 },
 			NvimTreeIndentMarker = { fg = Palette.noir_8 },
 			NvimTreeNormal = { fg = Palette.noir_4 },
 			NvimTreeVertSplit = { bg = Palette.none, fg = Palette.none },
