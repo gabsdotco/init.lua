@@ -23,15 +23,6 @@ return {
 			vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
 		end
 
-		vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-			underline = true,
-			update_in_insert = true,
-			virtual_text = {
-				spacing = 4,
-				severity = { min = vim.diagnostic.severity.WARN },
-			},
-		})
-
 		-- LSP Diagnostic Config
 		vim.diagnostic.config({
 			float = { border = "rounded" },

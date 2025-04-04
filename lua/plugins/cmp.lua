@@ -1,7 +1,7 @@
 return {
 	"hrsh7th/nvim-cmp",
 	dependecies = {
-		{ "L3MON4D3/LuaSnip", version = "2.*", build = "make install_jsregexp" },
+		{ "L3MON4D3/LuaSnip", build = "make install_jsregexp" },
 	},
 	config = function()
 		local cmp = require("cmp")

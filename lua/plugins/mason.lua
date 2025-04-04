@@ -16,11 +16,6 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
-		local handlers = {
-			["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
-			["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
-		}
-
 		local mason = require("mason")
 		local mason_lspconfig = require("mason-lspconfig")
 		local mason_tool_installer = require("mason-tool-installer")
@@ -39,14 +34,7 @@ return {
 			ensure_installed = { "ts_ls", "lua_ls" },
 			handlers = {
 				function(server_name)
-					-- TS server will be handled by typescript-tools.nvim
-					if server_name == "ts_ls" then
-						return
-					end
-
-					require("lspconfig")[server_name].setup({
-						handlers = handlers,
-					})
+					require("lspconfig")[server_name].setup({})
 				end,
 			},
 		})
