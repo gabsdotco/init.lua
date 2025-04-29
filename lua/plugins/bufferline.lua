@@ -123,11 +123,11 @@ return {
 			diagnostics = false,
 			offsets = {
 				{
-					separator = " ",
+					separator = "",
 					highlight = "NvimTreeNormal",
 					filetype = "NvimTree",
 					-- tree icon
-					text = "File Explorer",
+					text = "",
 					text_align = "left",
 				},
 			},
