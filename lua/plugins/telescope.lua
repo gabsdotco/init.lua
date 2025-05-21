@@ -43,7 +43,7 @@ return {
 				layout_strategy = "vertical_fused",
 				layout_config = {
 					preview_cutoff = 1,
-					width = 0.45,
+					width = 0.50,
 					height = 0.6,
 				},
 				prompt_prefix = " ❯ ",
