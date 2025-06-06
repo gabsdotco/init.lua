@@ -1,6 +1,9 @@
 return {
 	"zbirenbaum/copilot.lua",
 	opts = {
+		filetypes = {
+			yaml = true,
+		},
 		suggestion = {
 			enabled = true,
 			debounce = 75,
