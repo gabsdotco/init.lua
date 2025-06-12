@@ -1,9 +1,9 @@
+require("custom.statusline.colors")
+
 local git = require("custom.statusline.components.git")
 local utils = require("custom.statusline.components.utils")
 local components = require("custom.statusline.utils")
 local diagnostics = require("custom.statusline.components.diagnostics")
-
-require("custom.statusline.colors")
 
 function StatusLine()
 	local mode = utils.get_mode_component()

@@ -71,8 +71,8 @@ return {
 
 			TelescopeNormal = { bg = Palette.none, fg = Palette.noir_4 },
 			TelescopeBorder = { bg = Palette.none, fg = Palette.noir_8 },
-			TelescopeMatching = { bg = Palette.none, fg = Palette.noir_1 },
-			TelescopeSelection = { bg = "#181818" },
+			TelescopeMatching = { bg = Palette.none, fg = Palette.pink },
+			TelescopeSelection = { bg = Palette.none, fg = Palette.noir_1 },
 			TelescopeResultsLineNr = { bg = "#181818" },
 			TelescopeResultsDiffAdd = { bg = Palette.none, fg = Palette.green },
 			TelescopeResultsDiffChange = { bg = Palette.none, fg = Palette.yellow },
@@ -136,6 +136,11 @@ return {
 			DiagnosticSignWarn = { fg = Palette.yellow },
 			DiagnosticSignInfo = { fg = Palette.blue },
 			DiagnosticSignHint = { fg = Palette.green },
+
+			DiagnosticError = { fg = Palette.red },
+			DiagnosticWarn = { fg = Palette.yellow },
+			DiagnosticInfo = { fg = Palette.blue },
+			DiagnosticHint = { fg = Palette.green },
 
 			CmpItemKindFunction = { fg = Palette.pink },
 			CmpItemKindMethod = { fg = Palette.peach },
