@@ -106,7 +106,7 @@ return {
 			NvimTreeVertSplit = { bg = Palette.none, fg = Palette.none },
 			NvimTreeOpenedFolderIcon = { bg = Palette.none, fg = Palette.noir_4 },
 			NvimTreeOpenedFolderName = { bg = Palette.none, fg = Palette.noir_4 },
-			NvimTreeCursorLine = { bg = Palette.none, fg = Palette.noir_1 },
+			NvimTreeCursorLine = { bg = "#181818", fg = Palette.none },
 			NvimTreeEmptyFolderName = { bg = Palette.none, fg = Palette.noir_4 },
 
 			DevIconDefault = { fg = Palette.noir_4 },
