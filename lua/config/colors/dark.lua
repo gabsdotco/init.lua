@@ -122,7 +122,7 @@ PaletteDarkHighlights = {
 	["@string.special"] = { fg = PaletteDark.flamingo },
 
 	["@number"] = { fg = PaletteDark.noir_5 },
-	["@boolean"] = { fg = PaletteDark.rosewater },
+	["@boolean"] = { fg = PaletteDark.noir_5 },
 	["@constant"] = { fg = PaletteDark.flamingo },
 	["@constant.builtin"] = { fg = PaletteDark.flamingo },
 
