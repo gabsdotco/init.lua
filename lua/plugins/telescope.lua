@@ -1,6 +1,31 @@
 return {
 	"nvim-telescope/telescope.nvim",
 	version = "*",
+	cmd = "Telescope",
+	keys = {
+		{ "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+		{ "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
+		{ "<C-g>", "<cmd>Telescope git_files<cr>", desc = "Git files" },
+		{ "<C-s>", "<cmd>Telescope git_status<cr>", desc = "Git status" },
+		{ "<C-f>", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
+		{
+			"<C-e>",
+			"<cmd>Telescope file_browser initial_mode=normal path=%:p:h select_buffer=true<cr>",
+			desc = "File browser",
+		},
+		{
+			"<S-f>",
+			function()
+				require("telescope.builtin").current_buffer_fuzzy_find({
+					prompt_title = "Current Buffer Search",
+					initial_mode = "insert",
+					previewer = false,
+					sorting_strategy = "ascending",
+				})
+			end,
+			desc = "Buffer fuzzy find",
+		},
+	},
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-file-browser.nvim",
@@ -8,7 +33,6 @@ return {
 	},
 	config = function()
 		local telescope = require("telescope")
-		local builtin = require("telescope.builtin")
 		local actions = require("telescope.actions")
 
 		local layout_strategies = require("telescope.pickers.layout_strategies")
@@ -88,28 +112,5 @@ return {
 
 		telescope.load_extension("file_browser")
 		telescope.load_extension("fzf")
-
-		-- Telescope Remaps
-		vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-		vim.keymap.set("n", "<leader>b", builtin.buffers, {})
-		vim.keymap.set("n", "<C-g>", builtin.git_files, {})
-		vim.keymap.set("n", "<C-s>", builtin.git_status, {})
-		vim.keymap.set("n", "<C-f>", builtin.live_grep, {})
-		vim.keymap.set(
-			"n",
-			"<C-e>",
-			":Telescope file_browser initial_mode=normal path=%:p:h select_buffer=true<CR>",
-			{}
-		)
-
-		-- Telescope Buffer Fuzzy Find Remap
-		vim.keymap.set("n", "<S-f>", function()
-			builtin.current_buffer_fuzzy_find({
-				prompt_title = "Current Buffer Search",
-				initial_mode = "insert",
-				previewer = false,
-				sorting_strategy = "ascending",
-			})
-		end, {})
 	end,
 }

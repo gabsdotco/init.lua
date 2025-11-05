@@ -1,5 +1,9 @@
 return {
 	"akinsho/toggleterm.nvim",
+	keys = {
+		{ [[<c-\>]], desc = "Toggle terminal" },
+	},
+	cmd = { "ToggleTerm", "TermExec" },
 	opts = {
 		open_mapping = [[<c-\>]],
 		direction = "float",

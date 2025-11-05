@@ -1,4 +1,5 @@
-require("config.colors")
+require("config.colors.dark")
+require("config.colors.light")
 
 return {
 	"akinsho/bufferline.nvim",
@@ -23,114 +24,131 @@ return {
 			desc = "Previous Buffer",
 		},
 	},
-	opts = {
-		highlights = {
-			fill = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-			},
-			duplicate = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-				italic = false,
-			},
-			duplicate_selected = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-				italic = false,
-			},
-			duplicate_visible = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-				italic = false,
-			},
-			background = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-			},
-			close_button = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-			},
-			buffer_selected = {
-				fg = Palette.text,
-				bg = Palette.none,
-				bold = true,
-				italic = false,
-			},
-			close_button_selected = {
-				fg = Palette.text,
-				bg = Palette.none,
-			},
-			buffer_visible = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-				bold = false,
-				italic = false,
-			},
-			close_button_visible = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-			},
-			offset_separator = {
-				fg = Palette.none,
-				bg = Palette.none,
-			},
-			indicator_visible = {
-				fg = Palette.none,
-				bg = Palette.none,
-			},
-			indicator_selected = {
-				fg = Palette.none,
-				bg = Palette.none,
-			},
-			modified = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-			},
-			modified_visible = {
-				fg = Palette.noir_4,
-				bg = Palette.none,
-			},
-			modified_selected = {
-				fg = Palette.text,
-				bg = Palette.none,
-			},
-		},
-		options = {
-			tab_size = 18,
-			mode = "buffers",
-			modified_icon = "*",
-			show_buffer_icons = false,
-			left_trunc_marker = "...",
-			right_trunc_marker = "...",
-			buffer_close_icon = "",
-			show_duplicate_prefix = true,
-			always_show_bufferline = false,
-			separator_style = { "", "" },
-			custom_filter = function(buf_number)
-				-- don't show nvim-tree
-				if vim.bo[buf_number].filetype == "NvimTree" then
-					return false
-				end
+	config = function()
+		local is_light_mode = vim.o.background == "light"
+		local colors = is_light_mode and PaletteLight or PaletteDark
 
-				return true
-			end,
-			indicator = {
-				icon = " ",
-				style = "icon",
-			},
-			diagnostics = false,
-			offsets = {
-				{
-					separator = "",
-					highlight = "NvimTreeNormal",
-					filetype = "NvimTree",
-					-- tree icon
-					text = "",
-					text_align = "left",
+		require("bufferline").setup({
+			highlights = {
+				fill = {
+					fg = is_light_mode and colors.noir_5 or colors.noir_4,
+					bg = colors.none,
+				},
+				duplicate = {
+					fg = is_light_mode and colors.noir_5 or colors.noir_4,
+					bg = colors.none,
+					italic = false,
+				},
+				duplicate_selected = {
+					fg = is_light_mode and colors.noir_0 or colors.text,
+					bg = colors.none,
+					italic = false,
+				},
+				duplicate_visible = {
+					fg = is_light_mode and colors.noir_4 or colors.noir_4,
+					bg = colors.none,
+					italic = false,
+				},
+				background = {
+					fg = is_light_mode and colors.noir_5 or colors.noir_4,
+					bg = colors.none,
+				},
+				close_button = {
+					fg = is_light_mode and colors.noir_5 or colors.noir_4,
+					bg = colors.none,
+				},
+				buffer_selected = {
+					fg = is_light_mode and colors.noir_0 or colors.text,
+					bg = is_light_mode and colors.none or colors.none,
+					bold = true,
+					italic = false,
+				},
+				close_button_selected = {
+					fg = is_light_mode and colors.noir_0 or colors.text,
+					bg = is_light_mode and colors.none or colors.none,
+				},
+				buffer_visible = {
+					fg = is_light_mode and colors.noir_3 or colors.noir_4,
+					bg = colors.none,
+					bold = false,
+					italic = false,
+				},
+				close_button_visible = {
+					fg = is_light_mode and colors.noir_4 or colors.noir_4,
+					bg = colors.none,
+				},
+				offset_separator = {
+					fg = colors.none,
+					bg = colors.none,
+				},
+				indicator_visible = {
+					fg = colors.none,
+					bg = colors.none,
+				},
+				indicator_selected = {
+					fg = is_light_mode and colors.noir_0 or colors.none,
+					bg = is_light_mode and colors.none or colors.none,
+				},
+				modified = {
+					fg = is_light_mode and colors.noir_4 or colors.noir_4,
+					bg = colors.none,
+				},
+				modified_visible = {
+					fg = is_light_mode and colors.noir_3 or colors.noir_4,
+					bg = colors.none,
+				},
+				modified_selected = {
+					fg = is_light_mode and colors.noir_0 or colors.text,
+					bg = is_light_mode and colors.noir_9 or colors.none,
+				},
+				separator = {
+					fg = is_light_mode and colors.noir_7 or colors.noir_4,
+					bg = colors.none,
+				},
+				separator_selected = {
+					fg = is_light_mode and colors.noir_7 or colors.none,
+					bg = is_light_mode and colors.noir_9 or colors.none,
+				},
+				separator_visible = {
+					fg = is_light_mode and colors.noir_7 or colors.noir_4,
+					bg = colors.none,
 				},
 			},
-		},
-	},
+			options = {
+				tab_size = 18,
+				mode = "buffers",
+				modified_icon = "*",
+				show_buffer_icons = false,
+				left_trunc_marker = "...",
+				right_trunc_marker = "...",
+				buffer_close_icon = "",
+				show_duplicate_prefix = true,
+				always_show_bufferline = false,
+				separator_style = { "", "" },
+				custom_filter = function(buf_number)
+					-- don't show nvim-tree
+					if vim.bo[buf_number].filetype == "NvimTree" then
+						return false
+					end
+
+					return true
+				end,
+				indicator = {
+					icon = " ",
+					style = "icon",
+				},
+				diagnostics = false,
+				offsets = {
+					{
+						separator = "",
+						highlight = "NvimTreeNormal",
+						filetype = "NvimTree",
+						-- tree icon
+						text = "",
+						text_align = "left",
+					},
+				},
+			},
+		})
+	end,
 }

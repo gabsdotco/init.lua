@@ -1,24 +1,25 @@
 return {
 	"folke/zen-mode.nvim",
-	config = function()
-		local zen = require("zen-mode")
-
-		zen.setup({
-			plugins = {
-				options = {
-					enabled = true,
-					laststatus = 0,
-				},
-				tmux = { enabled = true },
+	keys = {
+		{
+			"<leader>z",
+			function()
+				require("zen-mode").toggle({
+					window = {
+						width = 0.70,
+					},
+				})
+			end,
+			desc = "Toggle zen mode",
+		},
+	},
+	opts = {
+		plugins = {
+			options = {
+				enabled = true,
+				laststatus = 0,
 			},
-		})
-
-		vim.keymap.set("n", "<leader>z", function()
-			zen.toggle({
-				window = {
-					width = 0.70,
-				},
-			})
-		end, {})
-	end,
+			tmux = { enabled = true },
+		},
+	},
 }

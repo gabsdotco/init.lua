@@ -11,7 +11,7 @@ return {
 		},
 		view = {
 			width = 40,
-			side = "right",
+			side = "left",
 		},
 		update_focused_file = {
 			enable = true,
@@ -39,32 +39,32 @@ return {
 					},
 				},
 				glyphs = {
-					default = "",
-					symlink = "",
+					default = " ",
+					symlink = " ",
 					folder = {
-						arrow_closed = "", -- Closed folder arrow
-						arrow_open = "", -- Open folder arrow
-						default = "", -- Default folder
-						open = "", -- Open folder
-						empty = "", -- Empty folder
-						empty_open = "", -- Open empty folder
-						symlink = "", -- Symlink folder
-						symlink_open = "", -- Open symlink folder
+						arrow_closed = " ", -- Closed folder arrow
+						arrow_open = " ", -- Open folder arrow
+						default = " ", -- Default folder
+						open = " ", -- Open folder
+						empty = " ", -- Empty folder
+						empty_open = " ", -- Open empty folder
+						symlink = " ", -- Symlink folder
+						symlink_open = " ", -- Open symlink folder
 					},
 					git = {
-						unstaged = "",
-						staged = "",
-						unmerged = "",
-						renamed = "󰁕",
-						untracked = "",
-						deleted = "",
-						ignored = "",
+						unstaged = "~",
+						staged = "✓",
+						unmerged = "⚠",
+						renamed = "➜",
+						untracked = "+",
+						deleted = "✕",
+						ignored = "◌",
 					},
 				},
 			},
 			indent_markers = {
 				enable = true,
-				inline_arrows = true,
+				inline_arrows = false,
 			},
 		},
 		filters = {
