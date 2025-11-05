@@ -8,6 +8,7 @@ PaletteDark = {
 	peach = "#fab387",
 	yellow = "#f9e2af",
 	green = "#a6e3a1",
+	green_white = "#b5f4d6",
 	teal = "#94e2d5",
 	sky = "#89dceb",
 	sapphire = "#74c7ec",
@@ -31,9 +32,9 @@ PaletteDark = {
 	noir_3 = "#666666",
 	noir_4 = "#555555",
 	noir_5 = "#444444",
-	noir_6 = "#444444",
-	noir_7 = "#333333",
-	noir_8 = "#222222",
+	noir_6 = "#333333",
+	noir_7 = "#222222",
+	noir_8 = "#181818",
 	noir_9 = "#111111",
 	none = "NONE",
 }
@@ -42,7 +43,7 @@ PaletteDarkHighlights = {
 	Normal = { fg = PaletteDark.noir_3, bg = PaletteDark.none },
 	NonText = { fg = PaletteDark.noir_2, bg = PaletteDark.none },
 	Comment = { fg = PaletteDark.noir_5, style = "italic" },
-	Constant = { fg = PaletteDark.noir_2 },
+	Constant = { fg = PaletteDark.flamingo },
 	Title = { fg = PaletteDark.text },
 	String = { fg = PaletteDark.noir_5 },
 	Character = { fg = PaletteDark.noir_3 },
@@ -51,7 +52,7 @@ PaletteDarkHighlights = {
 	Boolean = { fg = PaletteDark.noir_5 },
 	Float = { fg = PaletteDark.noir_5 },
 	Identifier = { fg = PaletteDark.noir_2 },
-	Function = { fg = PaletteDark.noir_2 },
+	Function = { fg = PaletteDark.rosewater },
 	Statement = { fg = PaletteDark.noir_4 },
 	Conditional = { fg = PaletteDark.noir_4 },
 	Repeat = { fg = PaletteDark.noir_4 },
@@ -82,8 +83,8 @@ PaletteDarkHighlights = {
 	LineNr = { bg = PaletteDark.none, fg = PaletteDark.noir_6 },
 	Visual = { bg = PaletteDark.noir_8 },
 
-	["@variable"] = { fg = PaletteDark.text },
-	["@variable.builtin"] = { fg = PaletteDark.text },
+	["@variable"] = { fg = PaletteDark.noir_1 },
+	["@variable.builtin"] = { fg = PaletteDark.noir_1 },
 	["@variable.member"] = { fg = PaletteDark.noir_3 },
 
 	["@constructor"] = { fg = PaletteDark.noir_2 },
@@ -91,14 +92,58 @@ PaletteDarkHighlights = {
 
 	["@type"] = { fg = PaletteDark.noir_1 },
 	["@type.qualifier"] = { fg = PaletteDark.noir_6 },
-	["@keyword.coroutine"] = { fg = PaletteDark.noir_6 },
+	["@type.builtin"] = { fg = PaletteDark.noir_1 },
+
+	["@keyword"] = { fg = PaletteDark.noir_4 },
+	["@keyword.modifier"] = { fg = PaletteDark.noir_6 },
+	["@keyword.coroutine"] = { fg = PaletteDark.noir_4 },
+	["@keyword.function"] = { fg = PaletteDark.noir_4 },
+	["@keyword.operator"] = { fg = PaletteDark.noir_5 },
+	["@keyword.return"] = { fg = PaletteDark.noir_4 },
+	["@keyword.conditional"] = { fg = PaletteDark.noir_4 },
+	["@keyword.repeat"] = { fg = PaletteDark.noir_4 },
+	["@keyword.import"] = { fg = PaletteDark.noir_4 },
+
+	["@function"] = { fg = PaletteDark.rosewater },
+	["@function.builtin"] = { fg = PaletteDark.rosewater },
+	["@function.call"] = { fg = PaletteDark.rosewater },
+	["@function.macro"] = { fg = PaletteDark.noir_4 },
+
+	["@method"] = { fg = PaletteDark.rosewater },
+	["@method.call"] = { fg = PaletteDark.rosewater },
+
+	["@string"] = { fg = PaletteDark.noir_5 },
+	["@string.escape"] = { fg = PaletteDark.flamingo },
+	["@string.special"] = { fg = PaletteDark.flamingo },
+
+	["@number"] = { fg = PaletteDark.noir_5 },
+	["@boolean"] = { fg = PaletteDark.noir_5 },
+	["@constant"] = { fg = PaletteDark.flamingo },
+	["@constant.builtin"] = { fg = PaletteDark.flamingo },
+
+	["@operator"] = { fg = PaletteDark.noir_5 },
+	["@punctuation.bracket"] = { fg = PaletteDark.noir_3 },
+	["@punctuation.delimiter"] = { fg = PaletteDark.noir_3 },
+	["@punctuation.special"] = { fg = PaletteDark.noir_4 },
+
+	["@tag"] = { fg = PaletteDark.noir_4 },
+	["@tag.attribute"] = { fg = PaletteDark.noir_3 },
+	["@tag.delimiter"] = { fg = PaletteDark.noir_3 },
+
+	["@property"] = { fg = PaletteDark.noir_3 },
+	["@field"] = { fg = PaletteDark.noir_3 },
+	["@parameter"] = { fg = PaletteDark.noir_3, style = "italic" },
+
+	["@namespace"] = { fg = PaletteDark.noir_2 },
+	["@module"] = { fg = PaletteDark.noir_1 },
+	["@label"] = { fg = PaletteDark.noir_4 },
 
 	Cursor = { bg = PaletteDark.none },
 	CursorLine = { bg = PaletteDark.none, fg = PaletteDark.none },
 	CursorLineNr = { bg = PaletteDark.none, fg = PaletteDark.noir_2, style = "bold" },
 
-	GitSignsAdd = { fg = PaletteDark.green, bg = PaletteDark.none },
-	GitSignsChange = { fg = PaletteDark.blue, bg = PaletteDark.none },
+	GitSignsAdd = { fg = PaletteDark.green_white, bg = PaletteDark.none },
+	GitSignsChange = { fg = PaletteDark.rosewater, bg = PaletteDark.none },
 	GitSignsDelete = { fg = PaletteDark.pink, bg = PaletteDark.none },
 	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_7 },
 
@@ -113,7 +158,7 @@ PaletteDarkHighlights = {
 	TelescopeResultsDiffUntracked = { bg = PaletteDark.none, fg = PaletteDark.yellow },
 
 	NvimTreeGitDirty = { fg = PaletteDark.rosewater },
-	NvimTreeGitNew = { fg = PaletteDark.text },
+	NvimTreeGitNew = { fg = PaletteDark.green_white },
 	NvimTreeGitStaged = { fg = PaletteDark.noir_0 },
 	NvimTreeGitUnstaged = { fg = PaletteDark.noir_4 },
 	NvimTreeGitUntracked = { fg = PaletteDark.noir_2 },
