@@ -95,7 +95,12 @@ PaletteDarkHighlights = {
 	["@type.builtin"] = { fg = PaletteDark.noir_1 },
 
 	["@keyword"] = { fg = PaletteDark.noir_4 },
-	["@keyword.modifier"] = { fg = PaletteDark.noir_6 },
+	["@keyword.modifier"] = { fg = PaletteDark.noir_5 },
+	["@keyword.preproc"] = { fg = PaletteDark.noir_4 },
+	["@keyword.namespace"] = { fg = PaletteDark.noir_4 },
+	["@keyword.type"] = { fg = PaletteDark.noir_4 },
+	["@keyword.control"] = { fg = PaletteDark.noir_4 },
+	["@keyword.operator.logical"] = { fg = PaletteDark.noir_5 },
 	["@keyword.coroutine"] = { fg = PaletteDark.noir_4 },
 	["@keyword.function"] = { fg = PaletteDark.noir_4 },
 	["@keyword.operator"] = { fg = PaletteDark.noir_5 },
@@ -117,7 +122,7 @@ PaletteDarkHighlights = {
 	["@string.special"] = { fg = PaletteDark.flamingo },
 
 	["@number"] = { fg = PaletteDark.noir_5 },
-	["@boolean"] = { fg = PaletteDark.noir_5 },
+	["@boolean"] = { fg = PaletteDark.rosewater },
 	["@constant"] = { fg = PaletteDark.flamingo },
 	["@constant.builtin"] = { fg = PaletteDark.flamingo },
 
