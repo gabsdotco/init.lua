@@ -141,7 +141,7 @@ PaletteDarkHighlights = {
 
 	["@namespace"] = { fg = PaletteDark.noir_2 },
 	["@module"] = { fg = PaletteDark.noir_1 },
-	["@label"] = { fg = PaletteDark.noir_4 },
+	["@label"] = { fg = PaletteDark.rosewater },
 
 	Cursor = { bg = PaletteDark.none },
 	CursorLine = { bg = PaletteDark.none, fg = PaletteDark.none },
@@ -168,7 +168,7 @@ PaletteDarkHighlights = {
 	NvimTreeGitUnstaged = { fg = PaletteDark.noir_4 },
 	NvimTreeGitUntracked = { fg = PaletteDark.noir_2 },
 	NvimTreeGitRenamed = { fg = PaletteDark.noir_1 },
-	NvimTreeGitIgnored = { fg = PaletteDark.noir_7 },
+	NvimTreeGitIgnored = { fg = PaletteDark.noir_6 },
 	NvimTreeGitMerge = { fg = PaletteDark.noir_1 },
 	NvimTreeGitModified = { fg = PaletteDark.rosewater },
 	NvimTreeGitDeleted = { fg = PaletteDark.pink },
