@@ -4,7 +4,7 @@ vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.smartindent = true
 vim.opt.scrolloff = 24
 vim.opt.relativenumber = false
@@ -21,6 +21,9 @@ vim.opt.foldlevelstart = 99
 
 -- Remove netwr menu banner
 vim.g.netrw_banner = 0
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 vim.opt.fillchars:append({
 	eob = " ",
