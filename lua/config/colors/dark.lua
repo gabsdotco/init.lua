@@ -7,8 +7,7 @@ PaletteDark = {
 	maroon = "#eba0ac",
 	peach = "#fab387",
 	yellow = "#f9e2af",
-	green = "#a6e3a1",
-	green_white = "#b5f4d6",
+	green = "#b5f4d6",
 	teal = "#94e2d5",
 	sky = "#89dceb",
 	sapphire = "#74c7ec",
@@ -81,7 +80,7 @@ PaletteDarkHighlights = {
 	StatusLine = { fg = PaletteDark.text, bg = PaletteDark.none },
 	StatusLineNC = { fg = PaletteDark.text, bg = PaletteDark.none },
 	LineNr = { bg = PaletteDark.none, fg = PaletteDark.noir_6 },
-	Visual = { bg = PaletteDark.noir_8 },
+	Visual = { bg = PaletteDark.noir_7 },
 
 	["@variable"] = { fg = PaletteDark.noir_1 },
 	["@variable.builtin"] = { fg = PaletteDark.noir_1 },
@@ -153,7 +152,7 @@ PaletteDarkHighlights = {
 	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_7 },
 
 	TelescopeNormal = { bg = PaletteDark.none, fg = PaletteDark.noir_4 },
-	TelescopeBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_8 },
+	TelescopeBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
 	TelescopeMatching = { bg = PaletteDark.none, fg = PaletteDark.noir_1 },
 	TelescopeSelection = { bg = PaletteDark.none, fg = PaletteDark.noir_2, style = "bold" },
 	TelescopeResultsLineNr = { bg = "#181818" },
@@ -163,7 +162,7 @@ PaletteDarkHighlights = {
 	TelescopeResultsDiffUntracked = { bg = PaletteDark.none, fg = PaletteDark.yellow },
 
 	NvimTreeGitDirty = { fg = PaletteDark.rosewater },
-	NvimTreeGitNew = { fg = PaletteDark.green_white },
+	NvimTreeGitNew = { fg = PaletteDark.green },
 	NvimTreeGitStaged = { fg = PaletteDark.noir_0 },
 	NvimTreeGitUnstaged = { fg = PaletteDark.noir_4 },
 	NvimTreeGitUntracked = { fg = PaletteDark.noir_2 },
@@ -189,7 +188,7 @@ PaletteDarkHighlights = {
 
 	DevIconDefault = { fg = PaletteDark.noir_4 },
 
-	FloatBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_8 },
+	FloatBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
 	FloatShadow = { bg = PaletteDark.none, fg = PaletteDark.none },
 	FloatShadowThrough = { bg = PaletteDark.none, fg = PaletteDark.none },
 
@@ -197,7 +196,7 @@ PaletteDarkHighlights = {
 
 	Folded = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
 
-	Pmenu = { bg = "#181818", fg = PaletteDark.noir_3 },
+	Pmenu = { bg = PaletteDark.noir_7, fg = PaletteDark.noir_3 },
 	PmenuSel = { bg = PaletteDark.noir_8, fg = PaletteDark.text },
 	PmenuSbar = { bg = "#181818", fg = PaletteDark.none },
 	PmenuThumb = { bg = PaletteDark.noir_8, fg = PaletteDark.none },
