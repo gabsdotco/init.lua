@@ -31,22 +31,22 @@ M.get_mode_component = function()
 end
 
 M.get_saved_component = function()
-	local saved = vim.bo.modified and "*" or ""
+	local saved = vim.bo.modified and "* Pending Changes" or ""
 	return saved
 end
 
 M.get_file_component = function()
 	local file = vim.fn.expand("%:t")
 
-	if file == "" then
-		file = "[no name]"
-	end
-
 	if string.match(file, "NvimTree") then
-		file = ""
+		return ""
 	end
 
-	return file
+	if file == "" then
+		return ""
+	end
+
+	return " " .. file
 end
 
 return M

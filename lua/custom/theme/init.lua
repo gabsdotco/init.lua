@@ -118,7 +118,9 @@
 require("config.colors.dark")
 require("config.colors.light")
 
-local highlights = PaletteDarkHighlights
+vim.o.background = "dark"
+
+local highlights = vim.o.background == "light" and PaletteLightHighlights or PaletteDarkHighlights
 
 for group, opts in pairs(highlights) do
 	local cmd = "highlight " .. group
