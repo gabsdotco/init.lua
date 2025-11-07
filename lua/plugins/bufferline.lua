@@ -99,7 +99,7 @@ return {
 				},
 				modified_selected = {
 					fg = is_light_mode and colors.noir_0 or colors.text,
-					bg = is_light_mode and colors.noir_9 or colors.none,
+					bg = is_light_mode and colors.none or colors.none,
 				},
 				separator = {
 					fg = is_light_mode and colors.noir_7 or colors.noir_4,
