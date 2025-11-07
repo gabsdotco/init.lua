@@ -149,7 +149,7 @@ PaletteDarkHighlights = {
 	GitSignsAdd = { fg = PaletteDark.green_white, bg = PaletteDark.none },
 	GitSignsChange = { fg = PaletteDark.rosewater, bg = PaletteDark.none },
 	GitSignsDelete = { fg = PaletteDark.pink, bg = PaletteDark.none },
-	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_7 },
+	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_6 },
 
 	TelescopeNormal = { bg = PaletteDark.none, fg = PaletteDark.noir_4 },
 	TelescopeBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
@@ -174,17 +174,17 @@ PaletteDarkHighlights = {
 
 	NvimTreeWinSeparator = { bg = PaletteDark.none, fg = PaletteDark.none },
 	NvimTreeFolderIcon = { fg = PaletteDark.noir_5 },
-	NvimTreeFolderName = { fg = PaletteDark.noir_5 },
+	NvimTreeFolderName = { fg = PaletteDark.noir_4 },
 	NvimTreeFileIcon = { fg = PaletteDark.noir_5 },
-	NvimTreeFileName = { fg = PaletteDark.noir_5 },
-	NvimTreeExecFile = { fg = PaletteDark.noir_5 },
+	NvimTreeFileName = { fg = PaletteDark.noir_4 },
+	NvimTreeExecFile = { fg = PaletteDark.noir_4 },
 	NvimTreeIndentMarker = { fg = PaletteDark.noir_7 },
-	NvimTreeNormal = { fg = PaletteDark.noir_5 },
+	NvimTreeNormal = { fg = PaletteDark.noir_4 },
 	NvimTreeVertSplit = { bg = PaletteDark.none, fg = PaletteDark.none },
 	NvimTreeOpenedFolderIcon = { bg = PaletteDark.none, fg = PaletteDark.noir_5 },
-	NvimTreeOpenedFolderName = { bg = PaletteDark.none, fg = PaletteDark.noir_5 },
+	NvimTreeOpenedFolderName = { bg = PaletteDark.none, fg = PaletteDark.noir_4 },
 	NvimTreeCursorLine = { bg = PaletteDark.noir_8, fg = PaletteDark.none },
-	NvimTreeEmptyFolderName = { bg = PaletteDark.none, fg = PaletteDark.noir_5 },
+	NvimTreeEmptyFolderName = { bg = PaletteDark.none, fg = PaletteDark.noir_4 },
 
 	DevIconDefault = { fg = PaletteDark.noir_4 },
 
