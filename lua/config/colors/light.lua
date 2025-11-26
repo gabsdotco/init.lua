@@ -128,10 +128,10 @@ PaletteLightHighlights = {
 	GitSignsDelete = { fg = PaletteLight.red, bg = PaletteLight.none },
 	GitSignsCurrentLineBlame = { fg = PaletteLight.noir_7 },
 
-	TelescopeNormal = { bg = PaletteLight.none, fg = PaletteLight.noir_7 },
+	TelescopeNormal = { bg = PaletteLight.none, fg = PaletteLight.noir_6 },
 	TelescopeBorder = { bg = PaletteLight.none, fg = PaletteLight.noir_8 },
 	TelescopeMatching = { bg = PaletteLight.none, fg = PaletteLight.noir_2 },
-	TelescopeSelection = { bg = PaletteLight.none, fg = PaletteLight.noir_4 },
+	TelescopeSelection = { bg = PaletteLight.none, fg = PaletteLight.noir_3 },
 	TelescopeResultsLineNr = { bg = PaletteLight.base },
 	TelescopeResultsDiffAdd = { bg = PaletteLight.none, fg = PaletteLight.green },
 	TelescopeResultsDiffChange = { bg = PaletteLight.none, fg = PaletteLight.yellow },
