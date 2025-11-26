@@ -89,7 +89,7 @@ PaletteLightHighlights = {
 
 	["@variable"] = { fg = PaletteLight.noir_4 },
 	["@variable.builtin"] = { fg = PaletteLight.noir_2 },
-	["@variable.member"] = { fg = PaletteLight.noir_2 },
+	["@variable.member"] = { fg = PaletteLight.noir_1 },
 	["@variable.parameter"] = { fg = PaletteLight.noir_4, style = "italic" },
 
 	["@constructor"] = { fg = PaletteLight.noir_1 },
@@ -100,9 +100,13 @@ PaletteLightHighlights = {
 	["@type.qualifier"] = { fg = PaletteLight.noir_1 },
 	["@keyword"] = { fg = PaletteLight.noir_1 },
 	["@keyword.function"] = { fg = PaletteLight.noir_2 },
-	["@keyword.return"] = { fg = PaletteLight.noir_2 },
+	["@keyword.return"] = { fg = PaletteLight.noir_3 },
+	["@keyword.operator"] = { fg = PaletteLight.noir_3 },
 	["@keyword.coroutine"] = { fg = PaletteLight.noir_3 },
 	["@keyword.modifier"] = { fg = PaletteLight.noir_4 },
+	["@keyword.import"] = { fg = PaletteLight.noir_2 },
+
+	["@punctuation.bracket"] = { fg = PaletteLight.noir_5 },
 
 	["@function"] = { fg = PaletteLight.noir_2 },
 	["@function.builtin"] = { fg = PaletteLight.noir_2 },
@@ -145,7 +149,7 @@ PaletteLightHighlights = {
 	NvimTreeGitUnstaged = { fg = PaletteLight.noir_4 },
 	NvimTreeGitUntracked = { fg = PaletteLight.noir_2 },
 	NvimTreeGitRenamed = { fg = PaletteLight.noir_1 },
-	NvimTreeGitIgnored = { fg = PaletteLight.noir_6 },
+	NvimTreeGitIgnored = { fg = PaletteLight.noir_7 },
 	NvimTreeGitMerge = { fg = PaletteLight.noir_1 },
 	NvimTreeGitModified = { fg = PaletteLight.rosewater },
 	NvimTreeGitDeleted = { fg = PaletteLight.pink },

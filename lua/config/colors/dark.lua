@@ -149,7 +149,7 @@ PaletteDarkHighlights = {
 	GitSignsAdd = { fg = PaletteDark.green_white, bg = PaletteDark.none },
 	GitSignsChange = { fg = PaletteDark.rosewater, bg = PaletteDark.none },
 	GitSignsDelete = { fg = PaletteDark.pink, bg = PaletteDark.none },
-	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_6 },
+	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_7 },
 
 	TelescopeNormal = { bg = PaletteDark.none, fg = PaletteDark.noir_4 },
 	TelescopeBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
