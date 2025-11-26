@@ -9,18 +9,18 @@ return {
 			"<C-q>",
 			function()
 				vim.cmd("bd")
-				vim.cmd("bprev")
+				vim.cmd("bprevious")
 			end,
 			desc = "Kill Buffer",
 		},
 		{
 			"<C-l>",
-			"<cmd>bnext<cr>",
+			"<cmd>BufferLineCycleNext<cr>",
 			desc = "Next Buffer",
 		},
 		{
 			"<C-h>",
-			"<cmd>bprev<cr>",
+			"<cmd>BufferLineCyclePrev<cr>",
 			desc = "Previous Buffer",
 		},
 	},

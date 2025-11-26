@@ -12,7 +12,7 @@ local colors = is_light_mode and PaletteLight or PaletteDark
 highlight("StatusMode", is_light_mode and colors.noir_0 or colors.text, colors.none, colors.none)
 highlight("StatusBranch", is_light_mode and colors.noir_1 or colors.text, colors.none, colors.none)
 highlight("StatusBranchChanges", is_light_mode and colors.noir_4 or colors.noir_5, colors.none, colors.none)
-highlight("StatusFile", is_light_mode and colors.noir_3 or colors.noir_4, colors.none, colors.none)
+highlight("StatusFile", is_light_mode and colors.noir_6 or colors.noir_4, colors.none, colors.none)
 highlight("StatusSaved", is_light_mode and colors.noir_5 or colors.noir_2, colors.none, colors.none)
 highlight("StatusWarnings", colors.yellow, colors.none, colors.none)
 highlight("StatusErrors", colors.red, colors.none, colors.none)

@@ -17,11 +17,19 @@ end
 M.get_warnings_component = function()
 	local warning_count = get_diagnostic_count(vim.diagnostic.severity.WARN)
 
+	if warning_count == 0 then
+		return ""
+	end
+
 	return "W:" .. warning_count
 end
 
 M.get_errors_component = function()
 	local error_count = get_diagnostic_count(vim.diagnostic.severity.ERROR)
+
+	if error_count == 0 then
+		return ""
+	end
 
 	return "E:" .. error_count
 end
@@ -29,11 +37,19 @@ end
 M.get_infos_component = function()
 	local info_count = get_diagnostic_count(vim.diagnostic.severity.INFO)
 
+	if info_count == 0 then
+		return ""
+	end
+
 	return "I:" .. info_count
 end
 
 M.get_hints_component = function()
 	local hint_count = get_diagnostic_count(vim.diagnostic.severity.HINT)
+
+	if hint_count == 0 then
+		return ""
+	end
 
 	return "H:" .. hint_count
 end
