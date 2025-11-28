@@ -121,7 +121,7 @@ return {
 			},
 			options = {
 				tab_size = 0,
-				max_name_length = 15,
+				max_name_length = 20,
 				mode = "buffers",
 				modified_icon = "  *  ",
 				show_buffer_icons = false,
