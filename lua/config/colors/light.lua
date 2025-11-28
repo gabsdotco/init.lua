@@ -98,7 +98,7 @@ PaletteLightHighlights = {
 	["@type"] = { fg = PaletteLight.noir_1 },
 	["@type.builtin"] = { fg = PaletteLight.noir_2 },
 	["@type.qualifier"] = { fg = PaletteLight.noir_1 },
-	["@keyword"] = { fg = PaletteLight.noir_1 },
+	["@keyword"] = { fg = PaletteLight.noir_2 },
 	["@keyword.function"] = { fg = PaletteLight.noir_2 },
 	["@keyword.return"] = { fg = PaletteLight.noir_3 },
 	["@keyword.operator"] = { fg = PaletteLight.noir_3 },
@@ -108,7 +108,7 @@ PaletteLightHighlights = {
 
 	["@punctuation.bracket"] = { fg = PaletteLight.noir_5 },
 
-	["@function"] = { fg = PaletteLight.noir_2 },
+	["@function"] = { fg = PaletteLight.noir_1 },
 	["@function.builtin"] = { fg = PaletteLight.noir_2 },
 	["@function.method"] = { fg = PaletteLight.noir_2 },
 

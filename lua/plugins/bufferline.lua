@@ -28,6 +28,11 @@ return {
 		local is_light_mode = vim.o.background == "light"
 		local colors = is_light_mode and PaletteLight or PaletteDark
 
+		-- Override the internal padding constant to remove spaces
+		local constants = require("bufferline.constants")
+
+		constants.padding = ""
+
 		require("bufferline").setup({
 			highlights = {
 				fill = {
@@ -115,16 +120,23 @@ return {
 				},
 			},
 			options = {
-				tab_size = 18,
+				tab_size = 0,
+				max_name_length = 15,
 				mode = "buffers",
-				modified_icon = "*",
+				modified_icon = "  *  ",
 				show_buffer_icons = false,
+				show_buffer_close_icons = true,
+				show_close_icon = true,
+				show_duplicate_prefix = true,
+				show_tab_indicators = false,
 				left_trunc_marker = "...",
 				right_trunc_marker = "...",
-				buffer_close_icon = "",
-				show_duplicate_prefix = true,
+				buffer_close_icon = "    ",
 				always_show_bufferline = false,
 				separator_style = { "", "" },
+				name_formatter = function(buf)
+					return buf.name
+				end,
 				custom_filter = function(buf_number)
 					-- don't show nvim-tree
 					if vim.bo[buf_number].filetype == "NvimTree" then
@@ -134,8 +146,7 @@ return {
 					return true
 				end,
 				indicator = {
-					icon = " ",
-					style = "icon",
+					style = "none",
 				},
 				diagnostics = false,
 				offsets = {
