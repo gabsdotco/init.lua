@@ -5,7 +5,7 @@ local get_diagnostic_count = function(severity)
 		return 0
 	end
 
-	local count = vim.diagnostic.count(0, { serverity = severity })[severity]
+	local count = vim.diagnostic.count(0, { severity = severity })[severity]
 
 	if count == nil then
 		return 0
