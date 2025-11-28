@@ -8,7 +8,6 @@ local diagnostics = require("custom.statusline.components.diagnostics")
 
 function StatusLine()
 	local mode = utils.get_mode_component()
-	local file = utils.get_file_component()
 	local saved = utils.get_saved_component()
 
 	local branch = git.get_branch_component()
@@ -29,7 +28,6 @@ function StatusLine()
 		components.get_component("StatusWarnings", warnings),
 		components.get_component("StatusInfos", infos),
 		components.get_component("StatusHints", hints),
-		components.get_component("StatusFile", file),
 		components.get_component_separator(),
 		components.get_component("StatusSaved", saved),
 		components.get_component("StatusSpotify", song),

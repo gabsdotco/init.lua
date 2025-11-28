@@ -132,7 +132,7 @@ return {
 				left_trunc_marker = "...",
 				right_trunc_marker = "...",
 				buffer_close_icon = "    ",
-				always_show_bufferline = false,
+				always_show_bufferline = true,
 				separator_style = { "", "" },
 				name_formatter = function(buf)
 					return buf.name
