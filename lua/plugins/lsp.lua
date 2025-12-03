@@ -59,6 +59,18 @@ return {
 
 		vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
 
+		-- Configure semantic tokens to be consistent across languages
+		vim.api.nvim_create_autocmd("LspAttach", {
+			callback = function(args)
+				local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+				if client and client.server_capabilities.semanticTokensProvider then
+					-- Override semantic token highlights to use standard treesitter highlights
+					client.server_capabilities.semanticTokensProvider = nil
+				end
+			end,
+		})
+
 		vim.diagnostic.config({
 			virtual_text = {
 				severity = {
