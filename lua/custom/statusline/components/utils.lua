@@ -35,18 +35,4 @@ M.get_saved_component = function()
 	return saved
 end
 
-M.get_file_component = function()
-	local file = vim.fn.expand("%:t")
-
-	if string.match(file, "NvimTree") then
-		return ""
-	end
-
-	if file == "" then
-		return ""
-	end
-
-	return " " .. file
-end
-
 return M

@@ -22,7 +22,7 @@ function M.update()
 	-- Quick async check if Spotify is running
 	vim.system({ "pgrep", "-x", "Spotify" }, {}, function(obj)
 		if obj.code ~= 0 or not obj.stdout or obj.stdout:match("^%s*$") then
-			spotify_display = ""
+			spotify_display = "♪ Nothing Playing"
 
 			vim.schedule(function()
 				vim.cmd("redrawstatus")
@@ -57,10 +57,10 @@ function M.update()
 
 						spotify_display = string.format("♪ %s", display)
 					else
-						spotify_display = ""
+						spotify_display = "♪ Nothing Playing"
 					end
 				else
-					spotify_display = ""
+					spotify_display = "♪ Nothing Playing"
 				end
 
 				-- Trigger statusline redraw
@@ -79,6 +79,7 @@ function M.start_auto_update(interval_ms)
 	end
 
 	timer = vim.loop.new_timer()
+
 	timer:start(0, interval_ms, function()
 		M.update()
 	end)
@@ -114,7 +115,7 @@ end
 function M.setup_commands()
 	vim.api.nvim_create_autocmd({ "VimEnter" }, {
 		callback = function()
-			M.start_auto_update(5 * 1000)
+			M.start_auto_update(5 * 1000) -- Update every 5 seconds
 		end,
 	})
 

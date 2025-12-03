@@ -21,7 +21,7 @@ M.get_warnings_component = function()
 		return ""
 	end
 
-	return "W:" .. warning_count
+	return "•" .. warning_count
 end
 
 M.get_errors_component = function()
@@ -31,7 +31,7 @@ M.get_errors_component = function()
 		return ""
 	end
 
-	return "E:" .. error_count
+	return "•" .. error_count
 end
 
 M.get_infos_component = function()
@@ -41,7 +41,7 @@ M.get_infos_component = function()
 		return ""
 	end
 
-	return "I:" .. info_count
+	return "•" .. info_count
 end
 
 M.get_hints_component = function()
@@ -51,7 +51,7 @@ M.get_hints_component = function()
 		return ""
 	end
 
-	return "H:" .. hint_count
+	return "•" .. hint_count
 end
 
 return M

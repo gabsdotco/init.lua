@@ -12,10 +12,10 @@ M.get_branch_component = function()
 			branch = branch:sub(1, 20) .. "..."
 		end
 
-		return "  " .. branch
+		return " " .. branch
 	end
 
-	return "  No branch"
+	return " No branch"
 end
 
 M.get_branch_changes_component = function()

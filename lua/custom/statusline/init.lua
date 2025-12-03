@@ -1,5 +1,3 @@
-require("custom.statusline.colors")
-
 local git = require("custom.statusline.components.git")
 local utils = require("custom.statusline.components.utils")
 local spotify = require("custom.statusline.components.spotify")
