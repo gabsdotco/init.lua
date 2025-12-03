@@ -69,7 +69,7 @@ return {
 		},
 		filters = {
 			git_ignored = false,
-			dotfiles = true,
+			dotfiles = false,
 		},
 	},
 	config = function(_, options)
@@ -85,6 +85,11 @@ return {
 					nowait = true,
 				}
 			end
+
+			-- Focus file when created from nvim-tree
+			api.events.subscribe(api.events.Event.FileCreated, function(file)
+				vim.cmd("edit " .. vim.fn.fnameescape(file.fname))
+			end)
 
 			-- default mappings
 			api.config.mappings.default_on_attach(bufnr)
