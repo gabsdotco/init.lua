@@ -25,13 +25,18 @@ local function get_mode_group(mode)
 	return group:upper()
 end
 
-M.get_mode_component = function()
+function M.get_mode_component()
 	local mode = vim.api.nvim_get_mode().mode
 	return get_mode_group(mode)
 end
 
-M.get_saved_component = function()
+function M.get_saved_component()
 	local saved = vim.bo.modified and "* Pending Changes" or ""
+
+	if vim.bo.filetype == "TelescopePrompt" then
+		saved = ""
+	end
+
 	return saved
 end
 

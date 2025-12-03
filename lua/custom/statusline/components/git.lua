@@ -19,6 +19,7 @@ M.get_branch_component = function()
 end
 
 M.get_branch_changes_component = function()
+	local example = 1000
 	local statuses = vim.b.gitsigns_status_dict
 
 	local changes = 0
@@ -31,7 +32,7 @@ M.get_branch_changes_component = function()
 		deletions = statuses.removed or 0
 	end
 
-	return "%#GitSignsChange#~" .. changes .. " %#GitSignsAdd#+" .. additions .. " %#GitSignsDelete#-" .. deletions
+	return "%#GitSignsAdd#+" .. additions .. " %#GitSignsChange#~" .. changes .. " %#GitSignsDelete#-" .. deletions
 end
 
 return M

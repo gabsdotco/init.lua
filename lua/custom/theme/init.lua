@@ -118,7 +118,7 @@
 require("config.colors.dark")
 require("config.colors.light")
 
-vim.o.background = "light"
+vim.o.background = "dark"
 
 local highlights = vim.o.background == "light" and PaletteLightHighlights or PaletteDarkHighlights
 
