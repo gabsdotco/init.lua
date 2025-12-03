@@ -41,7 +41,7 @@ PaletteDark = {
 PaletteDarkHighlights = {
 	Normal = { fg = PaletteDark.noir_3, bg = PaletteDark.none },
 	NonText = { fg = PaletteDark.noir_2, bg = PaletteDark.none },
-	Comment = { fg = PaletteDark.noir_5, style = "italic" },
+	Comment = { fg = PaletteDark.noir_6, style = "italic" },
 	Constant = { fg = PaletteDark.noir_2 },
 	Title = { fg = PaletteDark.text },
 	String = { fg = PaletteDark.noir_5 },
@@ -151,7 +151,7 @@ PaletteDarkHighlights = {
 	GitSignsDelete = { fg = PaletteDark.pink, bg = PaletteDark.none },
 	GitSignsCurrentLineBlame = { fg = PaletteDark.noir_7 },
 
-	TelescopeNormal = { bg = PaletteDark.none, fg = PaletteDark.noir_4 },
+	TelescopeNormal = { bg = PaletteDark.none, fg = PaletteDark.noir_5 },
 	TelescopeBorder = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
 	TelescopeMatching = { bg = PaletteDark.none, fg = PaletteDark.noir_1 },
 	TelescopeSelection = { bg = PaletteDark.none, fg = PaletteDark.noir_2, style = "bold" },
@@ -196,10 +196,10 @@ PaletteDarkHighlights = {
 
 	Folded = { bg = PaletteDark.none, fg = PaletteDark.noir_7 },
 
-	Pmenu = { bg = PaletteDark.noir_7, fg = PaletteDark.noir_3 },
+	Pmenu = { bg = PaletteDark.none, fg = PaletteDark.noir_3 },
 	PmenuSel = { bg = PaletteDark.noir_8, fg = PaletteDark.text },
-	PmenuSbar = { bg = "#181818", fg = PaletteDark.none },
-	PmenuThumb = { bg = PaletteDark.noir_8, fg = PaletteDark.none },
+	PmenuSbar = { bg = PaletteDark.none, fg = PaletteDark.none },
+	PmenuThumb = { bg = PaletteDark.none, fg = PaletteDark.none },
 
 	NoiceCmdlineIcon = { bg = PaletteDark.none, fg = PaletteDark.text },
 	NoiceCmdlinePopup = { bg = PaletteDark.none, fg = PaletteDark.noir_3 },
@@ -230,8 +230,16 @@ PaletteDarkHighlights = {
 	CmpItemKindKeyword = { fg = PaletteDark.overlay2 },
 	CmpItemKindText = { fg = PaletteDark.blue },
 
-	IndentBlanklineChar = { fg = PaletteDark.mantle },
-	IndentBlanklineSpaceChar = { fg = PaletteDark.mantle },
-	IndentBlanklineSpaceCharBlankline = { fg = PaletteDark.mantle },
-	IndentBlanklineContextChar = { fg = PaletteDark.noir_7 },
+	IblScope = { fg = PaletteDark.noir_7 },
+
+	StatusMode = { fg = PaletteDark.text, bg = PaletteDark.none },
+	StatusBranch = { fg = PaletteDark.text, bg = PaletteDark.none },
+	StatusBranchChanges = { fg = PaletteDark.noir_5, bg = PaletteDark.none },
+	StatusFile = { fg = PaletteDark.noir_4, bg = PaletteDark.none },
+	StatusSaved = { fg = PaletteDark.noir_4, bg = PaletteDark.none },
+	StatusWarnings = { fg = PaletteDark.yellow, bg = PaletteDark.none },
+	StatusErrors = { fg = PaletteDark.red, bg = PaletteDark.none },
+	StatusInfos = { fg = PaletteDark.blue, bg = PaletteDark.none },
+	StatusHints = { fg = PaletteDark.green, bg = PaletteDark.none },
+	StatusSpotify = { fg = PaletteDark.noir_2, bg = PaletteDark.none },
 }

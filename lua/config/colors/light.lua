@@ -46,7 +46,7 @@ PaletteLight = {
 PaletteLightHighlights = {
 	Normal = { fg = PaletteLight.noir_3, bg = PaletteLight.none },
 	NonText = { fg = PaletteLight.noir_6, bg = PaletteLight.none },
-	Comment = { fg = PaletteLight.noir_6, style = "italic" },
+	Comment = { fg = PaletteLight.noir_7, style = "italic" },
 	Constant = { fg = PaletteLight.noir_2 },
 	Title = { fg = PaletteLight.text },
 	String = { fg = PaletteLight.noir_5 },
@@ -106,11 +106,12 @@ PaletteLightHighlights = {
 	["@keyword.modifier"] = { fg = PaletteLight.noir_4 },
 	["@keyword.import"] = { fg = PaletteLight.noir_2 },
 
-	["@punctuation.bracket"] = { fg = PaletteLight.noir_5 },
+	["@punctuation.bracket"] = { fg = PaletteLight.noir_3 },
 
 	["@function"] = { fg = PaletteLight.noir_1 },
 	["@function.builtin"] = { fg = PaletteLight.noir_2 },
 	["@function.method"] = { fg = PaletteLight.noir_2 },
+	["@function.call"] = { fg = PaletteLight.noir_0 },
 
 	["@property"] = { fg = PaletteLight.noir_3 },
 	["@field"] = { fg = PaletteLight.noir_3 },
@@ -138,10 +139,7 @@ PaletteLightHighlights = {
 	TelescopeResultsDiffDelete = { bg = PaletteLight.none, fg = PaletteLight.red },
 	TelescopeResultsDiffUntracked = { bg = PaletteLight.none, fg = PaletteLight.yellow },
 
-	IndentBlanklineChar = { fg = PaletteLight.blue },
-	IndentBlanklineSpaceChar = { fg = PaletteLight.blue },
-	IndentBlanklineSpaceCharBlankline = { fg = PaletteLight.blue },
-	IndentBlanklineContextChar = { fg = PaletteLight.pink },
+	IblScope = { fg = PaletteLight.noir_8 },
 
 	NvimTreeGitDirty = { fg = PaletteLight.rosewater },
 	NvimTreeGitNew = { fg = PaletteLight.green },
@@ -152,7 +150,7 @@ PaletteLightHighlights = {
 	NvimTreeGitIgnored = { fg = PaletteLight.noir_7 },
 	NvimTreeGitMerge = { fg = PaletteLight.noir_1 },
 	NvimTreeGitModified = { fg = PaletteLight.rosewater },
-	NvimTreeGitDeleted = { fg = PaletteLight.pink },
+	NvimTreeGitDeleted = { fg = PaletteLight.red },
 
 	NvimTreeWinSeparator = { bg = PaletteLight.none, fg = PaletteLight.none },
 	NvimTreeFolderIcon = { fg = PaletteLight.noir_4 },
@@ -181,7 +179,7 @@ PaletteLightHighlights = {
 	Pmenu = { bg = PaletteLight.none, fg = PaletteLight.noir_3 },
 	PmenuSel = { bg = PaletteLight.noir_8, fg = PaletteLight.text },
 	PmenuSbar = { bg = PaletteLight.none, fg = PaletteLight.none },
-	PmenuThumb = { bg = PaletteLight.noir_8, fg = PaletteLight.none },
+	PmenuThumb = { bg = PaletteLight.none, fg = PaletteLight.none },
 
 	NoiceCmdlineIcon = { bg = PaletteLight.none, fg = PaletteLight.text },
 	NoiceCmdlinePopup = { bg = PaletteLight.none, fg = PaletteLight.noir_3 },
@@ -211,4 +209,15 @@ PaletteLightHighlights = {
 	CmpItemKindSnippet = { fg = PaletteLight.maroon },
 	CmpItemKindKeyword = { fg = PaletteLight.overlay2 },
 	CmpItemKindText = { fg = PaletteLight.blue },
+
+	StatusMode = { fg = PaletteLight.noir_0, bg = PaletteLight.none },
+	StatusBranch = { fg = PaletteLight.noir_1, bg = PaletteLight.none },
+	StatusBranchChanges = { fg = PaletteLight.noir_4, bg = PaletteLight.none },
+	StatusFile = { fg = PaletteLight.noir_6, bg = PaletteLight.none },
+	StatusSaved = { fg = PaletteLight.noir_6, bg = PaletteLight.none },
+	StatusWarnings = { fg = PaletteLight.yellow, bg = PaletteLight.none },
+	StatusErrors = { fg = PaletteLight.red, bg = PaletteLight.none },
+	StatusInfos = { fg = PaletteLight.blue, bg = PaletteLight.none },
+	StatusHints = { fg = PaletteLight.green, bg = PaletteLight.none },
+	StatusSpotify = { fg = PaletteLight.noir_5, bg = PaletteLight.none },
 }
