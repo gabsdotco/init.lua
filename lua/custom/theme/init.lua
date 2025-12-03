@@ -122,6 +122,8 @@ vim.o.background = "light"
 
 local highlights = vim.o.background == "light" and PaletteLightHighlights or PaletteDarkHighlights
 
+vim.cmd("hi clear")
+
 for group, opts in pairs(highlights) do
 	local cmd = "highlight " .. group
 
