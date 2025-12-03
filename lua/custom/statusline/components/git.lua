@@ -4,7 +4,7 @@ M.get_branch_component = function()
 	local branch = vim.g.gitsigns_head
 
 	if branch == nil then
-		return "  No branch"
+		return " No branch"
 	end
 
 	if branch ~= "" then
