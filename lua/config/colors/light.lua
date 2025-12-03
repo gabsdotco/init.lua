@@ -88,37 +88,49 @@ PaletteLightHighlights = {
 	Visual = { bg = PaletteLight.noir_9 },
 
 	["@variable"] = { fg = PaletteLight.noir_4 },
-	["@variable.builtin"] = { fg = PaletteLight.noir_2 },
-	["@variable.member"] = { fg = PaletteLight.noir_1 },
+	["@variable.builtin"] = { fg = PaletteLight.noir_4 },
+	["@variable.member"] = { fg = PaletteLight.noir_3 },
 	["@variable.parameter"] = { fg = PaletteLight.noir_4, style = "italic" },
+
+	["@constant"] = { fg = PaletteLight.noir_4 },
+	["@constant.builtin"] = { fg = PaletteLight.noir_4 },
 
 	["@constructor"] = { fg = PaletteLight.noir_1 },
 	["@lsp.type.parameter"] = { fg = PaletteLight.noir_4, style = "italic" },
 
-	["@type"] = { fg = PaletteLight.noir_1 },
-	["@type.builtin"] = { fg = PaletteLight.noir_2 },
+	["@type"] = { fg = PaletteLight.noir_4 },
+	["@type.builtin"] = { fg = PaletteLight.noir_4 },
 	["@type.qualifier"] = { fg = PaletteLight.noir_1 },
-	["@keyword"] = { fg = PaletteLight.noir_2 },
-	["@keyword.function"] = { fg = PaletteLight.noir_2 },
-	["@keyword.return"] = { fg = PaletteLight.noir_3 },
-	["@keyword.operator"] = { fg = PaletteLight.noir_3 },
+
+	["@operator"] = { fg = PaletteLight.noir_2 },
+
+	["@keyword"] = { fg = PaletteLight.noir_1 },
+	["@keyword.conditional"] = { fg = PaletteLight.noir_2 },
+	["@keyword.function"] = { fg = PaletteLight.noir_0 },
+	["@keyword.return"] = { fg = PaletteLight.noir_0 },
+	["@keyword.operator"] = { fg = PaletteLight.noir_2 },
 	["@keyword.coroutine"] = { fg = PaletteLight.noir_3 },
-	["@keyword.modifier"] = { fg = PaletteLight.noir_4 },
+	["@keyword.modifier"] = { fg = PaletteLight.noir_0 },
 	["@keyword.import"] = { fg = PaletteLight.noir_2 },
+	["@keyword.type"] = { fg = PaletteLight.noir_2 },
+	["@keyword.exception"] = { fg = PaletteLight.noir_1 },
 
-	["@punctuation.bracket"] = { fg = PaletteLight.noir_3 },
+	["@punctuation.bracket"] = { fg = PaletteLight.noir_5 },
 
-	["@function"] = { fg = PaletteLight.noir_1 },
-	["@function.builtin"] = { fg = PaletteLight.noir_2 },
-	["@function.method"] = { fg = PaletteLight.noir_2 },
-	["@function.call"] = { fg = PaletteLight.noir_0 },
+	["@function"] = { fg = PaletteLight.noir_4 },
+	["@function.builtin"] = { fg = PaletteLight.noir_0 },
+	["@function.method"] = { fg = PaletteLight.noir_4 },
+	["@function.call"] = { fg = PaletteLight.noir_2 },
+	["@function.method.call"] = { fg = PaletteLight.noir_2 },
 
-	["@property"] = { fg = PaletteLight.noir_3 },
+	["@property"] = { fg = PaletteLight.noir_4 },
 	["@field"] = { fg = PaletteLight.noir_3 },
 
 	["@namespace"] = { fg = PaletteLight.noir_2 },
 	["@module"] = { fg = PaletteLight.noir_2 },
 	["@label"] = { fg = PaletteDark.noir_9 },
+
+	["@tag"] = { fg = PaletteLight.noir_1 },
 
 	Cursor = { bg = PaletteLight.none },
 	CursorLine = { bg = PaletteLight.none, fg = PaletteLight.none },
