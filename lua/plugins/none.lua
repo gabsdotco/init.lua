@@ -15,15 +15,18 @@ return {
 				require("none-ls.diagnostics.eslint_d"),
 			},
 			on_attach = function(client, bufnr)
-				if client.supports_method("textDocument/formatting") then
+				local formatting_method = vim.lsp.protocol.Methods.textDocument_formatting
+
+				if client.supports_method(formatting_method) then
 					vim.api.nvim_clear_autocmds({ group = group, buffer = bufnr })
 					vim.api.nvim_create_autocmd("BufWritePre", {
 						group = group,
 						buffer = bufnr,
 						callback = function()
-							vim.lsp.buf.format({
-								bufnr = bufnr,
-							})
+							vim.lsp.buf.format({ async = false, bufnr = bufnr })
+
+							-- Temporary fix for null-ls formatting clearing diagnostics
+							vim.diagnostic.enable(true, { bufnr = bufnr })
 						end,
 					})
 				end
