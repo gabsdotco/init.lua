@@ -166,18 +166,6 @@ PaletteDarkHighlights = {
 	TelescopeResultsDiffDelete = { bg = PaletteDark.none, fg = PaletteDark.red },
 	TelescopeResultsDiffUntracked = { bg = PaletteDark.none, fg = PaletteDark.yellow },
 
-	-- NvimTreeGitDirty = { fg = PaletteDark.rosewater },
-	-- NvimTreeGitNew = { fg = PaletteDark.green },
-	-- NvimTreeGitStaged = { fg = PaletteDark.noir_0 },
-	-- NvimTreeGitUnstaged = { fg = PaletteDark.noir_4 },
-	-- NvimTreeGitUntracked = { fg = PaletteDark.noir_2 },
-	-- NvimTreeGitRenamed = { fg = PaletteDark.noir_1 },
-	-- NvimTreeGitIgnored = { fg = PaletteDark.noir_6 },
-	-- NvimTreeGitMerge = { fg = PaletteDark.noir_1 },
-	-- NvimTreeGitModified = { fg = PaletteDark.rosewater },
-	-- NvimTreeGitDeleted = { fg = PaletteDark.pink },
-
-	-- Checking if monochrome mode is better
 	NvimTreeGitDirty = { fg = PaletteDark.noir_1 },
 	NvimTreeGitNew = { fg = PaletteDark.noir_1 },
 	NvimTreeGitStaged = { fg = PaletteDark.noir_1 },
