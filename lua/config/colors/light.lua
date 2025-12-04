@@ -121,8 +121,8 @@ PaletteLightHighlights = {
 	["@function"] = { fg = PaletteLight.noir_4 },
 	["@function.builtin"] = { fg = PaletteLight.noir_0 },
 	["@function.method"] = { fg = PaletteLight.noir_4 },
-	["@function.call"] = { fg = PaletteLight.noir_2 },
-	["@function.method.call"] = { fg = PaletteLight.noir_2 },
+	["@function.call"] = { fg = PaletteLight.noir_1 },
+	["@function.method.call"] = { fg = PaletteLight.noir_1 },
 
 	["@property"] = { fg = PaletteLight.noir_4 },
 	["@field"] = { fg = PaletteLight.noir_3 },
