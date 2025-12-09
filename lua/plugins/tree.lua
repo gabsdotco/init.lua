@@ -1,7 +1,7 @@
 return {
 	"nvim-tree/nvim-tree.lua",
 	version = "*",
-	lazy = false,
+	lazy = true,
 	keys = {
 		{ "<C-t>", "<cmd>NvimTreeToggle<cr>", desc = "Toggle Tree" },
 	},
