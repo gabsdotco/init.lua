@@ -1,8 +1,9 @@
 local git = require("custom.statusline.components.git")
 local utils = require("custom.statusline.components.utils")
 local spotify = require("custom.statusline.components.spotify")
-local components = require("custom.statusline.utils")
 local diagnostics = require("custom.statusline.components.diagnostics")
+
+local components = require("custom.statusline.utils")
 
 function StatusLine()
 	local mode = utils.get_mode_component()
@@ -28,7 +29,7 @@ function StatusLine()
 		components.get_component("StatusHints", hints),
 		components.get_component_separator(),
 		components.get_component("StatusSaved", saved),
-		components.get_component("StatusSpotify", song),
+		components.get_component("StatusSpotify", song, true),
 	})
 end
 

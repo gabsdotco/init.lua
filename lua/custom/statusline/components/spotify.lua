@@ -42,6 +42,7 @@ function M.update()
       end tell
     ]]
 
+		-- TODO: don't redraw if nothing has changed
 		vim.system({ "osascript", "-e", script }, {}, function(result)
 			vim.schedule(function()
 				if result.code == 0 and result.stdout and result.stdout:match("%S") then

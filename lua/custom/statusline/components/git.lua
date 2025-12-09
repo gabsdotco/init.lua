@@ -19,7 +19,6 @@ M.get_branch_component = function()
 end
 
 M.get_branch_changes_component = function()
-	local example = 1000
 	local statuses = vim.b.gitsigns_status_dict
 
 	local changes = 0
