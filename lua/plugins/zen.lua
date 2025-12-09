@@ -7,6 +7,7 @@ return {
 				require("zen-mode").toggle({
 					window = {
 						width = 0.70,
+						height = 0.90,
 					},
 				})
 			end,
