@@ -89,7 +89,7 @@ M.setup = function()
 
 		["@namespace"] = { fg = colors.noir_2 },
 		["@module"] = { fg = colors.noir_2 },
-		["@label"] = { fg = colors.noir_9 },
+		["@label"] = { fg = colors.noir_6 },
 
 		["@tag"] = { fg = colors.noir_1 },
 
