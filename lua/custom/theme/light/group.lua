@@ -45,7 +45,7 @@ M.setup = function()
 		StatusLine = { fg = colors.text, bg = colors.none },
 		StatusLineNC = { fg = colors.text, bg = colors.none },
 		LineNr = { bg = colors.none, fg = colors.noir_6 },
-		Visual = { bg = colors.noir_9 },
+		Visual = { bg = colors.base },
 
 		["@variable"] = { fg = colors.noir_4 },
 		["@variable.builtin"] = { fg = colors.noir_4 },
@@ -150,7 +150,7 @@ M.setup = function()
 		Folded = { bg = colors.none, fg = colors.noir_7 },
 
 		Pmenu = { bg = colors.none, fg = colors.noir_3 },
-		PmenuSel = { bg = colors.noir_8, fg = colors.text },
+		PmenuSel = { bg = colors.base, fg = colors.text },
 		PmenuSbar = { bg = colors.none, fg = colors.none },
 		PmenuThumb = { bg = colors.none, fg = colors.none },
 
