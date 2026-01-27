@@ -213,6 +213,7 @@ M.setup = function()
 		BufferLineSeparator = { fg = colors.noir_7, bg = colors.none },
 		BufferLineSeparatorSelected = { fg = colors.noir_7, bg = colors.noir_9 },
 		BufferLineSeparatorVisible = { fg = colors.noir_7, bg = colors.none },
+		BufferLineTruncMarker = { fg = colors.noir_6, bg = colors.none },
 	}
 end
 
