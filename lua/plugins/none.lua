@@ -13,7 +13,6 @@ return {
 				nls.builtins.formatting.stylua,
 				nls.builtins.formatting.prettier,
 				nls.builtins.formatting.gofmt,
-				nls.builtins.formatting.goimports,
 				require("none-ls.diagnostics.eslint_d"),
 			},
 			on_attach = function(client, bufnr)
