@@ -4,6 +4,7 @@ return {
 	lazy = true,
 	keys = {
 		{ "<C-t>", "<cmd>NvimTreeToggle<cr>", desc = "Toggle Tree" },
+		{ "<leader>ts", "<cmd>NvimTreeToggleSide<cr>", desc = "Toggle Tree Side" },
 	},
 	opts = {
 		sort = {
@@ -108,6 +109,33 @@ return {
 		options.on_attach = my_on_attach
 
 		require("nvim-tree").setup(options)
+
+		-- Command to toggle tree direction (left/right)
+		vim.api.nvim_create_user_command("NvimTreeToggleSide", function()
+			local api = require("nvim-tree.api")
+			local view = require("nvim-tree.view")
+
+			-- Get current side
+			local current_side = view.View.side
+			local new_side = current_side == "left" and "right" or "left"
+
+			-- Close the tree if it's open
+			local was_open = view.is_visible()
+
+			if was_open then
+				api.tree.close()
+			end
+
+			-- Update the side configuration
+			view.View.side = new_side
+
+			-- Reopen if it was open before
+			if was_open then
+				api.tree.open()
+			end
+
+			print("NvimTree side switched to: " .. new_side)
+		end, { desc = "Toggle NvimTree side (left/right)" })
 
 		-- closes nvim-tree if it's the last open buffer
 		vim.api.nvim_create_autocmd({ "QuitPre" }, {
