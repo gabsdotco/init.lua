@@ -176,8 +176,8 @@ M.setup = function()
 		NoiceCmdlinePopupBorderInput = { bg = colors.none, fg = colors.noir_5 },
 		NoiceCmdlinePopupBorder = { bg = colors.none, fg = colors.noir_8 },
 
-		NoiceLspProgressClient = { fg = colors.noir_0 },
-		NoiceLspProgressSpinner = { fg = colors.noir_0 },
+		NoiceLspProgressClient = { fg = colors.noir_1 },
+		NoiceLspProgressSpinner = { fg = colors.noir_1 },
 
 		DiagnosticSignError = { fg = colors.red },
 		DiagnosticSignWarn = { fg = colors.yellow },
