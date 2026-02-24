@@ -25,7 +25,7 @@ return {
 			ui = {
 				icons = {
 					package_installed = "✓",
-					package_pending = "➜",
+					package_pending = "->",
 					package_uninstalled = "✗",
 				},
 			},
@@ -86,10 +86,10 @@ return {
 					min = vim.diagnostic.severity.WARN,
 				},
 				text = {
-					[vim.diagnostic.severity.ERROR] = "•",
-					[vim.diagnostic.severity.WARN] = "•",
-					[vim.diagnostic.severity.INFO] = "•",
-					[vim.diagnostic.severity.HINT] = "•",
+					[vim.diagnostic.severity.ERROR] = "▪",
+					[vim.diagnostic.severity.WARN] = "▪",
+					[vim.diagnostic.severity.INFO] = "▪",
+					[vim.diagnostic.severity.HINT] = "▪",
 				},
 			},
 		})

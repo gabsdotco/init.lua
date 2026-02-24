@@ -11,8 +11,8 @@ return {
 			sorter = "case_sensitive",
 		},
 		view = {
-			width = 40,
-			side = "right",
+			width = 35,
+			side = "left",
 		},
 		update_focused_file = {
 			enable = true,
@@ -59,7 +59,7 @@ return {
 						renamed = "➜",
 						untracked = "+",
 						deleted = "✕",
-						ignored = "◌",
+						ignored = "*",
 					},
 				},
 			},

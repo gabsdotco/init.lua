@@ -219,7 +219,7 @@ M.setup = function()
 		BufferLineDuplicateVisible = { fg = colors.noir_4, bg = colors.none, italic = false },
 		BufferLineBackground = { fg = colors.noir_4, bg = colors.none },
 		BufferLineCloseButton = { fg = colors.noir_4, bg = colors.none },
-		BufferLineBufferSelected = { fg = colors.text, bg = colors.none, bold = true, italic = false },
+		BufferLineBufferSelected = { fg = colors.text, bg = colors.none, bold = false, italic = false },
 		BufferLineCloseButtonSelected = { fg = colors.text, bg = colors.none },
 		BufferLineBufferVisible = { fg = colors.noir_4, bg = colors.none, bold = false, italic = false },
 		BufferLineCloseButtonVisible = { fg = colors.noir_4, bg = colors.none },
