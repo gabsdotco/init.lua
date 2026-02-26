@@ -2,9 +2,6 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	event = { "BufReadPost", "BufNewFile" },
 	build = ":TSUpdate",
-	dependencies = {
-		"nvim-treesitter/playground",
-	},
 	opts = {
 		sync_install = false,
 		auto_install = true,
@@ -23,6 +20,6 @@ return {
 		},
 	},
 	config = function(_, opts)
-		require("nvim-treesitter.configs").setup(opts)
+		require("nvim-treesitter").setup(opts)
 	end,
 }
