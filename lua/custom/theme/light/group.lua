@@ -214,6 +214,9 @@ M.setup = function()
 		BufferLineSeparatorSelected = { fg = colors.noir_7, bg = colors.noir_9 },
 		BufferLineSeparatorVisible = { fg = colors.noir_7, bg = colors.none },
 		BufferLineTruncMarker = { fg = colors.noir_6, bg = colors.none },
+
+		KeystrokeNormal = { fg = colors.noir_5, bg = colors.none },
+		KeystrokeBorder = { fg = colors.noir_8, bg = colors.none },
 	}
 end
 

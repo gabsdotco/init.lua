@@ -119,7 +119,7 @@ M.setup = function()
 		GitSignsAdd = { fg = colors.green, bg = colors.none },
 		GitSignsChange = { fg = colors.mauve, bg = colors.none },
 		GitSignsDelete = { fg = colors.pink, bg = colors.none },
-		GitSignsCurrentLineBlame = { fg = colors.noir_7 },
+		GitSignsCurrentLineBlame = { fg = colors.noir_6 },
 
 		TelescopeNormal = { bg = colors.none, fg = colors.noir_5 },
 		TelescopeBorder = { bg = colors.none, fg = colors.noir_7 },
@@ -233,6 +233,9 @@ M.setup = function()
 		BufferLineSeparatorSelected = { fg = colors.none, bg = colors.none },
 		BufferLineSeparatorVisible = { fg = colors.noir_4, bg = colors.none },
 		BufferLineTruncMarker = { fg = colors.noir_4, bg = colors.none },
+
+		KeystrokeNormal = { fg = colors.noir_3, bg = colors.none },
+		KeystrokeBorder = { fg = colors.noir_7, bg = colors.none },
 	}
 end
 
