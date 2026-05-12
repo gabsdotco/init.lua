@@ -115,22 +115,19 @@ return {
 		vim.api.nvim_create_user_command("NvimTreeToggleSide", function()
 			local api = require("nvim-tree.api")
 			local view = require("nvim-tree.view")
+			local config = require("nvim-tree.config")
 
-			-- Get current side
-			local current_side = view.View.side
+			local current_side = config.g.view.side
 			local new_side = current_side == "left" and "right" or "left"
 
-			-- Close the tree if it's open
 			local was_open = view.is_visible()
 
 			if was_open then
 				api.tree.close()
 			end
 
-			-- Update the side configuration
-			view.View.side = new_side
+			config.g.view.side = new_side
 
-			-- Reopen if it was open before
 			if was_open then
 				api.tree.open()
 			end
