@@ -42,8 +42,6 @@ M.setup = function()
 		Underlined = { underline = true },
 		Error = { fg = colors.red },
 		Todo = { fg = colors.teal, bold = true },
-		StatusLine = { fg = colors.text, bg = colors.none },
-		StatusLineNC = { fg = colors.text, bg = colors.none },
 		LineNr = { bg = colors.none, fg = colors.noir_6 },
 		Visual = { bg = colors.noir_7 },
 		QuickFixLine = { bg = colors.none, fg = colors.text },
@@ -202,6 +200,8 @@ M.setup = function()
 
 		IblScope = { fg = colors.noir_7 },
 
+		StatusLine = { fg = colors.text, bg = colors.none },
+		StatusLineNC = { fg = colors.text, bg = colors.none },
 		StatusMode = { fg = colors.text, bg = colors.none },
 		StatusBranch = { fg = colors.text, bg = colors.none },
 		StatusBranchChanges = { fg = colors.noir_5, bg = colors.none },
